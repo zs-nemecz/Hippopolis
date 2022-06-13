@@ -1,0 +1,7 @@
+,Cue,Image,Category,Novelty,UpdateImage,TestImage1,TestImage2,TestImage3,TestImage4
+0,ZONGORA,stimuli/scenes/001a.jpg,scene,0,stimuli/scenes/001a.jpg,stimuli/objects/009a.jpg,stimuli/scenes/001b.jpg,stimuli/scenes/001a.jpg,stimuli/objects/009b.jpg
+1,SZILVA,stimuli/objects/008a.jpg,object,1,stimuli/objects/009a.jpg,stimuli/objects/009a.jpg,stimuli/objects/014a.jpg,stimuli/objects/009b.jpg,stimuli/objects/014b.jpg
+2,TOLMÁCS,stimuli/objects/006a.jpg,object,0,stimuli/objects/006a.jpg,stimuli/scenes/010b.jpg,stimuli/objects/006b.jpg,stimuli/scenes/010a.jpg,stimuli/objects/006a.jpg
+3,SZIKLA,stimuli/objects/014a.jpg,object,0,stimuli/objects/014a.jpg,stimuli/scenes/007b.jpg,stimuli/objects/014b.jpg,stimuli/scenes/007a.jpg,stimuli/objects/014a.jpg
+4,SIRÁLY,stimuli/scenes/016a.jpg,scene,1,stimuli/scenes/010a.jpg,stimuli/scenes/010b.jpg,stimuli/scenes/010a.jpg,stimuli/scenes/001b.jpg,stimuli/scenes/001a.jpg
+5,HEGESZTŐ,stimuli/scenes/007a.jpg,scene,0,stimuli/scenes/007a.jpg,stimuli/scenes/007b.jpg,stimuli/objects/006b.jpg,stimuli/scenes/007a.jpg,stimuli/objects/006a.jpg

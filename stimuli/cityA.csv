@@ -1,0 +1,7 @@
+,Cue,Image,Category,Novelty,UpdateImage,TestImage1,TestImage2,TestImage3,TestImage4
+0,TIGRIS,stimuli/objects/001a.jpg,object,0,stimuli/objects/001a.jpg,stimuli/objects/001b.jpg,stimuli/objects/001a.jpg,stimuli/scenes/008b.jpg,stimuli/scenes/008a.jpg
+1,VITORLA,stimuli/scenes/017a.jpg,scene,1,stimuli/scenes/013a.jpg,stimuli/scenes/013a.jpg,stimuli/objects/007b.jpg,stimuli/objects/007a.jpg,stimuli/scenes/013b.jpg
+2,SZÖCSKE,stimuli/scenes/008a.jpg,scene,0,stimuli/scenes/008a.jpg,stimuli/scenes/013b.jpg,stimuli/scenes/008a.jpg,stimuli/scenes/013a.jpg,stimuli/scenes/008b.jpg
+3,TELEFON,stimuli/scenes/018a.jpg,scene,2,stimuli/objects/007a.jpg,stimuli/scenes/009b.jpg,stimuli/objects/007b.jpg,stimuli/scenes/009a.jpg,stimuli/objects/007a.jpg
+4,PETÁRDA,stimuli/objects/004a.jpg,object,1,stimuli/objects/016a.jpg,stimuli/objects/016b.jpg,stimuli/objects/016a.jpg,stimuli/objects/001b.jpg,stimuli/objects/001a.jpg
+5,TÖLCSÉR,stimuli/objects/010a.jpg,object,2,stimuli/scenes/009a.jpg,stimuli/objects/016b.jpg,stimuli/scenes/009a.jpg,stimuli/scenes/009b.jpg,stimuli/objects/016a.jpg

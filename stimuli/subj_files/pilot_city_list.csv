@@ -1,0 +1,3 @@
+CityName,StimuliFile,CityImage,StreetSign
+Camponello,stimuli/subj_files/pilot_cityB.csv,./stimuli/leipzig.jpg,./stimuli/street_plate2.png
+Hippopolis,stimuli/subj_files/pilot_cityA.csv,./stimuli/frankfurt.jpg,./stimuli/street_plate1.png
