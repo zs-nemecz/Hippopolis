@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2021.1.4">
+<PsychoPy2experiment encoding="utf-8" version="2021.1.2">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -64,8 +64,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="key = key_resp.keys;&amp;#10;response = &quot;invalid&quot;;&amp;#10;if ((key === &quot;d&quot;)) {&amp;#10;    response = TestImage1Type;&amp;#10;} else {&amp;#10;    if ((key === &quot;f&quot;)) {&amp;#10;        response = TestImage2Type;&amp;#10;    } else {&amp;#10;        if ((key === &quot;j&quot;)) {&amp;#10;            response = TestImage3Type;&amp;#10;        } else {&amp;#10;            if ((key === &quot;k&quot;)) {&amp;#10;                response = TestImage4Type;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;console.log(response);&amp;#10;thisExp.addData(&quot;test_resp&quot;, response);&amp;#10;if ((response === &quot;target&quot;)) {&amp;#10;    t += 1;&amp;#10;}&amp;#10;if ((response === &quot;lure&quot;)) {&amp;#10;    l += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist1&quot;)) {&amp;#10;    d1 += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist2&quot;)) {&amp;#10;    d2 += 1;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="key = key_resp.keys&amp;#10;response = 'invalid'&amp;#10;&amp;#10;if key == 'd':&amp;#10;    response = TestImage1Type&amp;#10;elif key == 'f':&amp;#10;    response = TestImage2Type&amp;#10;elif key == 'j':&amp;#10;    response = TestImage3Type&amp;#10;elif key == 'k':&amp;#10;    response = TestImage4Type&amp;#10;&amp;#10;print(response)&amp;#10;thisExp.addData('test_resp', response)&amp;#10;if response == 'target':&amp;#10;    t += 1&amp;#10;if response == 'lure':&amp;#10;    l += 1&amp;#10;if response == 'dist1':&amp;#10;    d1 += 1&amp;#10;if response == 'dist2':&amp;#10;    d2 += 1&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="key = key_resp.keys;&amp;#10;response = &quot;invalid&quot;;&amp;#10;if ((key === &quot;d&quot;)) {&amp;#10;    response = TestImage1Type;&amp;#10;} else {&amp;#10;    if ((key === &quot;f&quot;)) {&amp;#10;        response = TestImage2Type;&amp;#10;    } else {&amp;#10;        if ((key === &quot;j&quot;)) {&amp;#10;            response = TestImage3Type;&amp;#10;        } else {&amp;#10;            if ((key === &quot;k&quot;)) {&amp;#10;                response = TestImage4Type;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;console.log(response);&amp;#10;thisExp.addData(&quot;test_resp&quot;, response);&amp;#10;if ((response === &quot;target&quot;)) {&amp;#10;    target += 1;&amp;#10;}&amp;#10;if ((response === &quot;lure&quot;)) {&amp;#10;    lure += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist1&quot;)) {&amp;#10;    dist1 += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist2&quot;)) {&amp;#10;    dist2 += 1;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="key = key_resp.keys&amp;#10;response = 'invalid'&amp;#10;&amp;#10;if key == 'd':&amp;#10;    response = TestImage1Type&amp;#10;elif key == 'f':&amp;#10;    response = TestImage2Type&amp;#10;elif key == 'j':&amp;#10;    response = TestImage3Type&amp;#10;elif key == 'k':&amp;#10;    response = TestImage4Type&amp;#10;&amp;#10;print(response)&amp;#10;thisExp.addData('test_resp', response)&amp;#10;if response == 'target':&amp;#10;    target += 1&amp;#10;if response == 'lure':&amp;#10;    lure += 1&amp;#10;if response == 'dist1':&amp;#10;    dist1 += 1&amp;#10;if response == 'dist2':&amp;#10;    dist2 += 1&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -132,10 +132,10 @@
       <CodeComponent name="count_responses">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="t = 0;&amp;#10;l = 0;&amp;#10;d1 = 0;&amp;#10;d2 = 0;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="t = 0&amp;#10;l = 0&amp;#10;d1 = 0&amp;#10;d2 = 0" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="target = 0&amp;#10;lure = 0&amp;#10;dist1 = 0&amp;#10;dist2 = 0" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="target = 0;&amp;#10;lure = 0;&amp;#10;dist1 = 0;&amp;#10;dist2 = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="target = 0;&amp;#10;lure = 0;&amp;#10;dist1 = 0;&amp;#10;dist2 = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="target = 0&amp;#10;lure = 0&amp;#10;dist1 = 0&amp;#10;dist2 = 0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -196,8 +196,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="thisExp.addData(&quot;n_targets&quot;, t);&amp;#10;thisExp.addData(&quot;n_lures&quot;, l);&amp;#10;thisExp.addData(&quot;n_dist1s&quot;, d1);&amp;#10;thisExp.addData(&quot;n_dist2s&quot;, d2);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="thisExp.addData('n_targets', t)&amp;#10;thisExp.addData('n_lures', l)&amp;#10;thisExp.addData('n_dist1s', d1)&amp;#10;thisExp.addData('n_dist2s', d2)" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="thisExp.addData(&quot;n_targets&quot;, target);&amp;#10;thisExp.addData(&quot;n_lures&quot;, lure);&amp;#10;thisExp.addData(&quot;n_dist1s&quot;, dist1);&amp;#10;thisExp.addData(&quot;n_dist2s&quot;, dist2);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="thisExp.addData('n_targets', target)&amp;#10;thisExp.addData('n_lures', lure)&amp;#10;thisExp.addData('n_dist1s', dist1)&amp;#10;thisExp.addData('n_dist2s', dist2)" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>

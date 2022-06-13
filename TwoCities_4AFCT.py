@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on June 13, 2022, at 21:03
+This experiment was created using PsychoPy3 Experiment Builder (v2021.1.2),
+    on június 13, 2022, at 22:02
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2021.1.4'
+psychopyVersion = '2021.1.2'
 expName = 'Hippopolis_4AFCT'  # from the Builder filename that created this script
 expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Zsuzsa\\HCCCL\\TwoCities\\TwoCities_4AFCT.py',
+    originPath='D:\\Users\\USER\\Desktop\\Hippopolis\\TwoCities_4AFCT.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -102,6 +102,10 @@ city_image = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-1.0)
+target = 0
+lure = 0
+dist1 = 0
+dist2 = 0
 
 # Initialize components for Routine "test_trial"
 test_trialClock = core.Clock()
@@ -294,10 +298,10 @@ for thisCityBlock in CityBlock:
     # update component parameters for each repeat
     cityname_text.setText(CityName)
     city_image.setImage(CityImage)
-    t = 0
-    l = 0
-    d1 = 0
-    d2 = 0
+    target = 0
+    lure = 0
+    dist1 = 0
+    dist2 = 0
     # keep track of which components have finished
     city_nameComponents = [cityname_text, city_image]
     for thisComponent in city_nameComponents:
@@ -727,13 +731,13 @@ for thisCityBlock in CityBlock:
         print(response)
         thisExp.addData('test_resp', response)
         if response == 'target':
-            t += 1
+            target += 1
         if response == 'lure':
-            l += 1
+            lure += 1
         if response == 'dist1':
-            d1 += 1
+            dist1 += 1
         if response == 'dist2':
-            d2 += 1
+            dist2 += 1
         
         
         
@@ -812,10 +816,10 @@ for thisCityBlock in CityBlock:
     break_key_resp.keys = []
     break_key_resp.rt = []
     _break_key_resp_allKeys = []
-    thisExp.addData('n_targets', t)
-    thisExp.addData('n_lures', l)
-    thisExp.addData('n_dist1s', d1)
-    thisExp.addData('n_dist2s', d2)
+    thisExp.addData('n_targets', target)
+    thisExp.addData('n_lures', lure)
+    thisExp.addData('n_dist1s', dist1)
+    thisExp.addData('n_dist2s', dist2)
     # keep track of which components have finished
     take_a_breakComponents = [break_text, break_key_resp]
     for thisComponent in take_a_breakComponents:
