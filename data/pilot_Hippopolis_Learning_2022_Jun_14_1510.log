@@ -1,0 +1,92 @@
+1.0397 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+13.1321 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000001E9401EB38>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000001E93F7D208>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='pix', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.1324 	EXP 	window1: mouseVisible = True
+13.1324 	EXP 	window1: recordFrameIntervals = False
+13.2986 	EXP 	window1: recordFrameIntervals = True
+13.4831 	EXP 	window1: recordFrameIntervals = False
+13.6623 	EXP 	Created cityname_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='cityname_text', opacity=1, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+13.6697 	EXP 	Created city_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='city_image', opacity=1, ori=0.0, pos=array([   0., -100.]), size=array([1200.,  630.]), texRes=128.0, units='pix', win=Window(...))
+13.6746 	EXP 	Created plate = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate', opacity=1, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+13.6760 	EXP 	Created city_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='city_text', opacity=1, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+13.6769 	EXP 	Created street_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text', opacity=1, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+13.6825 	EXP 	Created learning_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='learning_image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+13.7552 	EXP 	Created fx_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='fx_cross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+13.7815 	EXP 	Created test_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='test_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+13.7856 	EXP 	Created plate_test = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate_test', opacity=1, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+13.7864 	EXP 	Created city_text_test = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='city_text_test', opacity=1, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+13.7871 	EXP 	Created street_text_test = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text_test', opacity=1, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+13.7958 	EXP 	Created test_question = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='test_question', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Fel tudja idézni a képet?', units='pix', win=Window(...), wrapWidth=500)
+13.8489 	EXP 	Created button_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='stimuli\\\\buttons.png', interpolate=True, mask=None, maskParams=None, name='button_image', opacity=1, ori=0.0, pos=array([   0., -200.]), size=array([660., 312.]), texRes=128.0, units='pix', win=Window(...))
+13.8533 	EXP 	Created plate_verbal = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate_verbal', opacity=1, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+13.8541 	EXP 	Created street_text_verbal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text_verbal', opacity=1, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+13.8548 	EXP 	Created city_text_verbal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='city_text_verbal', opacity=1, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+13.8665 	EXP 	Created question_verbal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='question_verbal', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+13.8686 	EXP 	Created fx_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='fx_cross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+13.8784 	EXP 	Created break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='break_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+13.9381 	EXP 	Imported ./stimuli/subj_files/pilot_city_list.csv as conditions, 2 conditions, 4 params
+13.9386 	EXP 	Created sequence: sequential, trialTypes=2, nReps=2, seed=None
+13.9394 	EXP 	New trial (rep=0, index=0): OrderedDict([('CityName', 'Camponello'), ('StimuliFile', 'stimuli/subj_files/pilot_cityB.csv'), ('CityImage', './stimuli/leipzig.jpg'), ('StreetSign', './stimuli/street_plate2.png')])
+13.9997 	EXP 	cityname_text: text = 'Camponello'
+13.9997 	EXP 	city_image: image = './stimuli/leipzig.jpg'
+13.9997 	EXP 	cityname_text: autoDraw = True
+13.9997 	EXP 	city_image: autoDraw = True
+16.9370 	EXP 	Imported stimuli/subj_files/pilot_cityB.csv as conditions, 60 conditions, 13 params
+16.9375 	EXP 	Created sequence: random, trialTypes=60, nReps=1, seed=None
+16.9380 	EXP 	New trial (rep=0, index=0): OrderedDict([('Cue', 'PETÁRDA'), ('Image', 'stimuli/scenes/023a.jpg'), ('Category', 'scene'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/023a.jpg'), ('TestImage1', 'stimuli/scenes/023a.jpg'), ('TestImage2', 'stimuli/scenes/019b.jpg'), ('TestImage3', 'stimuli/scenes/019a.jpg'), ('TestImage4', 'stimuli/scenes/023b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'lure')])
+17.0310 	EXP 	cityname_text: autoDraw = False
+17.0310 	EXP 	city_image: autoDraw = False
+17.0310 	EXP 	plate: image = './stimuli/street_plate2.png'
+17.0310 	EXP 	city_text: text = 'Camponello'
+17.0310 	EXP 	street_text: text = 'PETÁRDA'
+17.0310 	EXP 	learning_image: image = 'stimuli/scenes/023a.jpg'
+17.0310 	EXP 	plate: autoDraw = True
+17.0310 	EXP 	city_text: autoDraw = True
+17.0310 	EXP 	street_text: autoDraw = True
+17.0310 	EXP 	learning_image: autoDraw = True
+19.9298 	EXP 	plate: autoDraw = False
+19.9298 	EXP 	city_text: autoDraw = False
+19.9298 	EXP 	street_text: autoDraw = False
+19.9298 	EXP 	learning_image: autoDraw = False
+19.9298 	EXP 	fx_cross: autoDraw = True
+20.9185 	EXP 	New trial (rep=0, index=1): OrderedDict([('Cue', 'MAJORÁNNA'), ('Image', 'stimuli/scenes/031a.jpg'), ('Category', 'scene'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/031a.jpg'), ('TestImage1', 'stimuli/objects/044b.jpg'), ('TestImage2', 'stimuli/objects/044a.jpg'), ('TestImage3', 'stimuli/scenes/031b.jpg'), ('TestImage4', 'stimuli/scenes/031a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'target')])
+20.9692 	EXP 	fx_cross: autoDraw = False
+20.9692 	EXP 	plate: image = './stimuli/street_plate2.png'
+20.9692 	EXP 	city_text: text = 'Camponello'
+20.9692 	EXP 	street_text: text = 'MAJORÁNNA'
+20.9692 	EXP 	learning_image: image = 'stimuli/scenes/031a.jpg'
+20.9692 	EXP 	plate: autoDraw = True
+20.9692 	EXP 	city_text: autoDraw = True
+20.9692 	EXP 	street_text: autoDraw = True
+20.9692 	EXP 	learning_image: autoDraw = True
+23.9237 	EXP 	plate: autoDraw = False
+23.9237 	EXP 	city_text: autoDraw = False
+23.9237 	EXP 	street_text: autoDraw = False
+23.9237 	EXP 	learning_image: autoDraw = False
+23.9237 	EXP 	fx_cross: autoDraw = True
+24.9150 	EXP 	New trial (rep=0, index=2): OrderedDict([('Cue', 'KIRAKÓ'), ('Image', 'stimuli/scenes/032a.jpg'), ('Category', 'scene'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/032a.jpg'), ('TestImage1', 'stimuli/scenes/032a.jpg'), ('TestImage2', 'stimuli/scenes/064a.jpg'), ('TestImage3', 'stimuli/scenes/032b.jpg'), ('TestImage4', 'stimuli/scenes/064b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist2')])
+24.9660 	EXP 	fx_cross: autoDraw = False
+24.9660 	EXP 	plate: image = './stimuli/street_plate2.png'
+24.9660 	EXP 	city_text: text = 'Camponello'
+24.9660 	EXP 	street_text: text = 'KIRAKÓ'
+24.9660 	EXP 	learning_image: image = 'stimuli/scenes/032a.jpg'
+24.9660 	EXP 	plate: autoDraw = True
+24.9660 	EXP 	city_text: autoDraw = True
+24.9660 	EXP 	street_text: autoDraw = True
+24.9660 	EXP 	learning_image: autoDraw = True
+27.9323 	EXP 	plate: autoDraw = False
+27.9323 	EXP 	city_text: autoDraw = False
+27.9323 	EXP 	street_text: autoDraw = False
+27.9323 	EXP 	learning_image: autoDraw = False
+27.9323 	EXP 	fx_cross: autoDraw = True
+28.9170 	EXP 	New trial (rep=0, index=3): OrderedDict([('Cue', 'BONBON'), ('Image', 'stimuli/objects/091a.jpg'), ('Category', 'object'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/091a.jpg'), ('TestImage1', 'stimuli/objects/091a.jpg'), ('TestImage2', 'stimuli/objects/091b.jpg'), ('TestImage3', 'stimuli/scenes/069a.jpg'), ('TestImage4', 'stimuli/scenes/069b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'dist2')])
+28.9868 	EXP 	fx_cross: autoDraw = False
+28.9868 	EXP 	plate: image = './stimuli/street_plate2.png'
+28.9868 	EXP 	city_text: text = 'Camponello'
+28.9868 	EXP 	street_text: text = 'BONBON'
+28.9868 	EXP 	learning_image: image = 'stimuli/objects/091a.jpg'
+28.9868 	EXP 	plate: autoDraw = True
+28.9868 	EXP 	city_text: autoDraw = True
+28.9868 	EXP 	street_text: autoDraw = True
+28.9868 	EXP 	learning_image: autoDraw = True
+31.2570 	DATA 	Keypress: escape
+31.3828 	EXP 	window1: mouseVisible = True
