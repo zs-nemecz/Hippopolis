@@ -1,0 +1,69 @@
+0.6525 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.7841 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002081E8F40F0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002081E9CC828>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='pix', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.7846 	EXP 	window1: mouseVisible = True
+6.7847 	EXP 	window1: recordFrameIntervals = False
+6.9504 	EXP 	window1: recordFrameIntervals = True
+7.1372 	WARNING 	t of last frame was 20.53ms (=1/48)
+7.3874 	WARNING 	t of last frame was 20.56ms (=1/48)
+7.6375 	WARNING 	t of last frame was 20.60ms (=1/48)
+7.8875 	WARNING 	t of last frame was 20.96ms (=1/47)
+8.1371 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+8.6169 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+8.8313 	EXP 	Created learning_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=35.0, italic=False, languageStyle='LTR', name='learning_instructions_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1400.0)
+8.8322 	EXP 	Created cityname_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='cityname_text', opacity=1, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+8.8365 	EXP 	Created city_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='city_image', opacity=1, ori=0.0, pos=array([   0., -100.]), size=array([1200.,  630.]), texRes=128.0, units='pix', win=Window(...))
+8.8394 	EXP 	Created fx_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='fx_cross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+8.8424 	EXP 	Created plate_updating = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate_updating', opacity=1, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+8.8432 	EXP 	Created city_text_updating = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='city_text_updating', opacity=1, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+8.8436 	EXP 	Created street_text_updating = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text_updating', opacity=1, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+8.8545 	EXP 	Created test_image1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='test_image1', opacity=1, ori=0.0, pos=array([-512.,    0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+8.8634 	EXP 	Created test_image2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='test_image2', opacity=1, ori=0.0, pos=array([-192.,    0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+8.8668 	EXP 	Created test_image3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='test_image3', opacity=1, ori=0.0, pos=array([192.,   0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+8.8702 	EXP 	Created test_image4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='test_image4', opacity=1, ori=0.0, pos=array([512.,   0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+8.9169 	EXP 	Created button_d = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='stimuli\\\\test_4afc_d.png', interpolate=True, mask=None, maskParams=None, name='button_d', opacity=1, ori=0.0, pos=array([-512., -350.]), size=array([99., 94.]), texRes=128.0, units='pix', win=Window(...))
+8.9481 	EXP 	Created button_f = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='stimuli\\\\test_4afc_f.png', interpolate=True, mask=None, maskParams=None, name='button_f', opacity=1, ori=0.0, pos=array([-192., -350.]), size=array([99., 94.]), texRes=128.0, units='pix', win=Window(...))
+8.9839 	EXP 	Created button_j = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, image='stimuli\\\\test_4afc_j.png', interpolate=True, mask=None, maskParams=None, name='button_j', opacity=1, ori=0.0, pos=array([ 192., -350.]), size=array([99., 94.]), texRes=128.0, units='pix', win=Window(...))
+9.0045 	EXP 	Created button_k = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, image='stimuli\\\\test_4afc_k.png', interpolate=True, mask=None, maskParams=None, name='button_k', opacity=1, ori=0.0, pos=array([ 512., -350.]), size=array([99., 94.]), texRes=128.0, units='pix', win=Window(...))
+9.0256 	EXP 	Created short_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='short_break_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+9.0297 	EXP 	Created break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='break_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+9.0386 	EXP 	Created end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=35.0, italic=False, languageStyle='LTR', name='end_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1000.0)
+9.0689 	EXP 	learning_instructions_text: autoDraw = True
+32.3536 	EXP 	Imported ./stimuli/subj_files/test_city_list.csv as conditions, 2 conditions, 4 params
+32.3538 	EXP 	Created sequence: random, trialTypes=2, nReps=1, seed=None
+32.3540 	EXP 	New trial (rep=0, index=0): OrderedDict([('CityName', 'Camponello'), ('StimuliFile', 'stimuli/subj_files/test_cityB.csv'), ('CityImage', './stimuli/leipzig.jpg'), ('StreetSign', './stimuli/street_plate2.png')])
+32.3934 	DATA 	Keypress: space
+32.3968 	EXP 	learning_instructions_text: autoDraw = False
+32.3968 	EXP 	cityname_text: text = 'Camponello'
+32.3968 	EXP 	city_image: image = './stimuli/leipzig.jpg'
+32.3968 	EXP 	cityname_text: autoDraw = True
+32.3968 	EXP 	city_image: autoDraw = True
+35.3489 	EXP 	Imported stimuli/subj_files/test_cityB.csv as conditions, 5 conditions, 13 params
+35.3491 	EXP 	Created sequence: random, trialTypes=5, nReps=1, seed=None
+35.3494 	EXP 	New trial (rep=0, index=0): OrderedDict([('Cue', 'FEJSZE UTCA'), ('Image', 'stimuli/objects/060a.jpg'), ('Category', 'object'), ('Novelty', 2), ('UpdateImage', 'stimuli/scenes/089a.jpg'), ('TestImage1', 'stimuli/scenes/080b.jpg'), ('TestImage2', 'stimuli/scenes/089a.jpg'), ('TestImage3', 'stimuli/scenes/089b.jpg'), ('TestImage4', 'stimuli/scenes/080a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'target'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist1')])
+35.3605 	EXP 	cityname_text: autoDraw = False
+35.3605 	EXP 	city_image: autoDraw = False
+35.3605 	EXP 	fx_cross: autoDraw = True
+36.3907 	EXP 	fx_cross: autoDraw = False
+36.3907 	EXP 	plate_updating: image = './stimuli/street_plate2.png'
+36.3907 	EXP 	city_text_updating: text = 'Camponello'
+36.3907 	EXP 	street_text_updating: text = 'FEJSZE UTCA'
+36.3907 	EXP 	test_image1: image = 'stimuli/scenes/080b.jpg'
+36.3907 	EXP 	test_image2: image = 'stimuli/scenes/089a.jpg'
+36.3907 	EXP 	test_image3: image = 'stimuli/scenes/089b.jpg'
+36.3907 	EXP 	test_image4: image = 'stimuli/scenes/080a.jpg'
+36.3907 	EXP 	plate_updating: autoDraw = True
+36.3907 	EXP 	city_text_updating: autoDraw = True
+36.3907 	EXP 	street_text_updating: autoDraw = True
+36.3907 	EXP 	test_image1: autoDraw = True
+36.3907 	EXP 	test_image2: autoDraw = True
+36.3907 	EXP 	test_image3: autoDraw = True
+36.3907 	EXP 	test_image4: autoDraw = True
+36.3907 	EXP 	button_d: autoDraw = True
+36.3907 	EXP 	button_f: autoDraw = True
+36.3907 	EXP 	button_j: autoDraw = True
+36.3907 	EXP 	button_k: autoDraw = True
+40.0622 	DATA 	Keypress: f
+40.0978 	EXP 	window1: mouseVisible = True

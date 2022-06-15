@@ -1,0 +1,6 @@
+Cue,Image,Category,Novelty,UpdateImage,TestImage1,TestImage2,TestImage3,TestImage4,TestImage1Type,TestImage2Type,TestImage3Type,TestImage4Type
+TERASZ UTCA,stimuli/objects/114a.jpg,object,2,stimuli/scenes/058a.jpg,stimuli/objects/011a.jpg,stimuli/scenes/058a.jpg,stimuli/objects/011b.jpg,stimuli/scenes/058b.jpg,dist1,target,dist2,lure
+BOLYGÓ UTCA,stimuli/objects/065a.jpg,object,1,stimuli/objects/022a.jpg,stimuli/objects/003b.jpg,stimuli/objects/022b.jpg,stimuli/objects/022a.jpg,stimuli/objects/003a.jpg,dist2,lure,target,dist1
+ÁRNYÉK UTCA,stimuli/objects/028a.jpg,object,0,stimuli/objects/028a.jpg,stimuli/scenes/102a.jpg,stimuli/objects/028b.jpg,stimuli/scenes/102b.jpg,stimuli/objects/028a.jpg,dist1,lure,dist2,target
+MÁLNA UTCA,stimuli/scenes/101a.jpg,scene,1,stimuli/scenes/036a.jpg,stimuli/objects/095a.jpg,stimuli/objects/095b.jpg,stimuli/scenes/036a.jpg,stimuli/scenes/036b.jpg,dist1,dist2,target,lure
+LOVAGLÁS UTCA,stimuli/scenes/084a.jpg,scene,0,stimuli/scenes/084a.jpg,stimuli/scenes/056a.jpg,stimuli/scenes/084b.jpg,stimuli/scenes/084a.jpg,stimuli/scenes/056b.jpg,dist1,lure,target,dist2

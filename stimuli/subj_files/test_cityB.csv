@@ -1,0 +1,6 @@
+Cue,Image,Category,Novelty,UpdateImage,TestImage1,TestImage2,TestImage3,TestImage4,TestImage1Type,TestImage2Type,TestImage3Type,TestImage4Type
+KAKAÓ UTCA,stimuli/objects/108a.jpg,object,0,stimuli/objects/108a.jpg,stimuli/objects/108a.jpg,stimuli/objects/108b.jpg,stimuli/objects/107a.jpg,stimuli/objects/107b.jpg,target,lure,dist1,dist2
+TELEP UTCA,stimuli/objects/112a.jpg,object,2,stimuli/scenes/035a.jpg,stimuli/scenes/029a.jpg,stimuli/scenes/035a.jpg,stimuli/scenes/035b.jpg,stimuli/scenes/029b.jpg,dist1,target,lure,dist2
+AKÁC UTCA,stimuli/scenes/071a.jpg,scene,2,stimuli/objects/077a.jpg,stimuli/scenes/034a.jpg,stimuli/objects/077b.jpg,stimuli/scenes/034b.jpg,stimuli/objects/077a.jpg,dist1,lure,dist2,target
+MANDARIN UTCA,stimuli/objects/054a.jpg,object,0,stimuli/objects/054a.jpg,stimuli/objects/111b.jpg,stimuli/objects/054a.jpg,stimuli/objects/054b.jpg,stimuli/objects/111a.jpg,dist2,target,lure,dist1
+FEJSZE UTCA,stimuli/objects/060a.jpg,object,2,stimuli/scenes/089a.jpg,stimuli/scenes/080b.jpg,stimuli/scenes/089a.jpg,stimuli/scenes/089b.jpg,stimuli/scenes/080a.jpg,dist2,target,lure,dist1
