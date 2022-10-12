@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on June 15, 2022, at 18:07
+    on June 16, 2022, at 17:26
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -115,6 +115,16 @@ city_image = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-1.0)
 
+# Initialize components for Routine "fixation_cross"
+fixation_crossClock = core.Clock()
+fx_cross = visual.TextStim(win=win, name='fx_cross',
+    text='+',
+    font='Open Sans',
+    pos=(0, 0), height=48.0, wrapWidth=None, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+
 # Initialize components for Routine "learning_trial"
 learning_trialClock = core.Clock()
 plate = visual.ImageStim(
@@ -147,16 +157,6 @@ learning_image = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-3.0)
-
-# Initialize components for Routine "fixation_cross"
-fixation_crossClock = core.Clock()
-fx_cross = visual.TextStim(win=win, name='fx_cross',
-    text='+',
-    font='Open Sans',
-    pos=(0, 0), height=48.0, wrapWidth=None, ori=0.0, 
-    color='black', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
 
 # Initialize components for Routine "short_break"
 short_breakClock = core.Clock()
@@ -224,6 +224,7 @@ button_image = visual.ImageStim(
 # Initialize components for Routine "verbal_test"
 verbal_testClock = core.Clock()
 import random as rnd
+recall = 0
 plate_verbal = visual.ImageStim(
     win=win,
     name='plate_verbal', 
@@ -567,6 +568,75 @@ for thisCityBlock in CityBlock:
             for paramName in thisLearningTrial:
                 exec('{} = thisLearningTrial[paramName]'.format(paramName))
         
+        # ------Prepare to start Routine "fixation_cross"-------
+        continueRoutine = True
+        routineTimer.add(1.000000)
+        # update component parameters for each repeat
+        # keep track of which components have finished
+        fixation_crossComponents = [fx_cross]
+        for thisComponent in fixation_crossComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        fixation_crossClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        
+        # -------Run Routine "fixation_cross"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = fixation_crossClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=fixation_crossClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *fx_cross* updates
+            if fx_cross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                fx_cross.frameNStart = frameN  # exact frame index
+                fx_cross.tStart = t  # local t and not account for scr refresh
+                fx_cross.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(fx_cross, 'tStartRefresh')  # time at next scr refresh
+                fx_cross.setAutoDraw(True)
+            if fx_cross.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > fx_cross.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    fx_cross.tStop = t  # not accounting for scr refresh
+                    fx_cross.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(fx_cross, 'tStopRefresh')  # time at next scr refresh
+                    fx_cross.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in fixation_crossComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "fixation_cross"-------
+        for thisComponent in fixation_crossComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        LearningTrials.addData('fx_cross.started', fx_cross.tStartRefresh)
+        LearningTrials.addData('fx_cross.stopped', fx_cross.tStopRefresh)
+        
         # ------Prepare to start Routine "learning_trial"-------
         continueRoutine = True
         routineTimer.add(3.000000)
@@ -697,75 +767,6 @@ for thisCityBlock in CityBlock:
         LearningTrials.addData('learning_image.started', learning_image.tStartRefresh)
         LearningTrials.addData('learning_image.stopped', learning_image.tStopRefresh)
         
-        # ------Prepare to start Routine "fixation_cross"-------
-        continueRoutine = True
-        routineTimer.add(1.000000)
-        # update component parameters for each repeat
-        # keep track of which components have finished
-        fixation_crossComponents = [fx_cross]
-        for thisComponent in fixation_crossComponents:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        fixation_crossClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-        frameN = -1
-        
-        # -------Run Routine "fixation_cross"-------
-        while continueRoutine and routineTimer.getTime() > 0:
-            # get current time
-            t = fixation_crossClock.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=fixation_crossClock)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            
-            # *fx_cross* updates
-            if fx_cross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                fx_cross.frameNStart = frameN  # exact frame index
-                fx_cross.tStart = t  # local t and not account for scr refresh
-                fx_cross.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(fx_cross, 'tStartRefresh')  # time at next scr refresh
-                fx_cross.setAutoDraw(True)
-            if fx_cross.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > fx_cross.tStartRefresh + 1.0-frameTolerance:
-                    # keep track of stop time/frame for later
-                    fx_cross.tStop = t  # not accounting for scr refresh
-                    fx_cross.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(fx_cross, 'tStopRefresh')  # time at next scr refresh
-                    fx_cross.setAutoDraw(False)
-            
-            # check for quit (typically the Esc key)
-            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                core.quit()
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in fixation_crossComponents:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # -------Ending Routine "fixation_cross"-------
-        for thisComponent in fixation_crossComponents:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        LearningTrials.addData('fx_cross.started', fx_cross.tStartRefresh)
-        LearningTrials.addData('fx_cross.stopped', fx_cross.tStopRefresh)
-        
         # ------Prepare to start Routine "short_break"-------
         continueRoutine = True
         # update component parameters for each repeat
@@ -774,7 +775,7 @@ for thisCityBlock in CityBlock:
         _short_break_key_allKeys = []
         trial_count += 1
         
-        if trial_count < 40:
+        if trial_count < 45:
             continueRoutine = False
         else:
             trial_count = 0
@@ -855,8 +856,8 @@ for thisCityBlock in CityBlock:
         for thisComponent in short_breakComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        thisExp.addData('short_break_text.started', short_break_text.tStartRefresh)
-        thisExp.addData('short_break_text.stopped', short_break_text.tStopRefresh)
+        LearningTrials.addData('short_break_text.started', short_break_text.tStartRefresh)
+        LearningTrials.addData('short_break_text.stopped', short_break_text.tStopRefresh)
         # check responses
         if short_break_key.keys in ['', [], None]:  # No response was made
             short_break_key.keys = None
@@ -1179,6 +1180,7 @@ for thisCityBlock in CityBlock:
         continueRoutine = True
         # update component parameters for each repeat
         if test_key_resp.keys=='right':
+            recall += 1
             print('Remembered trial.')
             dice = rnd.randint(1,100)
             print(dice)
@@ -1396,6 +1398,9 @@ for thisCityBlock in CityBlock:
     _break_key_resp_allKeys = []
     if repetitions >= 4:
         continueRoutine = False
+    
+    thisExp.addData('n_remembered', recall)
+    recall=0
     # keep track of which components have finished
     take_a_breakComponents = [break_text, break_key_resp]
     for thisComponent in take_a_breakComponents:

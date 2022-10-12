@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2021.1.2">
+<PsychoPy2experiment encoding="utf-8" version="2021.1.4">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -632,8 +632,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="trial_count += 1;&amp;#10;if ((trial_count &lt; 40)) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    trial_count = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="trial_count += 1&amp;#10;&amp;#10;if trial_count &lt; 40:&amp;#10;    continueRoutine = False&amp;#10;else:&amp;#10;    trial_count = 0&amp;#10;    " valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="trial_count += 1;&amp;#10;if ((trial_count &lt; 45)) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    trial_count = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="trial_count += 1&amp;#10;&amp;#10;if trial_count &lt; 45:&amp;#10;    continueRoutine = False&amp;#10;else:&amp;#10;    trial_count = 0&amp;#10;    " valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>

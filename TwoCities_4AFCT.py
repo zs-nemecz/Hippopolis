@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.1.2),
-    on június 16, 2022, at 10:23
+This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
+    on June 16, 2022, at 11:33
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2021.1.2'
+psychopyVersion = '2021.1.4'
 expName = 'Hippopolis_4AFCT'  # from the Builder filename that created this script
 expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Users\\USER\\Desktop\\Hippopolis\\TwoCities_4AFCT.py',
+    originPath='D:\\Zsuzsa\\HCCCL\\Hippopolis\\TwoCities_4AFCT.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -544,31 +544,6 @@ for thisCityBlock in CityBlock:
         continueRoutine = True
         routineTimer.add(1.000000)
         # update component parameters for each repeat
-        key = key_resp.keys
-        response = 'invalid'
-        
-        if key == 'd':
-            response = TestImage1Type
-        elif key == 'f':
-            response = TestImage2Type
-        elif key == 'j':
-            response = TestImage3Type
-        elif key == 'k':
-            response = TestImage4Type
-        
-        print(response)
-        thisExp.addData('test_resp', response)
-        if response == 'target':
-            target += 1
-        if response == 'lure':
-            lure += 1
-        if response == 'dist1':
-            dist1 += 1
-        if response == 'dist2':
-            dist2 += 1
-        
-        
-        
         # keep track of which components have finished
         fixation_crossComponents = [fx_cross]
         for thisComponent in fixation_crossComponents:
@@ -648,6 +623,31 @@ for thisCityBlock in CityBlock:
         key_resp.keys = []
         key_resp.rt = []
         _key_resp_allKeys = []
+        key = key_resp.keys
+        response = 'invalid'
+        
+        if key == 'd':
+            response = TestImage1Type
+        elif key == 'f':
+            response = TestImage2Type
+        elif key == 'j':
+            response = TestImage3Type
+        elif key == 'k':
+            response = TestImage4Type
+        
+        print(response)
+        thisExp.addData('test_resp', response)
+        if response == 'target':
+            target += 1
+        if response == 'lure':
+            lure += 1
+        if response == 'dist1':
+            dist1 += 1
+        if response == 'dist2':
+            dist2 += 1
+        
+        
+        
         # keep track of which components have finished
         test_trialComponents = [plate_updating, city_text_updating, street_text_updating, test_image1, test_image2, test_image3, test_image4, button_d, button_f, button_j, button_k, key_resp]
         for thisComponent in test_trialComponents:
@@ -949,7 +949,7 @@ for thisCityBlock in CityBlock:
         _short_break_key_allKeys = []
         trial_count += 1
         
-        if trial_count < 40:
+        if trial_count < 45:
             continueRoutine = False
         else:
             trial_count = 0

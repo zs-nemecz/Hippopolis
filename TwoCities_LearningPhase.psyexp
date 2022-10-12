@@ -430,8 +430,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if ((repetitions &gt;= 4)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if repetitions &gt;= 4:&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if ((repetitions &gt;= 4)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;thisExp.addData(&quot;n_remembered&quot;, recall);&amp;#10;recall = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if repetitions &gt;= 4:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;thisExp.addData('n_remembered', recall)&amp;#10;recall=0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -492,10 +492,10 @@
       <CodeComponent name="dice_roll">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="import random as rnd" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="import * as rnd from 'random';&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if ((test_key_resp.keys === &quot;right&quot;)) {&amp;#10;    console.log(&quot;Remembered trial.&quot;);&amp;#10;    dice = rnd.randint(1, 100);&amp;#10;    console.log(dice);&amp;#10;    if ((dice &lt; 90)) {&amp;#10;        continueRoutine = false;&amp;#10;    }&amp;#10;} else {&amp;#10;    console.log(&quot;Not remembered trial.&quot;);&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if test_key_resp.keys=='right':&amp;#10;    print('Remembered trial.')&amp;#10;    dice = rnd.randint(1,100)&amp;#10;    print(dice)&amp;#10;    if dice &lt; 90:&amp;#10;        continueRoutine = False&amp;#10;else:&amp;#10;    print('Not remembered trial.')&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import random as rnd&amp;#10;recall = 0" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="import * as rnd from 'random';&amp;#10;var recall;&amp;#10;recall = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if ((test_key_resp.keys === &quot;right&quot;)) {&amp;#10;    recall += 1;&amp;#10;    console.log(&quot;Remembered trial.&quot;);&amp;#10;    dice = rnd.randint(1, 100);&amp;#10;    console.log(dice);&amp;#10;    if ((dice &lt; 90)) {&amp;#10;        continueRoutine = false;&amp;#10;    }&amp;#10;} else {&amp;#10;    console.log(&quot;Not remembered trial.&quot;);&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if test_key_resp.keys=='right':&amp;#10;    recall += 1&amp;#10;    print('Remembered trial.')&amp;#10;    dice = rnd.randint(1,100)&amp;#10;    print(dice)&amp;#10;    if dice &lt; 90:&amp;#10;        continueRoutine = False&amp;#10;else:&amp;#10;    print('Not remembered trial.')&amp;#10;    continueRoutine = False" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -783,8 +783,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="trial_count += 1;&amp;#10;if ((trial_count &lt; 40)) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    trial_count = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="trial_count += 1&amp;#10;&amp;#10;if trial_count &lt; 40:&amp;#10;    continueRoutine = False&amp;#10;else:&amp;#10;    trial_count = 0&amp;#10;    " valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="trial_count += 1;&amp;#10;if ((trial_count &lt; 45)) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    trial_count = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="trial_count += 1&amp;#10;&amp;#10;if trial_count &lt; 45:&amp;#10;    continueRoutine = False&amp;#10;else:&amp;#10;    trial_count = 0&amp;#10;    " valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -823,8 +823,8 @@
       <Param name="name" updates="None" val="LearningTrials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="learning_trial"/>
     <Routine name="fixation_cross"/>
+    <Routine name="learning_trial"/>
     <Routine name="short_break"/>
     <LoopTerminator name="LearningTrials"/>
     <Routine name="test_intro"/>

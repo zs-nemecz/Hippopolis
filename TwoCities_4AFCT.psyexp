@@ -59,23 +59,6 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
-      <CodeComponent name="check_response">
-        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="key = key_resp.keys;&amp;#10;response = &quot;invalid&quot;;&amp;#10;if ((key === &quot;d&quot;)) {&amp;#10;    response = TestImage1Type;&amp;#10;} else {&amp;#10;    if ((key === &quot;f&quot;)) {&amp;#10;        response = TestImage2Type;&amp;#10;    } else {&amp;#10;        if ((key === &quot;j&quot;)) {&amp;#10;            response = TestImage3Type;&amp;#10;        } else {&amp;#10;            if ((key === &quot;k&quot;)) {&amp;#10;                response = TestImage4Type;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;console.log(response);&amp;#10;thisExp.addData(&quot;test_resp&quot;, response);&amp;#10;if ((response === &quot;target&quot;)) {&amp;#10;    target += 1;&amp;#10;}&amp;#10;if ((response === &quot;lure&quot;)) {&amp;#10;    lure += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist1&quot;)) {&amp;#10;    dist1 += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist2&quot;)) {&amp;#10;    dist2 += 1;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="key = key_resp.keys&amp;#10;response = 'invalid'&amp;#10;&amp;#10;if key == 'd':&amp;#10;    response = TestImage1Type&amp;#10;elif key == 'f':&amp;#10;    response = TestImage2Type&amp;#10;elif key == 'j':&amp;#10;    response = TestImage3Type&amp;#10;elif key == 'k':&amp;#10;    response = TestImage4Type&amp;#10;&amp;#10;print(response)&amp;#10;thisExp.addData('test_resp', response)&amp;#10;if response == 'target':&amp;#10;    target += 1&amp;#10;if response == 'lure':&amp;#10;    lure += 1&amp;#10;if response == 'dist1':&amp;#10;    dist1 += 1&amp;#10;if response == 'dist2':&amp;#10;    dist2 += 1&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="check_response" valType="code"/>
-      </CodeComponent>
     </Routine>
     <Routine name="city_name">
       <TextComponent name="cityname_text">
@@ -632,6 +615,23 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
+      <CodeComponent name="check_response">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="key = key_resp.keys;&amp;#10;response = &quot;invalid&quot;;&amp;#10;if ((key === &quot;d&quot;)) {&amp;#10;    response = TestImage1Type;&amp;#10;} else {&amp;#10;    if ((key === &quot;f&quot;)) {&amp;#10;        response = TestImage2Type;&amp;#10;    } else {&amp;#10;        if ((key === &quot;j&quot;)) {&amp;#10;            response = TestImage3Type;&amp;#10;        } else {&amp;#10;            if ((key === &quot;k&quot;)) {&amp;#10;                response = TestImage4Type;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;console.log(response);&amp;#10;thisExp.addData(&quot;test_resp&quot;, response);&amp;#10;if ((response === &quot;target&quot;)) {&amp;#10;    target += 1;&amp;#10;}&amp;#10;if ((response === &quot;lure&quot;)) {&amp;#10;    lure += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist1&quot;)) {&amp;#10;    dist1 += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist2&quot;)) {&amp;#10;    dist2 += 1;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="key = key_resp.keys&amp;#10;response = 'invalid'&amp;#10;&amp;#10;if key == 'd':&amp;#10;    response = TestImage1Type&amp;#10;elif key == 'f':&amp;#10;    response = TestImage2Type&amp;#10;elif key == 'j':&amp;#10;    response = TestImage3Type&amp;#10;elif key == 'k':&amp;#10;    response = TestImage4Type&amp;#10;&amp;#10;print(response)&amp;#10;thisExp.addData('test_resp', response)&amp;#10;if response == 'target':&amp;#10;    target += 1&amp;#10;if response == 'lure':&amp;#10;    lure += 1&amp;#10;if response == 'dist1':&amp;#10;    dist1 += 1&amp;#10;if response == 'dist2':&amp;#10;    dist2 += 1&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="check_response" valType="code"/>
+      </CodeComponent>
     </Routine>
     <Routine name="setup">
       <CodeComponent name="selct_file">
@@ -745,8 +745,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="trial_count += 1;&amp;#10;if ((trial_count &lt; 40)) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    trial_count = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="trial_count += 1&amp;#10;&amp;#10;if trial_count &lt; 40:&amp;#10;    continueRoutine = False&amp;#10;else:&amp;#10;    trial_count = 0&amp;#10;    " valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="trial_count += 1;&amp;#10;if ((trial_count &lt; 45)) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    trial_count = 0;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="trial_count += 1&amp;#10;&amp;#10;if trial_count &lt; 45:&amp;#10;    continueRoutine = False&amp;#10;else:&amp;#10;    trial_count = 0&amp;#10;    " valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
