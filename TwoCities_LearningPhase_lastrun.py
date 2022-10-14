@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on október 12, 2022, at 17:22
+    on október 14, 2022, at 14:13
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1228,9 +1228,9 @@ for thisCityBlock in CityBlock:
         if test_key_resp.keys=='right':
             recall += 1
             print('Remembered trial.')
-            dice = rnd.randint(1,100)
+            dice = rnd.randint(1,20)
             print(dice)
-            if dice < 90:
+            if dice < 17:
                 continueRoutine = False
         else:
             print('Not remembered trial.')
