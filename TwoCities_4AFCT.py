@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on June 16, 2022, at 11:33
+    on October 14, 2022, at 16:32
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -623,31 +623,6 @@ for thisCityBlock in CityBlock:
         key_resp.keys = []
         key_resp.rt = []
         _key_resp_allKeys = []
-        key = key_resp.keys
-        response = 'invalid'
-        
-        if key == 'd':
-            response = TestImage1Type
-        elif key == 'f':
-            response = TestImage2Type
-        elif key == 'j':
-            response = TestImage3Type
-        elif key == 'k':
-            response = TestImage4Type
-        
-        print(response)
-        thisExp.addData('test_resp', response)
-        if response == 'target':
-            target += 1
-        if response == 'lure':
-            lure += 1
-        if response == 'dist1':
-            dist1 += 1
-        if response == 'dist2':
-            dist2 += 1
-        
-        
-        
         # keep track of which components have finished
         test_trialComponents = [plate_updating, city_text_updating, street_text_updating, test_image1, test_image2, test_image3, test_image4, button_d, button_f, button_j, button_k, key_resp]
         for thisComponent in test_trialComponents:
@@ -940,6 +915,28 @@ for thisCityBlock in CityBlock:
             LearningTrials.addData('key_resp.rt', key_resp.rt)
         LearningTrials.addData('key_resp.started', key_resp.tStartRefresh)
         LearningTrials.addData('key_resp.stopped', key_resp.tStopRefresh)
+        key = key_resp.keys
+        response = 'invalid'
+        
+        if key == 'd':
+            response = TestImage1Type
+        elif key == 'f':
+            response = TestImage2Type
+        elif key == 'j':
+            response = TestImage3Type
+        elif key == 'k':
+            response = TestImage4Type
+        
+        print(response)
+        thisExp.addData('test_resp', response)
+        if response == 'target':
+            target += 1
+        if response == 'lure':
+            lure += 1
+        if response == 'dist1':
+            dist1 += 1
+        if response == 'dist2':
+            dist2 += 1
         
         # ------Prepare to start Routine "short_break"-------
         continueRoutine = True
