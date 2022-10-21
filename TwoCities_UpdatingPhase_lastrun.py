@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on október 14, 2022, at 15:06
+    on október 21, 2022, at 14:57
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -756,7 +756,7 @@ for thisCityBlock in CityBlock:
         frameN = -1
         
         # --- Run Routine "updating_phase" ---
-        while continueRoutine and routineTimer.getTime() < 3.0:
+        while continueRoutine and routineTimer.getTime() < 2.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -776,7 +776,7 @@ for thisCityBlock in CityBlock:
                 plate_updating.setAutoDraw(True)
             if plate_updating.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > plate_updating.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > plate_updating.tStartRefresh + 2.0-frameTolerance:
                     # keep track of stop time/frame for later
                     plate_updating.tStop = t  # not accounting for scr refresh
                     plate_updating.frameNStop = frameN  # exact frame index
@@ -796,7 +796,7 @@ for thisCityBlock in CityBlock:
                 city_text_updating.setAutoDraw(True)
             if city_text_updating.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > city_text_updating.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > city_text_updating.tStartRefresh + 2.0-frameTolerance:
                     # keep track of stop time/frame for later
                     city_text_updating.tStop = t  # not accounting for scr refresh
                     city_text_updating.frameNStop = frameN  # exact frame index
@@ -816,7 +816,7 @@ for thisCityBlock in CityBlock:
                 street_text_updating.setAutoDraw(True)
             if street_text_updating.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > street_text_updating.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > street_text_updating.tStartRefresh + 2.0-frameTolerance:
                     # keep track of stop time/frame for later
                     street_text_updating.tStop = t  # not accounting for scr refresh
                     street_text_updating.frameNStop = frameN  # exact frame index
@@ -836,7 +836,7 @@ for thisCityBlock in CityBlock:
                 updating_image.setAutoDraw(True)
             if updating_image.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > updating_image.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > updating_image.tStartRefresh + 2.0-frameTolerance:
                     # keep track of stop time/frame for later
                     updating_image.tStop = t  # not accounting for scr refresh
                     updating_image.frameNStop = frameN  # exact frame index
@@ -870,7 +870,7 @@ for thisCityBlock in CityBlock:
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-3.000000)
+            routineTimer.addTime(-2.000000)
         
         # --- Prepare to start Routine "short_break" ---
         continueRoutine = True
