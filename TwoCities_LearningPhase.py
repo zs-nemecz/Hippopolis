@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
-    on October 21, 2022, at 13:55
+    on October 21, 2022, at 13:58
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1231,7 +1231,7 @@ for thisCityBlock in CityBlock:
             print('Remembered trial.')
             dice = rnd.randint(1,20)
             print(dice)
-            if verbal_reoprt < 5:
+            if verbal_report < 5:
                 if dice < 17:
                     continueRoutine = False
                 elif dice > 17:
