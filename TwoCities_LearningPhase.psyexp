@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2022.2.2">
+<PsychoPy2experiment encoding="utf-8" version="2022.2.4">
   <Settings>
     <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
@@ -465,8 +465,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((repetitions &gt;= 4)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;thisExp.addData(&quot;n_remembered&quot;, recall);&amp;#10;recall = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if repetitions &gt;= 4:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;thisExp.addData('n_remembered', recall)&amp;#10;recall=0" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="if ((repetitions &gt;= 4)) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;n_remembered&quot;, recall);&amp;#10;recall = 0;&amp;#10;verbal_report = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if repetitions &gt;= 4:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;thisExp.addData('n_remembered', recall)&amp;#10;recall=0&amp;#10;verbal_report = 0" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -527,10 +527,10 @@
       <CodeComponent name="dice_roll">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="import random as rnd&amp;#10;recall = 0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="import * as rnd from 'random';&amp;#10;var recall;&amp;#10;recall = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((test_key_resp.keys === &quot;right&quot;)) {&amp;#10;    recall += 1;&amp;#10;    console.log(&quot;Remembered trial.&quot;);&amp;#10;    dice = rnd.randint(1, 20);&amp;#10;    console.log(dice);&amp;#10;    if ((dice &lt; 17)) {&amp;#10;        continueRoutine = false;&amp;#10;    }&amp;#10;} else {&amp;#10;    console.log(&quot;Not remembered trial.&quot;);&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if test_key_resp.keys=='right':&amp;#10;    recall += 1&amp;#10;    print('Remembered trial.')&amp;#10;    dice = rnd.randint(1,20)&amp;#10;    print(dice)&amp;#10;    if dice &lt; 17:&amp;#10;        continueRoutine = False&amp;#10;else:&amp;#10;    print('Not remembered trial.')&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="import random as rnd&amp;#10;recall = 0&amp;#10;verbal_report = 0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="import * as rnd from 'random';&amp;#10;var recall, verbal_report;&amp;#10;recall = 0;&amp;#10;verbal_report = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="if ((test_key_resp.keys === &quot;right&quot;)) {&amp;#10;    recall += 1;&amp;#10;    console.log(&quot;Remembered trial.&quot;);&amp;#10;    dice = rnd.randint(1, 20);&amp;#10;    console.log(dice);&amp;#10;    if ((verbal_reoprt &lt; 5)) {&amp;#10;        if ((dice &lt; 17)) {&amp;#10;            continueRoutine = false;&amp;#10;        } else {&amp;#10;            if ((dice &gt; 17)) {&amp;#10;                verbal_report += 1;&amp;#10;            }&amp;#10;        }&amp;#10;    } else {&amp;#10;        continueRoutine = false;&amp;#10;    }&amp;#10;} else {&amp;#10;    console.log(&quot;Not remembered trial.&quot;);&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if test_key_resp.keys=='right':&amp;#10;    recall += 1&amp;#10;    print('Remembered trial.')&amp;#10;    dice = rnd.randint(1,20)&amp;#10;    print(dice)&amp;#10;    if verbal_reoprt &lt; 5:&amp;#10;        if dice &lt; 17:&amp;#10;            continueRoutine = False&amp;#10;        elif dice &gt; 17:&amp;#10;            verbal_report += 1&amp;#10;    else:&amp;#10;        continueRoutine = False&amp;#10;else:&amp;#10;    print('Not remembered trial.')&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>

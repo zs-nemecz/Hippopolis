@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on október 12, 2022, at 17:58
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
+    on October 21, 2022, at 13:55
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,7 +34,7 @@ from psychopy.hardware import keyboard
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
-psychopyVersion = '2022.2.2'
+psychopyVersion = '2022.2.4'
 expName = 'Hippopolis_Learning'  # from the Builder filename that created this script
 expInfo = {
     'participant': '',
@@ -53,7 +53,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Users\\USER\\Desktop\\Hippopolis\\TwoCities_LearningPhase.py',
+    originPath='C:\\Users\\hcccl\\Documents\\Hippopolis\\TwoCities_LearningPhase.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -233,6 +233,7 @@ button_image = visual.ImageStim(
 # Run 'Begin Experiment' code from dice_roll
 import random as rnd
 recall = 0
+verbal_report = 0
 plate_verbal = visual.ImageStim(
     win=win,
     name='plate_verbal', 
@@ -1230,7 +1231,12 @@ for thisCityBlock in CityBlock:
             print('Remembered trial.')
             dice = rnd.randint(1,20)
             print(dice)
-            if dice < 17:
+            if verbal_reoprt < 5:
+                if dice < 17:
+                    continueRoutine = False
+                elif dice > 17:
+                    verbal_report += 1
+            else:
                 continueRoutine = False
         else:
             print('Not remembered trial.')
@@ -1455,6 +1461,7 @@ for thisCityBlock in CityBlock:
     
     thisExp.addData('n_remembered', recall)
     recall=0
+    verbal_report = 0
     # keep track of which components have finished
     take_a_breakComponents = [break_text, break_key_resp]
     for thisComponent in take_a_breakComponents:
