@@ -102,7 +102,7 @@
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="pos" updates="constant" val="(0, -100)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(1200, 630)" valType="list"/>
+        <Param name="size" updates="constant" val="(750, 500)" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="num"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="num"/>
@@ -273,7 +273,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Szünet....&amp;#10;&amp;#10;A folytatáshoz nyomja le a SZÓKÖZ billentyűt." valType="str"/>
+        <Param name="text" updates="constant" val="Szünet.... A szünet után a másik város következik.&amp;#10;&amp;#10;A folytatáshoz nyomja le a SZÓKÖZ billentyűt." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -605,7 +605,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Rövid szünet....&amp;#10;&amp;#10;A folytatáshoz nyomja le a SZÓKÖZ billentyűt." valType="str"/>
+        <Param name="text" updates="constant" val="Rövid szünet.... Ugyanezzel a várossal folytatjuk.&amp;#10;&amp;#10;A folytatáshoz nyomja le a SZÓKÖZ billentyűt." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -667,7 +667,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Eltelt egy év, és Ön visszatér Hippopolisba és Camponelloba.&amp;#10;&amp;#10;Hippopolis egy nagyváros, ezért gyorsan változik. Az utcák többségébe a korábban látottakhoz képest új képek kerültek. &amp;#10;Camponello viszont egy kisváros, kevés a változás. Az utcák többségében ugyanazokat a képeket találja, mint régen.&amp;#10;&amp;#10;Az Ön feladata ismét az, hogy megjegyezze, melyik utcában milyen képet látott. &amp;#10;A képernyő felső részén látja majd a város és az utca nevét, középen pedig a képet. Próbálja meg memorizálni az utcához tartozó képet!&amp;#10;&amp;#10;Miután végigjárta az utcákat, egy emlékezeti feladattal vizsgáljuk meg, mennyi utcára és képre emlékszik. &amp;#10;&amp;#10;A SZÓKÖZ lenyomásával elindul a feladat." valType="str"/>
+        <Param name="text" updates="constant" val="Eltelt három év, és Ön visszatér Hippopolisba és Camponelloba.&amp;#10;&amp;#10;Hippopolis egy nagyváros, ezért gyorsan változik. Az utcák többségébe a korábban látottakhoz képest új képek kerültek. &amp;#10;Camponello viszont egy kisváros, kevés a változás. Az utcák többségében ugyanazokat a képeket találja, mint régen.&amp;#10;&amp;#10;Az Ön feladata ismét az, hogy megjegyezze, melyik utcában milyen képet látott. &amp;#10;A képernyő felső részén látja majd a város és az utca nevét, középen pedig a képet. Próbálja meg memorizálni az utcához tartozó képet!&amp;#10;&amp;#10;Miután végigjárta az utcákat, egy emlékezeti feladattal vizsgáljuk meg, mennyi utcára és képre emlékszik. &amp;#10;&amp;#10;A SZÓKÖZ lenyomásával elindul a feladat." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1400" valType="num"/>
       </TextComponent>

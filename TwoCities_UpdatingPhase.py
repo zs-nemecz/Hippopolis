@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on October 20, 2022, at 12:12
+    on November 25, 2022, at 10:47
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -89,7 +89,7 @@ repetitions = 0
 # Initialize components for Routine "update_instructions"
 update_instructionsClock = core.Clock()
 learning_instructions_text = visual.TextStim(win=win, name='learning_instructions_text',
-    text='Eltelt egy év, és Ön visszatér Hippopolisba és Camponelloba.\n\nHippopolis egy nagyváros, ezért gyorsan változik. Az utcák többségébe a korábban látottakhoz képest új képek kerültek. \nCamponello viszont egy kisváros, kevés a változás. Az utcák többségében ugyanazokat a képeket találja, mint régen.\n\nAz Ön feladata ismét az, hogy megjegyezze, melyik utcában milyen képet látott. \nA képernyő felső részén látja majd a város és az utca nevét, középen pedig a képet. Próbálja meg memorizálni az utcához tartozó képet!\n\nMiután végigjárta az utcákat, egy emlékezeti feladattal vizsgáljuk meg, mennyi utcára és képre emlékszik. \n\nA SZÓKÖZ lenyomásával elindul a feladat.',
+    text='Eltelt három év, és Ön visszatér Hippopolisba és Camponelloba.\n\nHippopolis egy nagyváros, ezért gyorsan változik. Az utcák többségébe a korábban látottakhoz képest új képek kerültek. \nCamponello viszont egy kisváros, kevés a változás. Az utcák többségében ugyanazokat a képeket találja, mint régen.\n\nAz Ön feladata ismét az, hogy megjegyezze, melyik utcában milyen képet látott. \nA képernyő felső részén látja majd a város és az utca nevét, középen pedig a képet. Próbálja meg memorizálni az utcához tartozó képet!\n\nMiután végigjárta az utcákat, egy emlékezeti feladattal vizsgáljuk meg, mennyi utcára és képre emlékszik. \n\nA SZÓKÖZ lenyomásával elindul a feladat.',
     font='Open Sans',
     pos=(0, 0), height=35.0, wrapWidth=1400.0, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
@@ -110,7 +110,7 @@ city_image = visual.ImageStim(
     win=win,
     name='city_image', 
     image='sin', mask=None,
-    ori=0.0, pos=(0, -100), size=(1200, 630),
+    ori=0.0, pos=(0, -100), size=(750, 500),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-1.0)
@@ -193,7 +193,7 @@ updating_image = visual.ImageStim(
 # Initialize components for Routine "short_break"
 short_breakClock = core.Clock()
 short_break_text = visual.TextStim(win=win, name='short_break_text',
-    text='Rövid szünet....\n\nA folytatáshoz nyomja le a SZÓKÖZ billentyűt.',
+    text='Rövid szünet.... Ugyanezzel a várossal folytatjuk.\n\nA folytatáshoz nyomja le a SZÓKÖZ billentyűt.',
     font='Open Sans',
     pos=(0, 0), height=48.0, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
@@ -204,7 +204,7 @@ short_break_key = keyboard.Keyboard()
 # Initialize components for Routine "take_a_break"
 take_a_breakClock = core.Clock()
 break_text = visual.TextStim(win=win, name='break_text',
-    text='Szünet....\n\nA folytatáshoz nyomja le a SZÓKÖZ billentyűt.',
+    text='Szünet.... A szünet után a másik város következik.\n\nA folytatáshoz nyomja le a SZÓKÖZ billentyűt.',
     font='Open Sans',
     pos=(0, 0), height=48.0, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
