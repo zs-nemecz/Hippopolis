@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on november 29, 2022, at 13:25
+    on november 29, 2022, at 15:12
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -508,7 +508,7 @@ for thisCityBlock in CityBlock:
     # update component parameters for each repeat
     cityname_text_intro.setText(CityName)
     city_image_2.setImage(CityImage)
-    # Run 'Begin Routine' code from count_round_2
+    # Run 'Begin Routine' code from count_round
     repetitions += 1
     trial_count = 0
     # keep track of which components have finished
@@ -744,9 +744,6 @@ for thisCityBlock in CityBlock:
     # update component parameters for each repeat
     cityname_text.setText(CityName)
     city_image.setImage(CityImage)
-    # Run 'Begin Routine' code from count_round
-    repetitions += 1
-    trial_count = 0
     # keep track of which components have finished
     city_nameComponents = [cityname_text, city_image]
     for thisComponent in city_nameComponents:
