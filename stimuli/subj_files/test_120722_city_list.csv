@@ -1,0 +1,3 @@
+CityName,StimuliFile,CityImage,StreetSign,VideoFile
+Hippopolis,stimuli/subj_files/test_120722_cityA.csv,./stimuli/seattle.jpg,./stimuli/street_plate1.png,./stimuli/videos/hippopolis_part1.mp4
+Camponello,stimuli/subj_files/test_120722_cityB.csv,./stimuli/arnedillo.png,./stimuli/street_plate2.png,./stimuli/videos/camponello_part1.mp4

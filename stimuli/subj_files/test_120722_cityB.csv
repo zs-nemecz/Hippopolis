@@ -1,0 +1,8 @@
+Cue,Image,Category,Novelty,UpdateImage,TestImage1,TestImage2,TestImage3,TestImage4,TestImage1Type,TestImage2Type,TestImage3Type,TestImage4Type
+FÉSŰ UTCA,stimuli/scenes/098a.jpg,scene,0,stimuli/scenes/098a.jpg,stimuli/scenes/120a.jpg,stimuli/scenes/098b.jpg,stimuli/scenes/120b.jpg,stimuli/scenes/098a.jpg,dist1,lure,dist2,target
+SZOMSZÉD UTCA,stimuli/scenes/054a.jpg,scene,0,stimuli/scenes/054a.jpg,stimuli/scenes/024b.jpg,stimuli/scenes/054a.jpg,stimuli/scenes/024a.jpg,stimuli/scenes/054b.jpg,dist2,target,dist1,lure
+SZŐLŐ UTCA,stimuli/scenes/111a.jpg,scene,0,stimuli/scenes/111a.jpg,stimuli/scenes/111a.jpg,stimuli/objects/084a.jpg,stimuli/scenes/111b.jpg,stimuli/objects/084b.jpg,target,dist1,lure,dist2
+TÁSKA UTCA,stimuli/objects/060a.jpg,object,0,stimuli/objects/060a.jpg,stimuli/objects/060b.jpg,stimuli/scenes/010a.jpg,stimuli/scenes/010b.jpg,stimuli/objects/060a.jpg,lure,dist1,dist2,target
+TENISZ UTCA,stimuli/objects/015a.jpg,object,0,stimuli/objects/015a.jpg,stimuli/objects/005b.jpg,stimuli/objects/015a.jpg,stimuli/objects/015b.jpg,stimuli/objects/005a.jpg,dist2,target,lure,dist1
+ZSEMLE UTCA,stimuli/scenes/028a.jpg,scene,0,stimuli/scenes/028a.jpg,stimuli/scenes/028b.jpg,stimuli/scenes/078b.jpg,stimuli/scenes/028a.jpg,stimuli/scenes/078a.jpg,lure,dist2,target,dist1
+TELEFON UTCA,stimuli/objects/094a.jpg,object,1,stimuli/objects/120a.jpg,stimuli/objects/056b.jpg,stimuli/objects/056a.jpg,stimuli/objects/120b.jpg,stimuli/objects/120a.jpg,dist2,dist1,lure,target
