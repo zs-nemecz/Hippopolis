@@ -1,0 +1,6 @@
+Cue,Image,Category,CorrectResponse,Novelty,UpdateImage,TestImage1,TestImage2,TestImage3,TestImage4,TestImage1Type,TestImage2Type,TestImage3Type,TestImage4Type
+SÜTŐ UTCA,stimuli/scenes/089a.jpg,scene,right,0,stimuli/scenes/089a.jpg,stimuli/scenes/089b.jpg,stimuli/scenes/033a.jpg,stimuli/scenes/033b.jpg,stimuli/scenes/089a.jpg,lure,dist1,dist2,target
+KÖTÉNY UTCA,stimuli/scenes/049a.jpg,scene,right,2,stimuli/objects/085a.jpg,stimuli/objects/085a.jpg,stimuli/objects/085b.jpg,stimuli/objects/099b.jpg,stimuli/objects/099a.jpg,target,lure,dist2,dist1
+MOTOR UTCA,stimuli/scenes/110a.jpg,scene,right,0,stimuli/scenes/110a.jpg,stimuli/objects/036a.jpg,stimuli/objects/036b.jpg,stimuli/scenes/110b.jpg,stimuli/scenes/110a.jpg,dist1,dist2,lure,target
+MÁLNA UTCA,stimuli/objects/060a.jpg,object,left,0,stimuli/objects/060a.jpg,stimuli/scenes/063b.jpg,stimuli/objects/060a.jpg,stimuli/objects/060b.jpg,stimuli/scenes/063a.jpg,dist2,target,lure,dist1
+VASALÓ UTCA,stimuli/objects/108a.jpg,object,left,1,stimuli/objects/064a.jpg,stimuli/objects/064b.jpg,stimuli/objects/073a.jpg,stimuli/objects/064a.jpg,stimuli/objects/073b.jpg,lure,dist1,target,dist2
