@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on november 29, 2022, at 16:02
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
+    on December 08, 2022, at 22:38
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,7 +34,7 @@ from psychopy.hardware import keyboard
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
-psychopyVersion = '2022.2.2'
+psychopyVersion = '2022.2.4'
 expName = 'Hippopolis_Updating'  # from the Builder filename that created this script
 expInfo = {
     'participant': '',
@@ -53,7 +53,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Users\\USER\\Desktop\\Hippopolis\\TwoCities_UpdatingPhase_lastrun.py',
+    originPath='D:\\Zsuzsa\\HCCCL\\Prediction-and-Memory\\Hippopolis\\TwoCities_UpdatingPhase_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -111,6 +111,34 @@ learning_instructions_text = visual.TextStim(win=win, name='learning_instruction
     depth=0.0);
 intro_key = keyboard.Keyboard()
 
+# --- Initialize components for Routine "city_intro_updating" ---
+cityname_text_intro = visual.TextStim(win=win, name='cityname_text_intro',
+    text='',
+    font='Open Sans',
+    pos=(0, 400), height=48.0, wrapWidth=None, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+city_image_update = visual.ImageStim(
+    win=win,
+    name='city_image_update', 
+    image='sin', mask=None, anchor='center',
+    ori=0.0, pos=(0, -100), size=(750, 500),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=128.0, interpolate=True, depth=-1.0)
+load_video = clock.StaticPeriod(win=win, screenHz=expInfo['frameRate'], name='load_video')
+
+# --- Initialize components for Routine "satellite_video" ---
+movie = visual.MovieStim(
+    win, name='movie',
+    filename=None, movieLib='ffpyplayer',
+    loop=False, volume=1.0,
+    pos=(0, 0), size=(1920, 1080), units=None,
+    ori=0.0, anchor='center',opacity=None, contrast=1.0,
+)
+end_vid_key = keyboard.Keyboard()
+
 # --- Initialize components for Routine "city_name" ---
 cityname_text = visual.TextStim(win=win, name='cityname_text',
     text='',
@@ -167,6 +195,15 @@ fx_cross_prediction = visual.TextStim(win=win, name='fx_cross_prediction',
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-3.0);
+key_resp_update = keyboard.Keyboard()
+button_image_updating = visual.ImageStim(
+    win=win,
+    name='button_image_updating', 
+    image='stimuli/buttons_category.png', mask=None, anchor='center',
+    ori=0.0, pos=(0, -200), size=(660, 312),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=128.0, interpolate=True, depth=-5.0)
 
 # --- Initialize components for Routine "updating_phase" ---
 plate_updating = visual.ImageStim(
@@ -401,6 +438,239 @@ for thisCityBlock in CityBlock:
         for paramName in thisCityBlock:
             exec('{} = thisCityBlock[paramName]'.format(paramName))
     
+    # --- Prepare to start Routine "city_intro_updating" ---
+    continueRoutine = True
+    routineForceEnded = False
+    # update component parameters for each repeat
+    cityname_text_intro.setText(CityName)
+    city_image_update.setImage(CityImage)
+    # keep track of which components have finished
+    city_intro_updatingComponents = [cityname_text_intro, city_image_update, load_video]
+    for thisComponent in city_intro_updatingComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "city_intro_updating" ---
+    while continueRoutine and routineTimer.getTime() < 3.0:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *cityname_text_intro* updates
+        if cityname_text_intro.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            cityname_text_intro.frameNStart = frameN  # exact frame index
+            cityname_text_intro.tStart = t  # local t and not account for scr refresh
+            cityname_text_intro.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(cityname_text_intro, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'cityname_text_intro.started')
+            cityname_text_intro.setAutoDraw(True)
+        if cityname_text_intro.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > cityname_text_intro.tStartRefresh + 3.0-frameTolerance:
+                # keep track of stop time/frame for later
+                cityname_text_intro.tStop = t  # not accounting for scr refresh
+                cityname_text_intro.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'cityname_text_intro.stopped')
+                cityname_text_intro.setAutoDraw(False)
+        
+        # *city_image_update* updates
+        if city_image_update.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            city_image_update.frameNStart = frameN  # exact frame index
+            city_image_update.tStart = t  # local t and not account for scr refresh
+            city_image_update.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(city_image_update, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'city_image_update.started')
+            city_image_update.setAutoDraw(True)
+        if city_image_update.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > city_image_update.tStartRefresh + 3.0-frameTolerance:
+                # keep track of stop time/frame for later
+                city_image_update.tStop = t  # not accounting for scr refresh
+                city_image_update.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'city_image_update.stopped')
+                city_image_update.setAutoDraw(False)
+        # *load_video* period
+        if load_video.status == NOT_STARTED and t >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            load_video.frameNStart = frameN  # exact frame index
+            load_video.tStart = t  # local t and not account for scr refresh
+            load_video.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(load_video, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.addData('load_video.started', t)
+            load_video.start(3)
+        elif load_video.status == STARTED:  # one frame should pass before updating params and completing
+            load_video.complete()  # finish the static period
+            load_video.tStop = load_video.tStart + 3  # record stop time
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in city_intro_updatingComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "city_intro_updating" ---
+    for thisComponent in city_intro_updatingComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if routineForceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-3.000000)
+    
+    # --- Prepare to start Routine "satellite_video" ---
+    continueRoutine = True
+    routineForceEnded = False
+    # update component parameters for each repeat
+    movie.setMovie(UpdatingVideoFile)
+    end_vid_key.keys = []
+    end_vid_key.rt = []
+    _end_vid_key_allKeys = []
+    # keep track of which components have finished
+    satellite_videoComponents = [movie, end_vid_key]
+    for thisComponent in satellite_videoComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "satellite_video" ---
+    while continueRoutine and routineTimer.getTime() < 7.0:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *movie* updates
+        if movie.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            movie.frameNStart = frameN  # exact frame index
+            movie.tStart = t  # local t and not account for scr refresh
+            movie.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(movie, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'movie.started')
+            movie.setAutoDraw(True)
+            movie.play()
+        if movie.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > movie.tStartRefresh + 7.0-frameTolerance:
+                # keep track of stop time/frame for later
+                movie.tStop = t  # not accounting for scr refresh
+                movie.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'movie.stopped')
+                movie.setAutoDraw(False)
+                movie.stop()
+        if movie.status == FINISHED:  # force-end the routine
+            continueRoutine = False
+        
+        # *end_vid_key* updates
+        waitOnFlip = False
+        if end_vid_key.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            end_vid_key.frameNStart = frameN  # exact frame index
+            end_vid_key.tStart = t  # local t and not account for scr refresh
+            end_vid_key.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(end_vid_key, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'end_vid_key.started')
+            end_vid_key.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(end_vid_key.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(end_vid_key.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if end_vid_key.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > end_vid_key.tStartRefresh + 7-frameTolerance:
+                # keep track of stop time/frame for later
+                end_vid_key.tStop = t  # not accounting for scr refresh
+                end_vid_key.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'end_vid_key.stopped')
+                end_vid_key.status = FINISHED
+        if end_vid_key.status == STARTED and not waitOnFlip:
+            theseKeys = end_vid_key.getKeys(keyList=['p'], waitRelease=False)
+            _end_vid_key_allKeys.extend(theseKeys)
+            if len(_end_vid_key_allKeys):
+                end_vid_key.keys = _end_vid_key_allKeys[-1].name  # just the last key pressed
+                end_vid_key.rt = _end_vid_key_allKeys[-1].rt
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in satellite_videoComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "satellite_video" ---
+    for thisComponent in satellite_videoComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    movie.stop()
+    # check responses
+    if end_vid_key.keys in ['', [], None]:  # No response was made
+        end_vid_key.keys = None
+    CityBlock.addData('end_vid_key.keys',end_vid_key.keys)
+    if end_vid_key.keys != None:  # we had a response
+        CityBlock.addData('end_vid_key.rt', end_vid_key.rt)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if routineForceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-7.000000)
+    
     # --- Prepare to start Routine "city_name" ---
     continueRoutine = True
     routineForceEnded = False
@@ -602,8 +872,11 @@ for thisCityBlock in CityBlock:
         plate.setImage(StreetSign)
         city_text.setText(CityName)
         street_text.setText(Cue)
+        key_resp_update.keys = []
+        key_resp_update.rt = []
+        _key_resp_update_allKeys = []
         # keep track of which components have finished
-        prediction_phaseComponents = [plate, city_text, street_text, fx_cross_prediction]
+        prediction_phaseComponents = [plate, city_text, street_text, fx_cross_prediction, key_resp_update, button_image_updating]
         for thisComponent in prediction_phaseComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -617,7 +890,7 @@ for thisCityBlock in CityBlock:
         frameN = -1
         
         # --- Run Routine "prediction_phase" ---
-        while continueRoutine and routineTimer.getTime() < 3.0:
+        while continueRoutine and routineTimer.getTime() < 4.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -637,7 +910,7 @@ for thisCityBlock in CityBlock:
                 plate.setAutoDraw(True)
             if plate.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > plate.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > plate.tStartRefresh + 4.0-frameTolerance:
                     # keep track of stop time/frame for later
                     plate.tStop = t  # not accounting for scr refresh
                     plate.frameNStop = frameN  # exact frame index
@@ -657,7 +930,7 @@ for thisCityBlock in CityBlock:
                 city_text.setAutoDraw(True)
             if city_text.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > city_text.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > city_text.tStartRefresh + 4.0-frameTolerance:
                     # keep track of stop time/frame for later
                     city_text.tStop = t  # not accounting for scr refresh
                     city_text.frameNStop = frameN  # exact frame index
@@ -677,7 +950,7 @@ for thisCityBlock in CityBlock:
                 street_text.setAutoDraw(True)
             if street_text.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > street_text.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > street_text.tStartRefresh + 4.0-frameTolerance:
                     # keep track of stop time/frame for later
                     street_text.tStop = t  # not accounting for scr refresh
                     street_text.frameNStop = frameN  # exact frame index
@@ -697,13 +970,69 @@ for thisCityBlock in CityBlock:
                 fx_cross_prediction.setAutoDraw(True)
             if fx_cross_prediction.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > fx_cross_prediction.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > fx_cross_prediction.tStartRefresh + 4.0-frameTolerance:
                     # keep track of stop time/frame for later
                     fx_cross_prediction.tStop = t  # not accounting for scr refresh
                     fx_cross_prediction.frameNStop = frameN  # exact frame index
                     # add timestamp to datafile
                     thisExp.timestampOnFlip(win, 'fx_cross_prediction.stopped')
                     fx_cross_prediction.setAutoDraw(False)
+            
+            # *key_resp_update* updates
+            waitOnFlip = False
+            if key_resp_update.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                key_resp_update.frameNStart = frameN  # exact frame index
+                key_resp_update.tStart = t  # local t and not account for scr refresh
+                key_resp_update.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(key_resp_update, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'key_resp_update.started')
+                key_resp_update.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(key_resp_update.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(key_resp_update.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if key_resp_update.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > key_resp_update.tStartRefresh + 4.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    key_resp_update.tStop = t  # not accounting for scr refresh
+                    key_resp_update.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'key_resp_update.stopped')
+                    key_resp_update.status = FINISHED
+            if key_resp_update.status == STARTED and not waitOnFlip:
+                theseKeys = key_resp_update.getKeys(keyList=['left','right'], waitRelease=False)
+                _key_resp_update_allKeys.extend(theseKeys)
+                if len(_key_resp_update_allKeys):
+                    key_resp_update.keys = _key_resp_update_allKeys[-1].name  # just the last key pressed
+                    key_resp_update.rt = _key_resp_update_allKeys[-1].rt
+                    # was this correct?
+                    if (key_resp_update.keys == str('CorrResponse')) or (key_resp_update.keys == 'CorrResponse'):
+                        key_resp_update.corr = 1
+                    else:
+                        key_resp_update.corr = 0
+            
+            # *button_image_updating* updates
+            if button_image_updating.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                button_image_updating.frameNStart = frameN  # exact frame index
+                button_image_updating.tStart = t  # local t and not account for scr refresh
+                button_image_updating.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(button_image_updating, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'button_image_updating.started')
+                button_image_updating.setAutoDraw(True)
+            if button_image_updating.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > button_image_updating.tStartRefresh + 4.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    button_image_updating.tStop = t  # not accounting for scr refresh
+                    button_image_updating.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'button_image_updating.stopped')
+                    button_image_updating.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -727,11 +1056,24 @@ for thisCityBlock in CityBlock:
         for thisComponent in prediction_phaseComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
+        # check responses
+        if key_resp_update.keys in ['', [], None]:  # No response was made
+            key_resp_update.keys = None
+            # was no response the correct answer?!
+            if str('CorrResponse').lower() == 'none':
+               key_resp_update.corr = 1;  # correct non-response
+            else:
+               key_resp_update.corr = 0;  # failed to respond (incorrectly)
+        # store data for LearningTrials (TrialHandler)
+        LearningTrials.addData('key_resp_update.keys',key_resp_update.keys)
+        LearningTrials.addData('key_resp_update.corr', key_resp_update.corr)
+        if key_resp_update.keys != None:  # we had a response
+            LearningTrials.addData('key_resp_update.rt', key_resp_update.rt)
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-3.000000)
+            routineTimer.addTime(-4.000000)
         
         # --- Prepare to start Routine "updating_phase" ---
         continueRoutine = True
