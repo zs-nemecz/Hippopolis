@@ -1,0 +1,7 @@
+Cue,Image,Category,CorrectResponse,CityName,Novelty,UpdateImage,TestImage1,TestImage2,TestImage3,TestImage4,TestImage1Type,TestImage2Type,TestImage3Type,TestImage4Type
+TÁSKA UTCA,stimuli/scenes/103a.jpg,scene,right,Hippopolis,2,stimuli/objects/079a.jpg,stimuli/objects/079b.jpg,stimuli/objects/079a.jpg,stimuli/scenes/081b.jpg,stimuli/scenes/081a.jpg,lure,target,dist2,dist1
+BOLYGÓ UTCA,stimuli/objects/105a.jpg,object,left,Hippopolis,2,stimuli/scenes/059a.jpg,stimuli/objects/114b.jpg,stimuli/scenes/059b.jpg,stimuli/objects/114a.jpg,stimuli/scenes/059a.jpg,dist2,lure,dist1,target
+TELEFON UTCA,stimuli/objects/099a.jpg,object,left,Hippopolis,0,stimuli/objects/099a.jpg,stimuli/objects/099b.jpg,stimuli/objects/108b.jpg,stimuli/objects/099a.jpg,stimuli/objects/108a.jpg,lure,dist2,target,dist1
+RÁDIÓ UTCA,stimuli/objects/069a.jpg,object,left,Camponello,1,stimuli/objects/007a.jpg,stimuli/objects/007a.jpg,stimuli/scenes/006a.jpg,stimuli/objects/007b.jpg,stimuli/scenes/006b.jpg,target,dist1,lure,dist2
+KÓKUSZ UTCA,stimuli/scenes/108a.jpg,scene,right,Camponello,0,stimuli/scenes/108a.jpg,stimuli/scenes/108a.jpg,stimuli/objects/009b.jpg,stimuli/objects/009a.jpg,stimuli/scenes/108b.jpg,target,dist2,dist1,lure
+SAJTÓ UTCA,stimuli/scenes/023a.jpg,scene,right,Camponello,0,stimuli/scenes/023a.jpg,stimuli/scenes/027b.jpg,stimuli/scenes/027a.jpg,stimuli/scenes/023b.jpg,stimuli/scenes/023a.jpg,dist2,dist1,lure,target

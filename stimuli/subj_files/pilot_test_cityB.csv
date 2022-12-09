@@ -1,0 +1,4 @@
+Cue,Image,Category,CorrectResponse,CityName,Novelty,UpdateImage,TestImage1,TestImage2,TestImage3,TestImage4,TestImage1Type,TestImage2Type,TestImage3Type,TestImage4Type
+RÁDIÓ UTCA,stimuli/objects/069a.jpg,object,left,Camponello,1,stimuli/objects/007a.jpg,stimuli/objects/007a.jpg,stimuli/scenes/006a.jpg,stimuli/objects/007b.jpg,stimuli/scenes/006b.jpg,target,dist1,lure,dist2
+KÓKUSZ UTCA,stimuli/scenes/108a.jpg,scene,right,Camponello,0,stimuli/scenes/108a.jpg,stimuli/scenes/108a.jpg,stimuli/objects/009b.jpg,stimuli/objects/009a.jpg,stimuli/scenes/108b.jpg,target,dist2,dist1,lure
+SAJTÓ UTCA,stimuli/scenes/023a.jpg,scene,right,Camponello,0,stimuli/scenes/023a.jpg,stimuli/scenes/027b.jpg,stimuli/scenes/027a.jpg,stimuli/scenes/023b.jpg,stimuli/scenes/023a.jpg,dist2,dist1,lure,target
