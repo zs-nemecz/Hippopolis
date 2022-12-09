@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on december 09, 2022, at 12:55
+    on december 09, 2022, at 14:58
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -53,7 +53,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Users\\USER\\Desktop\\Hippopolis\\TwoCities_UpdatingPhase_lastrun.py',
+    originPath='D:\\Users\\USER\\Desktop\\TwoCities\\TwoCities_UpdatingPhase_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -1003,7 +1003,7 @@ for thisCityBlock in CityBlock:
                     thisExp.timestampOnFlip(win, 'key_resp_update.stopped')
                     key_resp_update.status = FINISHED
             if key_resp_update.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp_update.getKeys(keyList=['left','right'], waitRelease=False)
+                theseKeys = key_resp_update.getKeys(keyList=['left','right', 'down', 'up'], waitRelease=False)
                 _key_resp_update_allKeys.extend(theseKeys)
                 if len(_key_resp_update_allKeys):
                     key_resp_update.keys = _key_resp_update_allKeys[-1].name  # just the last key pressed
