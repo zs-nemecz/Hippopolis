@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
-    on December 09, 2022, at 11:54
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
+    on december 09, 2022, at 13:16
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,7 +34,7 @@ from psychopy.hardware import keyboard
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
-psychopyVersion = '2022.2.4'
+psychopyVersion = '2022.2.2'
 expName = 'Hippopolis_4AFCT'  # from the Builder filename that created this script
 expInfo = {
     'participant': '',
@@ -53,7 +53,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Zsuzsa\\HCCCL\\Prediction-and-Memory\\Hippopolis\\TwoCities_4AFCT_lastrun.py',
+    originPath='D:\\Users\\USER\\Desktop\\Hippopolis\\TwoCities_4AFCT_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info

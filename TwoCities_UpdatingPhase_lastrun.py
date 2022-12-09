@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
-    on December 08, 2022, at 22:38
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
+    on december 09, 2022, at 12:55
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,7 +34,7 @@ from psychopy.hardware import keyboard
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
-psychopyVersion = '2022.2.4'
+psychopyVersion = '2022.2.2'
 expName = 'Hippopolis_Updating'  # from the Builder filename that created this script
 expInfo = {
     'participant': '',
@@ -53,7 +53,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Zsuzsa\\HCCCL\\Prediction-and-Memory\\Hippopolis\\TwoCities_UpdatingPhase_lastrun.py',
+    originPath='D:\\Users\\USER\\Desktop\\Hippopolis\\TwoCities_UpdatingPhase_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -772,23 +772,23 @@ for thisCityBlock in CityBlock:
         routineTimer.addTime(-3.000000)
     
     # set up handler to look after randomisation of conditions etc
-    LearningTrials = data.TrialHandler(nReps=1.0, method='random', 
+    UpdatingTrials = data.TrialHandler(nReps=1.0, method='random', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions(StimuliFile),
-        seed=None, name='LearningTrials')
-    thisExp.addLoop(LearningTrials)  # add the loop to the experiment
-    thisLearningTrial = LearningTrials.trialList[0]  # so we can initialise stimuli with some values
-    # abbreviate parameter names if possible (e.g. rgb = thisLearningTrial.rgb)
-    if thisLearningTrial != None:
-        for paramName in thisLearningTrial:
-            exec('{} = thisLearningTrial[paramName]'.format(paramName))
+        seed=None, name='UpdatingTrials')
+    thisExp.addLoop(UpdatingTrials)  # add the loop to the experiment
+    thisUpdatingTrial = UpdatingTrials.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisUpdatingTrial.rgb)
+    if thisUpdatingTrial != None:
+        for paramName in thisUpdatingTrial:
+            exec('{} = thisUpdatingTrial[paramName]'.format(paramName))
     
-    for thisLearningTrial in LearningTrials:
-        currentLoop = LearningTrials
-        # abbreviate parameter names if possible (e.g. rgb = thisLearningTrial.rgb)
-        if thisLearningTrial != None:
-            for paramName in thisLearningTrial:
-                exec('{} = thisLearningTrial[paramName]'.format(paramName))
+    for thisUpdatingTrial in UpdatingTrials:
+        currentLoop = UpdatingTrials
+        # abbreviate parameter names if possible (e.g. rgb = thisUpdatingTrial.rgb)
+        if thisUpdatingTrial != None:
+            for paramName in thisUpdatingTrial:
+                exec('{} = thisUpdatingTrial[paramName]'.format(paramName))
         
         # --- Prepare to start Routine "fixation_cross" ---
         continueRoutine = True
@@ -1064,11 +1064,11 @@ for thisCityBlock in CityBlock:
                key_resp_update.corr = 1;  # correct non-response
             else:
                key_resp_update.corr = 0;  # failed to respond (incorrectly)
-        # store data for LearningTrials (TrialHandler)
-        LearningTrials.addData('key_resp_update.keys',key_resp_update.keys)
-        LearningTrials.addData('key_resp_update.corr', key_resp_update.corr)
+        # store data for UpdatingTrials (TrialHandler)
+        UpdatingTrials.addData('key_resp_update.keys',key_resp_update.keys)
+        UpdatingTrials.addData('key_resp_update.corr', key_resp_update.corr)
         if key_resp_update.keys != None:  # we had a response
-            LearningTrials.addData('key_resp_update.rt', key_resp_update.rt)
+            UpdatingTrials.addData('key_resp_update.rt', key_resp_update.rt)
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if routineForceEnded:
             routineTimer.reset()
@@ -1312,14 +1312,14 @@ for thisCityBlock in CityBlock:
         # check responses
         if short_break_key.keys in ['', [], None]:  # No response was made
             short_break_key.keys = None
-        LearningTrials.addData('short_break_key.keys',short_break_key.keys)
+        UpdatingTrials.addData('short_break_key.keys',short_break_key.keys)
         if short_break_key.keys != None:  # we had a response
-            LearningTrials.addData('short_break_key.rt', short_break_key.rt)
+            UpdatingTrials.addData('short_break_key.rt', short_break_key.rt)
         # the Routine "short_break" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
         
-    # completed 1.0 repeats of 'LearningTrials'
+    # completed 1.0 repeats of 'UpdatingTrials'
     
     
     # --- Prepare to start Routine "take_a_break" ---
