@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
-    on December 09, 2022, at 12:46
+    on December 09, 2022, at 15:10
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1009,7 +1009,7 @@ for thisCityBlock in CityBlock:
                     key_resp_update.keys = _key_resp_update_allKeys[-1].name  # just the last key pressed
                     key_resp_update.rt = _key_resp_update_allKeys[-1].rt
                     # was this correct?
-                    if (key_resp_update.keys == str('CorrResponse')) or (key_resp_update.keys == 'CorrResponse'):
+                    if (key_resp_update.keys == str(CorrectResponse)) or (key_resp_update.keys == CorrectResponse):
                         key_resp_update.corr = 1
                     else:
                         key_resp_update.corr = 0
@@ -1060,7 +1060,7 @@ for thisCityBlock in CityBlock:
         if key_resp_update.keys in ['', [], None]:  # No response was made
             key_resp_update.keys = None
             # was no response the correct answer?!
-            if str('CorrResponse').lower() == 'none':
+            if str(CorrectResponse).lower() == 'none':
                key_resp_update.corr = 1;  # correct non-response
             else:
                key_resp_update.corr = 0;  # failed to respond (incorrectly)

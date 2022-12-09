@@ -304,8 +304,8 @@
       <CodeComponent name="selct_file">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="ID = expInfo['participant']&amp;#10;test_trials = './stimuli/subj_files/' + ID + '_4afct.csv'" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="ID = expInfo[&quot;participant&quot;];&amp;#10;test_trials = ((&quot;./stimuli/subj_files/&quot; + ID) + &quot;_4afct.csv&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="ID = expInfo['participant']&amp;#10;test_trials = './stimuli/subj_files/' + ID + '_4afct_test.csv'" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="ID = expInfo[&quot;participant&quot;];&amp;#10;test_trials = ((&quot;./stimuli/subj_files/&quot; + ID) + &quot;_4afct_test.csv&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
@@ -633,14 +633,14 @@
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp">
+      <KeyboardComponent name="key_resp_4afct">
         <Param val="'d', 'f', 'j', 'k'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="True" valType="bool" updates="constant" name="discard previous"/>
         <Param val="" valType="num" updates="None" name="durationEstim"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="key_resp_4afct" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="num" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -663,8 +663,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="key = key_resp.keys;&amp;#10;response = &quot;invalid&quot;;&amp;#10;if ((key === &quot;d&quot;)) {&amp;#10;    response = TestImage1Type;&amp;#10;} else {&amp;#10;    if ((key === &quot;f&quot;)) {&amp;#10;        response = TestImage2Type;&amp;#10;    } else {&amp;#10;        if ((key === &quot;j&quot;)) {&amp;#10;            response = TestImage3Type;&amp;#10;        } else {&amp;#10;            if ((key === &quot;k&quot;)) {&amp;#10;                response = TestImage4Type;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;console.log(response);&amp;#10;psychoJS.experiment.addData(&quot;test_resp&quot;, response);&amp;#10;if ((response === &quot;target&quot;)) {&amp;#10;    target += 1;&amp;#10;}&amp;#10;if ((response === &quot;lure&quot;)) {&amp;#10;    lure += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist1&quot;)) {&amp;#10;    dist1 += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist2&quot;)) {&amp;#10;    dist2 += 1;&amp;#10;}&amp;#10;if ((response === &quot;invalid&quot;)) {&amp;#10;    invalid += 1;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="key = key_resp.keys&amp;#10;response = 'invalid'&amp;#10;&amp;#10;if key == 'd':&amp;#10;    response = TestImage1Type&amp;#10;elif key == 'f':&amp;#10;    response = TestImage2Type&amp;#10;elif key == 'j':&amp;#10;    response = TestImage3Type&amp;#10;elif key == 'k':&amp;#10;    response = TestImage4Type&amp;#10;&amp;#10;print(response)&amp;#10;thisExp.addData('test_resp', response)&amp;#10;if response == 'target':&amp;#10;    target += 1&amp;#10;if response == 'lure':&amp;#10;    lure += 1&amp;#10;if response == 'dist1':&amp;#10;    dist1 += 1&amp;#10;if response == 'dist2':&amp;#10;    dist2 += 1&amp;#10;if response == 'invalid':&amp;#10;    invalid += 1" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="key = key_resp_4afct.keys;&amp;#10;response = &quot;invalid&quot;;&amp;#10;if ((key === &quot;d&quot;)) {&amp;#10;    response = TestImage1Type;&amp;#10;} else {&amp;#10;    if ((key === &quot;f&quot;)) {&amp;#10;        response = TestImage2Type;&amp;#10;    } else {&amp;#10;        if ((key === &quot;j&quot;)) {&amp;#10;            response = TestImage3Type;&amp;#10;        } else {&amp;#10;            if ((key === &quot;k&quot;)) {&amp;#10;                response = TestImage4Type;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;console.log(response);&amp;#10;psychoJS.experiment.addData(&quot;test4afct_resp&quot;, response);&amp;#10;if ((response === &quot;target&quot;)) {&amp;#10;    target += 1;&amp;#10;}&amp;#10;if ((response === &quot;lure&quot;)) {&amp;#10;    lure += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist1&quot;)) {&amp;#10;    dist1 += 1;&amp;#10;}&amp;#10;if ((response === &quot;dist2&quot;)) {&amp;#10;    dist2 += 1;&amp;#10;}&amp;#10;if ((response === &quot;invalid&quot;)) {&amp;#10;    invalid += 1;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="key = key_resp_4afct.keys&amp;#10;response = 'invalid'&amp;#10;&amp;#10;if key == 'd':&amp;#10;    response = TestImage1Type&amp;#10;elif key == 'f':&amp;#10;    response = TestImage2Type&amp;#10;elif key == 'j':&amp;#10;    response = TestImage3Type&amp;#10;elif key == 'k':&amp;#10;    response = TestImage4Type&amp;#10;&amp;#10;print(response)&amp;#10;thisExp.addData('test4afct_resp', response)&amp;#10;if response == 'target':&amp;#10;    target += 1&amp;#10;if response == 'lure':&amp;#10;    lure += 1&amp;#10;if response == 'dist1':&amp;#10;    dist1 += 1&amp;#10;if response == 'dist2':&amp;#10;    dist2 += 1&amp;#10;if response == 'invalid':&amp;#10;    invalid += 1" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="check_response" valType="code" updates="None" name="name"/>
       </CodeComponent>
