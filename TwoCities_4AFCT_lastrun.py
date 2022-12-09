@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
-    on December 08, 2022, at 22:33
+    on December 09, 2022, at 11:54
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -97,7 +97,7 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 # --- Initialize components for Routine "setup" ---
 # Run 'Begin Experiment' code from selct_file
 ID = expInfo['participant']
-test_trials = './data/' + ID + '_Hippopolis_Updating_2022-12-08_21h10.24.461.csv'
+test_trials = './stimuli/subj_files/' + ID + '_4afct.csv'
 
 # --- Initialize components for Routine "test_instructions" ---
 learning_instructions_text = visual.TextStim(win=win, name='learning_instructions_text',

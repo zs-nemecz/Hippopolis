@@ -304,8 +304,8 @@
       <CodeComponent name="selct_file">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="ID = expInfo['participant']&amp;#10;test_trials = './data/' + ID + '_Hippopolis_Updating_2022-12-08_21h10.24.461.csv'" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="ID = expInfo[&quot;participant&quot;];&amp;#10;test_trials = ((&quot;./data/&quot; + ID) + &quot;_Hippopolis_Updating_2022-12-08_21h10.24.461.csv&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="ID = expInfo['participant']&amp;#10;test_trials = './stimuli/subj_files/' + ID + '_4afct.csv'" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="ID = expInfo[&quot;participant&quot;];&amp;#10;test_trials = ((&quot;./stimuli/subj_files/&quot; + ID) + &quot;_4afct.csv&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>

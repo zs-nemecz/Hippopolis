@@ -1,0 +1,3 @@
+CityName,StimuliFile,CityImage,StreetSign,LearningVideoFile,UpdatingVideoFile
+Camponello,stimuli/subj_files/ST02_120922_cityB.csv,./stimuli/arnedillo.png,./stimuli/street_plate2.png,./stimuli/videos/camponello_part,./stimuli/videos/campo-satellite.mp4
+Hippopolis,stimuli/subj_files/ST02_120922_cityA.csv,./stimuli/seattle.jpg,./stimuli/street_plate1.png,./stimuli/videos/hippopolis_part,./stimuli/videos/hippo-satellite.mp4
