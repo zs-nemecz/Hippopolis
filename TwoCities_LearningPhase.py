@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2022.2.2),
-    on november 29, 2022, at 14:57
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
+    on December 09, 2022, at 12:42
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,7 +34,7 @@ from psychopy.hardware import keyboard
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
-psychopyVersion = '2022.2.2'
+psychopyVersion = '2022.2.4'
 expName = 'Hippopolis_Learning'  # from the Builder filename that created this script
 expInfo = {
     'participant': '',
@@ -53,7 +53,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Users\\USER\\Desktop\\Hippopolis\\TwoCities_LearningPhase.py',
+    originPath='C:\\Users\\hcccl\\Documents\\Hippopolis\\TwoCities_LearningPhase.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -119,14 +119,16 @@ cityname_text_intro = visual.TextStim(win=win, name='cityname_text_intro',
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
-city_image_2 = visual.ImageStim(
+city_image = visual.ImageStim(
     win=win,
-    name='city_image_2', 
+    name='city_image', 
     image='sin', mask=None, anchor='center',
     ori=0.0, pos=(0, -100), size=(750, 500),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-1.0)
+# Run 'Begin Experiment' code from count_round
+vid_num = '1.mp4'
 load_video = clock.StaticPeriod(win=win, screenHz=expInfo['frameRate'], name='load_video')
 
 # --- Initialize components for Routine "intro_video" ---
@@ -139,23 +141,6 @@ movie = visual.MovieStim(
 )
 end_vid_key = keyboard.Keyboard()
 
-# --- Initialize components for Routine "city_name" ---
-cityname_text = visual.TextStim(win=win, name='cityname_text',
-    text='',
-    font='Open Sans',
-    pos=(0, 400), height=48.0, wrapWidth=None, ori=0.0, 
-    color='black', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-city_image = visual.ImageStim(
-    win=win,
-    name='city_image', 
-    image='sin', mask=None, anchor='center',
-    ori=0.0, pos=(0, -100), size=(750, 500),
-    color=[1,1,1], colorSpace='rgb', opacity=None,
-    flipHoriz=False, flipVert=False,
-    texRes=128.0, interpolate=True, depth=-1.0)
-
 # --- Initialize components for Routine "start_learning" ---
 text_countdown = visual.TextStim(win=win, name='text_countdown',
     text='',
@@ -164,6 +149,13 @@ text_countdown = visual.TextStim(win=win, name='text_countdown',
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
+cityname_text_start = visual.TextStim(win=win, name='cityname_text_start',
+    text='',
+    font='Open Sans',
+    pos=(0, 400), height=48.0, wrapWidth=None, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
 
 # --- Initialize components for Routine "fixation_cross" ---
 fx_cross = visual.TextStim(win=win, name='fx_cross',
@@ -205,6 +197,7 @@ learning_image = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-3.0)
+key_resp_2 = keyboard.Keyboard()
 
 # --- Initialize components for Routine "short_break" ---
 short_break_text = visual.TextStim(win=win, name='short_break_text',
@@ -225,6 +218,9 @@ test_text = visual.TextStim(win=win, name='test_text',
     languageStyle='LTR',
     depth=0.0);
 key_resp = keyboard.Keyboard()
+# Run 'Begin Experiment' code from set_max_written_test
+import random as rnd
+max_questions = 0
 
 # --- Initialize components for Routine "test_trial" ---
 plate_test = visual.ImageStim(
@@ -250,7 +246,7 @@ street_text_test = visual.TextStim(win=win, name='street_text_test',
     languageStyle='LTR',
     depth=-2.0);
 test_question = visual.TextStim(win=win, name='test_question',
-    text='Fel tudja idézni a képet?',
+    text='Tárgy vagy Tér?',
     font='Open Sans',
     pos=(0,0), height=48.0, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
@@ -260,17 +256,15 @@ test_key_resp = keyboard.Keyboard()
 button_image = visual.ImageStim(
     win=win,
     name='button_image', 
-    image='stimuli/buttons.png', mask=None, anchor='center',
+    image='stimuli/buttons_category.png', mask=None, anchor='center',
     ori=0.0, pos=(0, -200), size=(660, 312),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-5.0)
 
-# --- Initialize components for Routine "verbal_test" ---
+# --- Initialize components for Routine "written_test" ---
 # Run 'Begin Experiment' code from dice_roll
-import random as rnd
-recall = 0
-verbal_report = 0
+written_report = 0
 plate_verbal = visual.ImageStim(
     win=win,
     name='plate_verbal', 
@@ -294,13 +288,31 @@ city_text_verbal = visual.TextStim(win=win, name='city_text_verbal',
     languageStyle='LTR',
     depth=-3.0);
 question_verbal = visual.TextStim(win=win, name='question_verbal',
-    text='Írja körül, mit látott a képen.\n\nA folytatáshoz nyomja le a SZÓKÖZ gombot.',
+    text='Írja körül, mit látott a képen. \nA folytatáshoz kattintson a képernyőn bárhova az egérrel.',
     font='Open Sans',
     pos=(0,0), height=48.0, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-4.0);
-verbal_test_key_resp = keyboard.Keyboard()
+text_response_test = visual.TextBox2(
+     win, text=None, font='Open Sans',
+     pos=(0, -300),     letterHeight=42.0,
+     size=(600, 100), borderWidth=2.0,
+     color='black', colorSpace='rgb',
+     opacity=None,
+     bold=False, italic=False,
+     lineSpacing=1.0,
+     padding=0.0, alignment='center',
+     anchor='center',
+     fillColor=None, borderColor='black',
+     flipHoriz=False, flipVert=False, languageStyle='LTR',
+     editable=True,
+     name='text_response_test',
+     autoLog=True,
+)
+written_text_mouse = event.Mouse(win=win)
+x, y = [None, None]
+written_text_mouse.mouseClock = core.Clock()
 
 # --- Initialize components for Routine "fixation_cross" ---
 fx_cross = visual.TextStim(win=win, name='fx_cross',
@@ -507,12 +519,17 @@ for thisCityBlock in CityBlock:
     routineForceEnded = False
     # update component parameters for each repeat
     cityname_text_intro.setText(CityName)
-    city_image_2.setImage(CityImage)
+    city_image.setImage(CityImage)
     # Run 'Begin Routine' code from count_round
     repetitions += 1
+    if repetitions < 3:
+        vid_num = '1.mp4'
+    else:
+        vid_num = '2.mp4'
     trial_count = 0
+    video_file = LearningVideoFile + vid_num
     # keep track of which components have finished
-    city_introComponents = [cityname_text_intro, city_image_2, load_video]
+    city_introComponents = [cityname_text_intro, city_image, load_video]
     for thisComponent in city_introComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -554,25 +571,25 @@ for thisCityBlock in CityBlock:
                 thisExp.timestampOnFlip(win, 'cityname_text_intro.stopped')
                 cityname_text_intro.setAutoDraw(False)
         
-        # *city_image_2* updates
-        if city_image_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *city_image* updates
+        if city_image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            city_image_2.frameNStart = frameN  # exact frame index
-            city_image_2.tStart = t  # local t and not account for scr refresh
-            city_image_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(city_image_2, 'tStartRefresh')  # time at next scr refresh
+            city_image.frameNStart = frameN  # exact frame index
+            city_image.tStart = t  # local t and not account for scr refresh
+            city_image.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(city_image, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'city_image_2.started')
-            city_image_2.setAutoDraw(True)
-        if city_image_2.status == STARTED:
+            thisExp.timestampOnFlip(win, 'city_image.started')
+            city_image.setAutoDraw(True)
+        if city_image.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > city_image_2.tStartRefresh + 3.0-frameTolerance:
+            if tThisFlipGlobal > city_image.tStartRefresh + 3.0-frameTolerance:
                 # keep track of stop time/frame for later
-                city_image_2.tStop = t  # not accounting for scr refresh
-                city_image_2.frameNStop = frameN  # exact frame index
+                city_image.tStop = t  # not accounting for scr refresh
+                city_image.frameNStop = frameN  # exact frame index
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'city_image_2.stopped')
-                city_image_2.setAutoDraw(False)
+                thisExp.timestampOnFlip(win, 'city_image.stopped')
+                city_image.setAutoDraw(False)
         # *load_video* period
         if load_video.status == NOT_STARTED and t >= 0-frameTolerance:
             # keep track of start time/frame for later
@@ -619,7 +636,7 @@ for thisCityBlock in CityBlock:
     continueRoutine = True
     routineForceEnded = False
     # update component parameters for each repeat
-    movie.setMovie(VideoFile)
+    movie.setMovie(video_file)
     end_vid_key.keys = []
     end_vid_key.rt = []
     _end_vid_key_allKeys = []
@@ -638,7 +655,7 @@ for thisCityBlock in CityBlock:
     frameN = -1
     
     # --- Run Routine "intro_video" ---
-    while continueRoutine and routineTimer.getTime() < 27.8:
+    while continueRoutine and routineTimer.getTime() < 15.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -659,7 +676,7 @@ for thisCityBlock in CityBlock:
             movie.play()
         if movie.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > movie.tStartRefresh + 27.8-frameTolerance:
+            if tThisFlipGlobal > movie.tStartRefresh + 15.0-frameTolerance:
                 # keep track of stop time/frame for later
                 movie.tStop = t  # not accounting for scr refresh
                 movie.frameNStop = frameN  # exact frame index
@@ -687,7 +704,7 @@ for thisCityBlock in CityBlock:
             win.callOnFlip(end_vid_key.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if end_vid_key.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > end_vid_key.tStartRefresh + 27.8-frameTolerance:
+            if tThisFlipGlobal > end_vid_key.tStartRefresh + 15-frameTolerance:
                 # keep track of stop time/frame for later
                 end_vid_key.tStop = t  # not accounting for scr refresh
                 end_vid_key.frameNStop = frameN  # exact frame index
@@ -695,7 +712,7 @@ for thisCityBlock in CityBlock:
                 thisExp.timestampOnFlip(win, 'end_vid_key.stopped')
                 end_vid_key.status = FINISHED
         if end_vid_key.status == STARTED and not waitOnFlip:
-            theseKeys = end_vid_key.getKeys(keyList=['enter','left','right','space'], waitRelease=False)
+            theseKeys = end_vid_key.getKeys(keyList=['p'], waitRelease=False)
             _end_vid_key_allKeys.extend(theseKeys)
             if len(_end_vid_key_allKeys):
                 end_vid_key.keys = _end_vid_key_allKeys[-1].name  # just the last key pressed
@@ -736,111 +753,15 @@ for thisCityBlock in CityBlock:
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-27.800000)
-    
-    # --- Prepare to start Routine "city_name" ---
-    continueRoutine = True
-    routineForceEnded = False
-    # update component parameters for each repeat
-    cityname_text.setText(CityName)
-    city_image.setImage(CityImage)
-    # keep track of which components have finished
-    city_nameComponents = [cityname_text, city_image]
-    for thisComponent in city_nameComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "city_name" ---
-    while continueRoutine and routineTimer.getTime() < 3.0:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *cityname_text* updates
-        if cityname_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            cityname_text.frameNStart = frameN  # exact frame index
-            cityname_text.tStart = t  # local t and not account for scr refresh
-            cityname_text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(cityname_text, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'cityname_text.started')
-            cityname_text.setAutoDraw(True)
-        if cityname_text.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cityname_text.tStartRefresh + 3.0-frameTolerance:
-                # keep track of stop time/frame for later
-                cityname_text.tStop = t  # not accounting for scr refresh
-                cityname_text.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'cityname_text.stopped')
-                cityname_text.setAutoDraw(False)
-        
-        # *city_image* updates
-        if city_image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            city_image.frameNStart = frameN  # exact frame index
-            city_image.tStart = t  # local t and not account for scr refresh
-            city_image.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(city_image, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'city_image.started')
-            city_image.setAutoDraw(True)
-        if city_image.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > city_image.tStartRefresh + 3.0-frameTolerance:
-                # keep track of stop time/frame for later
-                city_image.tStop = t  # not accounting for scr refresh
-                city_image.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'city_image.stopped')
-                city_image.setAutoDraw(False)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in city_nameComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "city_name" ---
-    for thisComponent in city_nameComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-    if routineForceEnded:
-        routineTimer.reset()
-    else:
-        routineTimer.addTime(-3.000000)
+        routineTimer.addTime(-15.000000)
     
     # --- Prepare to start Routine "start_learning" ---
     continueRoutine = True
     routineForceEnded = False
     # update component parameters for each repeat
+    cityname_text_start.setText(CityName)
     # keep track of which components have finished
-    start_learningComponents = [text_countdown]
+    start_learningComponents = [text_countdown, cityname_text_start]
     for thisComponent in start_learningComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -883,6 +804,26 @@ for thisCityBlock in CityBlock:
                 text_countdown.setAutoDraw(False)
         if text_countdown.status == STARTED:  # only update if drawing
             text_countdown.setText(str(3-int(t)), log=False)
+        
+        # *cityname_text_start* updates
+        if cityname_text_start.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            cityname_text_start.frameNStart = frameN  # exact frame index
+            cityname_text_start.tStart = t  # local t and not account for scr refresh
+            cityname_text_start.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(cityname_text_start, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'cityname_text_start.started')
+            cityname_text_start.setAutoDraw(True)
+        if cityname_text_start.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > cityname_text_start.tStartRefresh + 3.0-frameTolerance:
+                # keep track of stop time/frame for later
+                cityname_text_start.tStop = t  # not accounting for scr refresh
+                cityname_text_start.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'cityname_text_start.stopped')
+                cityname_text_start.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1014,8 +955,11 @@ for thisCityBlock in CityBlock:
         city_text.setText(CityName)
         street_text.setText(Cue)
         learning_image.setImage(Image)
+        key_resp_2.keys = []
+        key_resp_2.rt = []
+        _key_resp_2_allKeys = []
         # keep track of which components have finished
-        learning_trialComponents = [plate, city_text, street_text, learning_image]
+        learning_trialComponents = [plate, city_text, street_text, learning_image, key_resp_2]
         for thisComponent in learning_trialComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1117,6 +1061,39 @@ for thisCityBlock in CityBlock:
                     thisExp.timestampOnFlip(win, 'learning_image.stopped')
                     learning_image.setAutoDraw(False)
             
+            # *key_resp_2* updates
+            waitOnFlip = False
+            if key_resp_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                key_resp_2.frameNStart = frameN  # exact frame index
+                key_resp_2.tStart = t  # local t and not account for scr refresh
+                key_resp_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(key_resp_2, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'key_resp_2.started')
+                key_resp_2.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(key_resp_2.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(key_resp_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if key_resp_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > key_resp_2.tStartRefresh + 3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    key_resp_2.tStop = t  # not accounting for scr refresh
+                    key_resp_2.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'key_resp_2.stopped')
+                    key_resp_2.status = FINISHED
+            if key_resp_2.status == STARTED and not waitOnFlip:
+                theseKeys = key_resp_2.getKeys(keyList=['p'], waitRelease=False)
+                _key_resp_2_allKeys.extend(theseKeys)
+                if len(_key_resp_2_allKeys):
+                    key_resp_2.keys = _key_resp_2_allKeys[-1].name  # just the last key pressed
+                    key_resp_2.rt = _key_resp_2_allKeys[-1].rt
+                    # a response ends the routine
+                    continueRoutine = False
+            
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
@@ -1139,6 +1116,12 @@ for thisCityBlock in CityBlock:
         for thisComponent in learning_trialComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
+        # check responses
+        if key_resp_2.keys in ['', [], None]:  # No response was made
+            key_resp_2.keys = None
+        LearningTrials.addData('key_resp_2.keys',key_resp_2.keys)
+        if key_resp_2.keys != None:  # we had a response
+            LearningTrials.addData('key_resp_2.rt', key_resp_2.rt)
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if routineForceEnded:
             routineTimer.reset()
@@ -1260,6 +1243,13 @@ for thisCityBlock in CityBlock:
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
+    # Run 'Begin Routine' code from set_max_written_test
+    if repetitions > 2:
+        max_questions = rnd.randint(1,3)
+    else:
+        max_questions = rnd.randint(1,6)
+        
+    print(max_questions)
     # keep track of which components have finished
     test_introComponents = [test_text, key_resp]
     for thisComponent in test_introComponents:
@@ -1506,11 +1496,16 @@ for thisCityBlock in CityBlock:
                     thisExp.timestampOnFlip(win, 'test_key_resp.stopped')
                     test_key_resp.status = FINISHED
             if test_key_resp.status == STARTED and not waitOnFlip:
-                theseKeys = test_key_resp.getKeys(keyList=['left','right'], waitRelease=False)
+                theseKeys = test_key_resp.getKeys(keyList=['left','right', 'down', 'up'], waitRelease=False)
                 _test_key_resp_allKeys.extend(theseKeys)
                 if len(_test_key_resp_allKeys):
                     test_key_resp.keys = _test_key_resp_allKeys[-1].name  # just the last key pressed
                     test_key_resp.rt = _test_key_resp_allKeys[-1].rt
+                    # was this correct?
+                    if (test_key_resp.keys == str(CorrectResponse)) or (test_key_resp.keys == CorrectResponse):
+                        test_key_resp.corr = 1
+                    else:
+                        test_key_resp.corr = 0
                     # a response ends the routine
                     continueRoutine = False
             
@@ -1559,7 +1554,14 @@ for thisCityBlock in CityBlock:
         # check responses
         if test_key_resp.keys in ['', [], None]:  # No response was made
             test_key_resp.keys = None
+            # was no response the correct answer?!
+            if str(CorrectResponse).lower() == 'none':
+               test_key_resp.corr = 1;  # correct non-response
+            else:
+               test_key_resp.corr = 0;  # failed to respond (incorrectly)
+        # store data for trials (TrialHandler)
         trials.addData('test_key_resp.keys',test_key_resp.keys)
+        trials.addData('test_key_resp.corr', test_key_resp.corr)
         if test_key_resp.keys != None:  # we had a response
             trials.addData('test_key_resp.rt', test_key_resp.rt)
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
@@ -1568,35 +1570,38 @@ for thisCityBlock in CityBlock:
         else:
             routineTimer.addTime(-4.000000)
         
-        # --- Prepare to start Routine "verbal_test" ---
+        # --- Prepare to start Routine "written_test" ---
         continueRoutine = True
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from dice_roll
-        if test_key_resp.keys=='right':
-            recall += 1
-            print('Remembered trial.')
-            dice = rnd.randint(1,20)
+        if test_key_resp.keys == CorrectResponse:
+            dice = rnd.randint(1,10)
             print(dice)
-            if verbal_report < 5:
-                if dice < 17:
+            if written_report < max_questions:
+                if dice < 2:
                     continueRoutine = False
-                elif dice > 17:
-                    verbal_report += 1
+                elif dice > 2:
+                    written_report += 1
             else:
-                continueRoutine = False
+                    continueRoutine = False
         else:
-            print('Not remembered trial.')
             continueRoutine = False
         plate_verbal.setImage(StreetSign)
         street_text_verbal.setText(Cue)
         city_text_verbal.setText(CityName)
-        verbal_test_key_resp.keys = []
-        verbal_test_key_resp.rt = []
-        _verbal_test_key_resp_allKeys = []
+        text_response_test.reset()
+        # setup some python lists for storing info about the written_text_mouse
+        written_text_mouse.x = []
+        written_text_mouse.y = []
+        written_text_mouse.leftButton = []
+        written_text_mouse.midButton = []
+        written_text_mouse.rightButton = []
+        written_text_mouse.time = []
+        gotValidClick = False  # until a click is received
         # keep track of which components have finished
-        verbal_testComponents = [plate_verbal, street_text_verbal, city_text_verbal, question_verbal, verbal_test_key_resp]
-        for thisComponent in verbal_testComponents:
+        written_testComponents = [plate_verbal, street_text_verbal, city_text_verbal, question_verbal, text_response_test, written_text_mouse]
+        for thisComponent in written_testComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
             thisComponent.tStartRefresh = None
@@ -1608,7 +1613,7 @@ for thisCityBlock in CityBlock:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         frameN = -1
         
-        # --- Run Routine "verbal_test" ---
+        # --- Run Routine "written_test" ---
         while continueRoutine:
             # get current time
             t = routineTimer.getTime()
@@ -1661,29 +1666,43 @@ for thisCityBlock in CityBlock:
                 thisExp.timestampOnFlip(win, 'question_verbal.started')
                 question_verbal.setAutoDraw(True)
             
-            # *verbal_test_key_resp* updates
-            waitOnFlip = False
-            if verbal_test_key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # *text_response_test* updates
+            if text_response_test.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                verbal_test_key_resp.frameNStart = frameN  # exact frame index
-                verbal_test_key_resp.tStart = t  # local t and not account for scr refresh
-                verbal_test_key_resp.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(verbal_test_key_resp, 'tStartRefresh')  # time at next scr refresh
+                text_response_test.frameNStart = frameN  # exact frame index
+                text_response_test.tStart = t  # local t and not account for scr refresh
+                text_response_test.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_response_test, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'verbal_test_key_resp.started')
-                verbal_test_key_resp.status = STARTED
-                # keyboard checking is just starting
-                waitOnFlip = True
-                win.callOnFlip(verbal_test_key_resp.clock.reset)  # t=0 on next screen flip
-                win.callOnFlip(verbal_test_key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-            if verbal_test_key_resp.status == STARTED and not waitOnFlip:
-                theseKeys = verbal_test_key_resp.getKeys(keyList=['space'], waitRelease=False)
-                _verbal_test_key_resp_allKeys.extend(theseKeys)
-                if len(_verbal_test_key_resp_allKeys):
-                    verbal_test_key_resp.keys = _verbal_test_key_resp_allKeys[-1].name  # just the last key pressed
-                    verbal_test_key_resp.rt = _verbal_test_key_resp_allKeys[-1].rt
-                    # a response ends the routine
-                    continueRoutine = False
+                thisExp.timestampOnFlip(win, 'text_response_test.started')
+                text_response_test.setAutoDraw(True)
+            # *written_text_mouse* updates
+            if written_text_mouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                written_text_mouse.frameNStart = frameN  # exact frame index
+                written_text_mouse.tStart = t  # local t and not account for scr refresh
+                written_text_mouse.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(written_text_mouse, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.addData('written_text_mouse.started', t)
+                written_text_mouse.status = STARTED
+                written_text_mouse.mouseClock.reset()
+                prevButtonState = written_text_mouse.getPressed()  # if button is down already this ISN'T a new click
+            if written_text_mouse.status == STARTED:  # only update if started and not finished!
+                buttons = written_text_mouse.getPressed()
+                if buttons != prevButtonState:  # button state changed?
+                    prevButtonState = buttons
+                    if sum(buttons) > 0:  # state changed to a new click
+                        x, y = written_text_mouse.getPos()
+                        written_text_mouse.x.append(x)
+                        written_text_mouse.y.append(y)
+                        buttons = written_text_mouse.getPressed()
+                        written_text_mouse.leftButton.append(buttons[0])
+                        written_text_mouse.midButton.append(buttons[1])
+                        written_text_mouse.rightButton.append(buttons[2])
+                        written_text_mouse.time.append(written_text_mouse.mouseClock.getTime())
+                        
+                        continueRoutine = False  # abort routine on response
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1694,7 +1713,7 @@ for thisCityBlock in CityBlock:
                 routineForceEnded = True
                 break
             continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in verbal_testComponents:
+            for thisComponent in written_testComponents:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
@@ -1703,17 +1722,19 @@ for thisCityBlock in CityBlock:
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # --- Ending Routine "verbal_test" ---
-        for thisComponent in verbal_testComponents:
+        # --- Ending Routine "written_test" ---
+        for thisComponent in written_testComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        # check responses
-        if verbal_test_key_resp.keys in ['', [], None]:  # No response was made
-            verbal_test_key_resp.keys = None
-        trials.addData('verbal_test_key_resp.keys',verbal_test_key_resp.keys)
-        if verbal_test_key_resp.keys != None:  # we had a response
-            trials.addData('verbal_test_key_resp.rt', verbal_test_key_resp.rt)
-        # the Routine "verbal_test" was not non-slip safe, so reset the non-slip timer
+        trials.addData('text_response_test.text',text_response_test.text)
+        # store data for trials (TrialHandler)
+        trials.addData('written_text_mouse.x', written_text_mouse.x)
+        trials.addData('written_text_mouse.y', written_text_mouse.y)
+        trials.addData('written_text_mouse.leftButton', written_text_mouse.leftButton)
+        trials.addData('written_text_mouse.midButton', written_text_mouse.midButton)
+        trials.addData('written_text_mouse.rightButton', written_text_mouse.rightButton)
+        trials.addData('written_text_mouse.time', written_text_mouse.time)
+        # the Routine "written_test" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
         # --- Prepare to start Routine "fixation_cross" ---
@@ -1806,9 +1827,7 @@ for thisCityBlock in CityBlock:
     if repetitions >= 4:
         continueRoutine = False
     
-    thisExp.addData('n_remembered', recall)
-    recall=0
-    verbal_report = 0
+    written_report = 0
     # keep track of which components have finished
     take_a_breakComponents = [break_text, break_key_resp]
     for thisComponent in take_a_breakComponents:
