@@ -1,0 +1,1079 @@
+3.5098 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+29.5781 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001EC0B64D100>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001EC101411F0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='pix', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+29.5782 	EXP 	window1: mouseVisible = True
+29.5783 	EXP 	window1: mouseVisible = False
+29.5783 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+29.5783 	EXP 	window1: recordFrameIntervals = False
+29.7431 	EXP 	window1: recordFrameIntervals = True
+29.9271 	EXP 	Screen (0) actual frame rate measured at 60.14Hz
+29.9271 	EXP 	window1: recordFrameIntervals = False
+34.2946 	EXP 	Created learning_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=35.0, italic=False, languageStyle='LTR', name='learning_instructions_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1400.0)
+34.2965 	EXP 	Created learning_cityname_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='learning_cityname_text', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+34.3196 	EXP 	Created learning_city_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='learning_city_image', opacity=1.0, ori=0.0, pos=array([   0., -100.]), size=array([750., 500.]), texRes=128.0, units='pix', win=Window(...))
+34.8366 	EXP 	Created text_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=32.0, italic=False, languageStyle='LTR', name='text_countdown', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+34.8376 	EXP 	Created cityname_text_start = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='cityname_text_start', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+34.8465 	EXP 	Created fx_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='fx_cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+34.8515 	EXP 	Created plate_learning = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate_learning', opacity=1.0, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+34.8537 	EXP 	Created learning_city_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='learning_city_text', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+34.8551 	EXP 	Created learning_street_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='learning_street_text', opacity=1.0, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+34.8633 	EXP 	Created learning_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='learning_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+34.9183 	EXP 	Created short_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='short_break_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+34.9938 	EXP 	Created learning_phase_test_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=34.0, italic=False, languageStyle='LTR', name='learning_phase_test_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=800.0)
+34.9948 	EXP 	Created text_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=32.0, italic=False, languageStyle='LTR', name='text_countdown', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+34.9957 	EXP 	Created cityname_text_start = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='cityname_text_start', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.0018 	EXP 	Created fx_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='fx_cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+35.0065 	EXP 	Created plate_test = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate_test', opacity=1.0, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+35.0074 	EXP 	Created city_text_test = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='city_text_test', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.0081 	EXP 	Created street_text_test = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text_test', opacity=1.0, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.0216 	EXP 	Created test_question = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='test_question', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Tárgy vagy Tér?', units='pix', win=Window(...), wrapWidth=500)
+35.0678 	EXP 	Created button_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='stimuli/buttons_category.png', interpolate=True, mask=None, maskParams=None, name='button_image', opacity=1.0, ori=0.0, pos=array([   0., -200.]), size=array([660., 312.]), texRes=128.0, units='pix', win=Window(...))
+35.0731 	EXP 	Created plate_verbal = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate_verbal', opacity=1.0, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+35.0741 	EXP 	Created street_text_verbal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text_verbal', opacity=1.0, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.0751 	EXP 	Created city_text_verbal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='city_text_verbal', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.0977 	EXP 	Created question_verbal = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='question_verbal', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+35.1319 	EXP 	window1: mouseVisible = True
+35.1463 	EXP 	Created long_break1_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='long_break1_break_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+35.1719 	EXP 	Created end_learning_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=35.0, italic=False, languageStyle='LTR', name='end_learning_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1000.0)
+35.2418 	EXP 	Created updating_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=35.0, italic=False, languageStyle='LTR', name='updating_instructions_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1400.0)
+35.2428 	EXP 	Created cityname_text_intro = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='cityname_text_intro', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.2470 	EXP 	Created city_image_update = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='city_image_update', opacity=1.0, ori=0.0, pos=array([   0., -100.]), size=array([750., 500.]), texRes=128.0, units='pix', win=Window(...))
+35.2485 	EXP 	Created cityname_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='cityname_text', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.2539 	EXP 	Created city_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='city_image', opacity=1.0, ori=0.0, pos=array([   0., -100.]), size=array([750., 500.]), texRes=128.0, units='pix', win=Window(...))
+35.2577 	EXP 	Created fx_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='fx_cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+35.2658 	EXP 	Created plate = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate', opacity=1.0, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+35.2669 	EXP 	Created city_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='city_text', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.2678 	EXP 	Created street_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text', opacity=1.0, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.2715 	EXP 	Created fx_cross_prediction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='fx_cross_prediction', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+35.2904 	EXP 	Created button_image_updating = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='stimuli/buttons_category.png', interpolate=True, mask=None, maskParams=None, name='button_image_updating', opacity=1.0, ori=0.0, pos=array([   0., -200.]), size=array([660., 312.]), texRes=128.0, units='pix', win=Window(...))
+35.2989 	EXP 	Created plate_updating = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='plate_updating', opacity=1.0, ori=0.0, pos=array([  0., 350.]), size=array([513., 215.]), texRes=128.0, units='pix', win=Window(...))
+35.2997 	EXP 	Created city_text_updating = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=36.0, italic=False, languageStyle='LTR', name='city_text_updating', opacity=1.0, ori=0.0, pos=array([  0., 400.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.3006 	EXP 	Created street_text_updating = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text_updating', opacity=1.0, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.3094 	EXP 	Created updating_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='updating_image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+35.3249 	EXP 	Created short_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='short_break_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+35.3346 	EXP 	Created long_break2_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='long_break2_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+35.3472 	EXP 	Created end_text_updating = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=35.0, italic=False, languageStyle='LTR', name='end_text_updating', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1000.0)
+35.3700 	EXP 	Created instructions_4afct_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=35.0, italic=False, languageStyle='LTR', name='instructions_4afct_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1400.0)
+35.3725 	EXP 	Created fx_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='fx_cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='pix', win=Window(...), wrapWidth=500)
+35.3735 	EXP 	Created street_text_4afct = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='street_text_4afct', opacity=1.0, ori=0.0, pos=array([  0., 320.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+35.3782 	EXP 	Created test_image1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='test_image1', opacity=1.0, ori=0.0, pos=array([-512.,    0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+35.3825 	EXP 	Created test_image2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='test_image2', opacity=1.0, ori=0.0, pos=array([-192.,    0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+35.3874 	EXP 	Created test_image3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='test_image3', opacity=1.0, ori=0.0, pos=array([192.,   0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+35.3931 	EXP 	Created test_image4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='test_image4', opacity=1.0, ori=0.0, pos=array([512.,   0.]), size=array([256., 256.]), texRes=128.0, units='pix', win=Window(...))
+35.4034 	EXP 	Created button_d = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='stimuli/test_4afc_d.png', interpolate=True, mask=None, maskParams=None, name='button_d', opacity=1.0, ori=0.0, pos=array([-512., -350.]), size=array([99., 94.]), texRes=128.0, units='pix', win=Window(...))
+35.4135 	EXP 	Created button_f = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='stimuli/test_4afc_f.png', interpolate=True, mask=None, maskParams=None, name='button_f', opacity=1.0, ori=0.0, pos=array([-192., -350.]), size=array([99., 94.]), texRes=128.0, units='pix', win=Window(...))
+35.4244 	EXP 	Created button_j = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='stimuli/test_4afc_j.png', interpolate=True, mask=None, maskParams=None, name='button_j', opacity=1.0, ori=0.0, pos=array([ 192., -350.]), size=array([99., 94.]), texRes=128.0, units='pix', win=Window(...))
+35.4346 	EXP 	Created button_k = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='stimuli/test_4afc_k.png', interpolate=True, mask=None, maskParams=None, name='button_k', opacity=1.0, ori=0.0, pos=array([ 512., -350.]), size=array([99., 94.]), texRes=128.0, units='pix', win=Window(...))
+35.5611 	EXP 	Created clock0 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, image='stimuli/stopwatch0.png', interpolate=True, mask=None, maskParams=None, name='clock0', opacity=1.0, ori=0.0, pos=array([450., 350.]), size=array([150., 150.]), texRes=128.0, units='pix', win=Window(...))
+35.5740 	EXP 	Created short_break_4afct_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=48.0, italic=False, languageStyle='LTR', name='short_break_4afct_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+35.5815 	EXP 	Created end_experiment_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=35.0, italic=False, languageStyle='LTR', name='end_experiment_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=1000.0)
+35.6030 	EXP 	text_response_test: autoLog = True
+35.6030 	EXP 	learning_instructions_text: autoDraw = True
+63.5560 	EXP 	Imported ./stimuli/subj_files/ST01_121322_city_list.csv as conditions, 2 conditions, 6 params
+63.5572 	EXP 	Created sequence: sequential, trialTypes=2, nReps=2, seed=None
+63.5585 	EXP 	New trial (rep=0, index=0): OrderedDict([('CityName', 'Camponello'), ('StimuliFile', 'stimuli/subj_files/ST01_121322_cityB.csv'), ('CityImage', './stimuli/arnedillo.png'), ('StreetSign', './stimuli/street_plate2.png'), ('LearningVideoFile', './stimuli/videos/camponello_part'), ('UpdatingVideoFile', './stimuli/videos/campo-satellite.mp4')])
+63.6485 	EXP 	window1: recordFrameIntervals = False
+63.7098 	DATA 	Keypress: space
+63.7429 	EXP 	learning_instructions_text: autoDraw = False
+63.7429 	EXP 	learning_cityname_text: height = 48.0
+63.7429 	EXP 	learning_cityname_text: height = 48.0
+63.7429 	EXP 	learning_cityname_text: height = 48.0
+63.7429 	EXP 	learning_cityname_text: text = 'Camponello'
+63.7429 	EXP 	learning_city_image: image = './stimuli/arnedillo.png'
+63.7429 	EXP 	learning_cityname_text: autoDraw = True
+63.7429 	EXP 	learning_city_image: autoDraw = True
+63.7453 	EXP 	window1: recordFrameIntervals = False
+66.9136 	EXP 	learning_cityname_text: autoDraw = False
+66.9136 	EXP 	learning_city_image: autoDraw = False
+82.1553 	EXP 	cityname_text_start: height = 48.0
+82.1553 	EXP 	cityname_text_start: height = 48.0
+82.1553 	EXP 	cityname_text_start: height = 48.0
+82.1553 	EXP 	cityname_text_start: text = 'Camponello'
+82.1553 	EXP 	text_countdown: autoDraw = True
+82.1553 	EXP 	cityname_text_start: autoDraw = True
+84.5692 	EXP 	Imported stimuli/subj_files/ST01_121322_cityB.csv as conditions, 80 conditions, 15 params
+84.5716 	EXP 	Created sequence: random, trialTypes=80, nReps=1, seed=None
+84.5721 	EXP 	New trial (rep=0, index=0): OrderedDict([('Cue', 'TISZTÁS UTCA'), ('Image', 'stimuli/scenes/046a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/046a.jpg'), ('TestImage1', 'stimuli/scenes/089b.jpg'), ('TestImage2', 'stimuli/scenes/089a.jpg'), ('TestImage3', 'stimuli/scenes/046b.jpg'), ('TestImage4', 'stimuli/scenes/046a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'target')])
+84.5761 	EXP 	text_countdown: autoDraw = False
+84.5761 	EXP 	cityname_text_start: autoDraw = False
+84.5761 	EXP 	fx_cross: autoDraw = True
+85.5967 	EXP 	fx_cross: autoDraw = False
+85.5967 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+85.5967 	EXP 	learning_city_text: height = 36.0
+85.5967 	EXP 	learning_city_text: height = 36.0
+85.5967 	EXP 	learning_city_text: height = 36.0
+85.5967 	EXP 	learning_city_text: text = 'Camponello'
+85.5967 	EXP 	learning_street_text: height = 48.0
+85.5967 	EXP 	learning_street_text: height = 48.0
+85.5967 	EXP 	learning_street_text: height = 48.0
+85.5967 	EXP 	learning_street_text: text = 'TISZTÁS UTCA'
+85.5967 	EXP 	learning_image: image = 'stimuli/scenes/046a.jpg'
+85.5967 	EXP 	plate_learning: autoDraw = True
+85.5967 	EXP 	learning_city_text: autoDraw = True
+85.5967 	EXP 	learning_street_text: autoDraw = True
+85.5967 	EXP 	learning_image: autoDraw = True
+88.5432 	EXP 	New trial (rep=0, index=1): OrderedDict([('Cue', 'KANÁL UTCA'), ('Image', 'stimuli/objects/092a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/objects/031a.jpg'), ('TestImage1', 'stimuli/objects/031b.jpg'), ('TestImage2', 'stimuli/scenes/001a.jpg'), ('TestImage3', 'stimuli/objects/031a.jpg'), ('TestImage4', 'stimuli/scenes/001b.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'dist2')])
+88.5584 	EXP 	plate_learning: autoDraw = False
+88.5584 	EXP 	learning_city_text: autoDraw = False
+88.5584 	EXP 	learning_street_text: autoDraw = False
+88.5584 	EXP 	learning_image: autoDraw = False
+88.5584 	EXP 	short_break_text: autoDraw = False
+88.5584 	EXP 	fx_cross: autoDraw = True
+89.5623 	EXP 	fx_cross: autoDraw = False
+89.5623 	EXP 	fx_cross: autoDraw = False
+89.5623 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+89.5623 	EXP 	learning_city_text: text = 'Camponello'
+89.5623 	EXP 	learning_street_text: height = 48.0
+89.5623 	EXP 	learning_street_text: height = 48.0
+89.5623 	EXP 	learning_street_text: height = 48.0
+89.5623 	EXP 	learning_street_text: text = 'KANÁL UTCA'
+89.5623 	EXP 	learning_image: image = 'stimuli/objects/092a.jpg'
+89.5623 	EXP 	plate_learning: autoDraw = True
+89.5623 	EXP 	learning_city_text: autoDraw = True
+89.5623 	EXP 	learning_street_text: autoDraw = True
+89.5623 	EXP 	learning_image: autoDraw = True
+92.5596 	EXP 	New trial (rep=0, index=2): OrderedDict([('Cue', 'KATONA UTCA'), ('Image', 'stimuli/objects/049a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/objects/052a.jpg'), ('TestImage1', 'stimuli/objects/052a.jpg'), ('TestImage2', 'stimuli/objects/039a.jpg'), ('TestImage3', 'stimuli/objects/039b.jpg'), ('TestImage4', 'stimuli/objects/052b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'lure')])
+92.5753 	EXP 	plate_learning: autoDraw = False
+92.5753 	EXP 	learning_city_text: autoDraw = False
+92.5753 	EXP 	learning_street_text: autoDraw = False
+92.5753 	EXP 	learning_image: autoDraw = False
+92.5753 	EXP 	short_break_text: autoDraw = False
+92.5753 	EXP 	fx_cross: autoDraw = True
+93.5853 	EXP 	fx_cross: autoDraw = False
+93.5853 	EXP 	fx_cross: autoDraw = False
+93.5853 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+93.5853 	EXP 	learning_city_text: text = 'Camponello'
+93.5853 	EXP 	learning_street_text: height = 48.0
+93.5853 	EXP 	learning_street_text: height = 48.0
+93.5853 	EXP 	learning_street_text: height = 48.0
+93.5853 	EXP 	learning_street_text: text = 'KATONA UTCA'
+93.5853 	EXP 	learning_image: image = 'stimuli/objects/049a.jpg'
+93.5853 	EXP 	plate_learning: autoDraw = True
+93.5853 	EXP 	learning_city_text: autoDraw = True
+93.5853 	EXP 	learning_street_text: autoDraw = True
+93.5853 	EXP 	learning_image: autoDraw = True
+96.5780 	EXP 	New trial (rep=0, index=3): OrderedDict([('Cue', 'TORONY UTCA'), ('Image', 'stimuli/objects/010a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/scenes/006a.jpg'), ('TestImage1', 'stimuli/scenes/110a.jpg'), ('TestImage2', 'stimuli/scenes/006a.jpg'), ('TestImage3', 'stimuli/scenes/110b.jpg'), ('TestImage4', 'stimuli/scenes/006b.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'lure')])
+96.5916 	EXP 	plate_learning: autoDraw = False
+96.5916 	EXP 	learning_city_text: autoDraw = False
+96.5916 	EXP 	learning_street_text: autoDraw = False
+96.5916 	EXP 	learning_image: autoDraw = False
+96.5916 	EXP 	short_break_text: autoDraw = False
+96.5916 	EXP 	fx_cross: autoDraw = True
+97.6013 	EXP 	fx_cross: autoDraw = False
+97.6013 	EXP 	fx_cross: autoDraw = False
+97.6013 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+97.6013 	EXP 	learning_city_text: text = 'Camponello'
+97.6013 	EXP 	learning_street_text: height = 48.0
+97.6013 	EXP 	learning_street_text: height = 48.0
+97.6013 	EXP 	learning_street_text: height = 48.0
+97.6013 	EXP 	learning_street_text: text = 'TORONY UTCA'
+97.6013 	EXP 	learning_image: image = 'stimuli/objects/010a.jpg'
+97.6013 	EXP 	plate_learning: autoDraw = True
+97.6013 	EXP 	learning_city_text: autoDraw = True
+97.6013 	EXP 	learning_street_text: autoDraw = True
+97.6013 	EXP 	learning_image: autoDraw = True
+100.5926 	EXP 	New trial (rep=0, index=4): OrderedDict([('Cue', 'TELEFON UTCA'), ('Image', 'stimuli/objects/072a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/072a.jpg'), ('TestImage1', 'stimuli/objects/072a.jpg'), ('TestImage2', 'stimuli/scenes/099a.jpg'), ('TestImage3', 'stimuli/objects/072b.jpg'), ('TestImage4', 'stimuli/scenes/099b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist2')])
+100.6082 	EXP 	plate_learning: autoDraw = False
+100.6082 	EXP 	learning_city_text: autoDraw = False
+100.6082 	EXP 	learning_street_text: autoDraw = False
+100.6082 	EXP 	learning_image: autoDraw = False
+100.6082 	EXP 	short_break_text: autoDraw = False
+100.6082 	EXP 	fx_cross: autoDraw = True
+101.6145 	EXP 	fx_cross: autoDraw = False
+101.6145 	EXP 	fx_cross: autoDraw = False
+101.6145 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+101.6145 	EXP 	learning_city_text: text = 'Camponello'
+101.6145 	EXP 	learning_street_text: height = 48.0
+101.6145 	EXP 	learning_street_text: height = 48.0
+101.6145 	EXP 	learning_street_text: height = 48.0
+101.6145 	EXP 	learning_street_text: text = 'TELEFON UTCA'
+101.6145 	EXP 	learning_image: image = 'stimuli/objects/072a.jpg'
+101.6145 	EXP 	plate_learning: autoDraw = True
+101.6145 	EXP 	learning_city_text: autoDraw = True
+101.6145 	EXP 	learning_street_text: autoDraw = True
+101.6145 	EXP 	learning_image: autoDraw = True
+104.6091 	EXP 	New trial (rep=0, index=5): OrderedDict([('Cue', 'PULÓVER UTCA'), ('Image', 'stimuli/scenes/029a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/029a.jpg'), ('TestImage1', 'stimuli/scenes/051b.jpg'), ('TestImage2', 'stimuli/scenes/029a.jpg'), ('TestImage3', 'stimuli/scenes/029b.jpg'), ('TestImage4', 'stimuli/scenes/051a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'target'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist1')])
+104.6252 	EXP 	plate_learning: autoDraw = False
+104.6252 	EXP 	learning_city_text: autoDraw = False
+104.6252 	EXP 	learning_street_text: autoDraw = False
+104.6252 	EXP 	learning_image: autoDraw = False
+104.6252 	EXP 	short_break_text: autoDraw = False
+104.6252 	EXP 	fx_cross: autoDraw = True
+105.6255 	EXP 	fx_cross: autoDraw = False
+105.6255 	EXP 	fx_cross: autoDraw = False
+105.6255 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+105.6255 	EXP 	learning_city_text: text = 'Camponello'
+105.6255 	EXP 	learning_street_text: height = 48.0
+105.6255 	EXP 	learning_street_text: height = 48.0
+105.6255 	EXP 	learning_street_text: height = 48.0
+105.6255 	EXP 	learning_street_text: text = 'PULÓVER UTCA'
+105.6255 	EXP 	learning_image: image = 'stimuli/scenes/029a.jpg'
+105.6255 	EXP 	plate_learning: autoDraw = True
+105.6255 	EXP 	learning_city_text: autoDraw = True
+105.6255 	EXP 	learning_street_text: autoDraw = True
+105.6255 	EXP 	learning_image: autoDraw = True
+108.6098 	EXP 	New trial (rep=0, index=6): OrderedDict([('Cue', 'KARTON UTCA'), ('Image', 'stimuli/scenes/003a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/scenes/001a.jpg'), ('TestImage1', 'stimuli/scenes/001a.jpg'), ('TestImage2', 'stimuli/scenes/001b.jpg'), ('TestImage3', 'stimuli/objects/052b.jpg'), ('TestImage4', 'stimuli/objects/052a.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'dist1')])
+108.6252 	EXP 	plate_learning: autoDraw = False
+108.6252 	EXP 	learning_city_text: autoDraw = False
+108.6252 	EXP 	learning_street_text: autoDraw = False
+108.6252 	EXP 	learning_image: autoDraw = False
+108.6252 	EXP 	plate_learning: autoDraw = False
+108.6252 	EXP 	learning_city_text: autoDraw = False
+108.6252 	EXP 	learning_street_text: autoDraw = False
+108.6252 	EXP 	learning_image: autoDraw = False
+108.6252 	EXP 	short_break_text: autoDraw = False
+108.6252 	EXP 	fx_cross: autoDraw = True
+109.6259 	EXP 	fx_cross: autoDraw = False
+109.6259 	EXP 	fx_cross: autoDraw = False
+109.6259 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+109.6259 	EXP 	learning_city_text: text = 'Camponello'
+109.6259 	EXP 	learning_street_text: height = 48.0
+109.6259 	EXP 	learning_street_text: height = 48.0
+109.6259 	EXP 	learning_street_text: height = 48.0
+109.6259 	EXP 	learning_street_text: text = 'KARTON UTCA'
+109.6259 	EXP 	learning_image: image = 'stimuli/scenes/003a.jpg'
+109.6259 	EXP 	plate_learning: autoDraw = True
+109.6259 	EXP 	learning_city_text: autoDraw = True
+109.6259 	EXP 	learning_street_text: autoDraw = True
+109.6259 	EXP 	learning_image: autoDraw = True
+112.6101 	EXP 	New trial (rep=0, index=7): OrderedDict([('Cue', 'KÖTÉNY UTCA'), ('Image', 'stimuli/objects/099a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/099a.jpg'), ('TestImage1', 'stimuli/scenes/077b.jpg'), ('TestImage2', 'stimuli/objects/099b.jpg'), ('TestImage3', 'stimuli/objects/099a.jpg'), ('TestImage4', 'stimuli/scenes/077a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'target'), ('TestImage4Type', 'dist1')])
+112.6248 	EXP 	plate_learning: autoDraw = False
+112.6248 	EXP 	learning_city_text: autoDraw = False
+112.6248 	EXP 	learning_street_text: autoDraw = False
+112.6248 	EXP 	learning_image: autoDraw = False
+112.6248 	EXP 	plate_learning: autoDraw = False
+112.6248 	EXP 	learning_city_text: autoDraw = False
+112.6248 	EXP 	learning_street_text: autoDraw = False
+112.6248 	EXP 	learning_image: autoDraw = False
+112.6248 	EXP 	short_break_text: autoDraw = False
+112.6248 	EXP 	fx_cross: autoDraw = True
+113.6344 	EXP 	fx_cross: autoDraw = False
+113.6344 	EXP 	fx_cross: autoDraw = False
+113.6344 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+113.6344 	EXP 	learning_city_text: text = 'Camponello'
+113.6344 	EXP 	learning_street_text: height = 48.0
+113.6344 	EXP 	learning_street_text: height = 48.0
+113.6344 	EXP 	learning_street_text: height = 48.0
+113.6344 	EXP 	learning_street_text: text = 'KÖTÉNY UTCA'
+113.6344 	EXP 	learning_image: image = 'stimuli/objects/099a.jpg'
+113.6344 	EXP 	plate_learning: autoDraw = True
+113.6344 	EXP 	learning_city_text: autoDraw = True
+113.6344 	EXP 	learning_street_text: autoDraw = True
+113.6344 	EXP 	learning_image: autoDraw = True
+116.6260 	EXP 	New trial (rep=0, index=8): OrderedDict([('Cue', 'PADLÓ UTCA'), ('Image', 'stimuli/scenes/082a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/objects/095a.jpg'), ('TestImage1', 'stimuli/scenes/006b.jpg'), ('TestImage2', 'stimuli/scenes/006a.jpg'), ('TestImage3', 'stimuli/objects/095a.jpg'), ('TestImage4', 'stimuli/objects/095b.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'lure')])
+116.6411 	EXP 	plate_learning: autoDraw = False
+116.6411 	EXP 	learning_city_text: autoDraw = False
+116.6411 	EXP 	learning_street_text: autoDraw = False
+116.6411 	EXP 	learning_image: autoDraw = False
+116.6411 	EXP 	short_break_text: autoDraw = False
+116.6411 	EXP 	fx_cross: autoDraw = True
+117.6489 	EXP 	fx_cross: autoDraw = False
+117.6489 	EXP 	fx_cross: autoDraw = False
+117.6489 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+117.6489 	EXP 	learning_city_text: text = 'Camponello'
+117.6489 	EXP 	learning_street_text: height = 48.0
+117.6489 	EXP 	learning_street_text: height = 48.0
+117.6489 	EXP 	learning_street_text: height = 48.0
+117.6489 	EXP 	learning_street_text: text = 'PADLÓ UTCA'
+117.6489 	EXP 	learning_image: image = 'stimuli/scenes/082a.jpg'
+117.6489 	EXP 	plate_learning: autoDraw = True
+117.6489 	EXP 	learning_city_text: autoDraw = True
+117.6489 	EXP 	learning_street_text: autoDraw = True
+117.6489 	EXP 	learning_image: autoDraw = True
+120.6423 	EXP 	New trial (rep=0, index=9): OrderedDict([('Cue', 'PETÁRDA UTCA'), ('Image', 'stimuli/scenes/099a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/099a.jpg'), ('TestImage1', 'stimuli/scenes/099a.jpg'), ('TestImage2', 'stimuli/objects/104b.jpg'), ('TestImage3', 'stimuli/objects/104a.jpg'), ('TestImage4', 'stimuli/scenes/099b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'lure')])
+120.6580 	EXP 	plate_learning: autoDraw = False
+120.6580 	EXP 	learning_city_text: autoDraw = False
+120.6580 	EXP 	learning_street_text: autoDraw = False
+120.6580 	EXP 	learning_image: autoDraw = False
+120.6580 	EXP 	short_break_text: autoDraw = False
+120.6580 	EXP 	fx_cross: autoDraw = True
+121.6589 	EXP 	fx_cross: autoDraw = False
+121.6589 	EXP 	fx_cross: autoDraw = False
+121.6589 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+121.6589 	EXP 	learning_city_text: text = 'Camponello'
+121.6589 	EXP 	learning_street_text: height = 48.0
+121.6589 	EXP 	learning_street_text: height = 48.0
+121.6589 	EXP 	learning_street_text: height = 48.0
+121.6589 	EXP 	learning_street_text: text = 'PETÁRDA UTCA'
+121.6589 	EXP 	learning_image: image = 'stimuli/scenes/099a.jpg'
+121.6589 	EXP 	plate_learning: autoDraw = True
+121.6589 	EXP 	learning_city_text: autoDraw = True
+121.6589 	EXP 	learning_street_text: autoDraw = True
+121.6589 	EXP 	learning_image: autoDraw = True
+124.6425 	EXP 	New trial (rep=0, index=10): OrderedDict([('Cue', 'MÁRVÁNY UTCA'), ('Image', 'stimuli/scenes/113a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/113a.jpg'), ('TestImage1', 'stimuli/scenes/113b.jpg'), ('TestImage2', 'stimuli/scenes/067a.jpg'), ('TestImage3', 'stimuli/scenes/113a.jpg'), ('TestImage4', 'stimuli/scenes/067b.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'dist2')])
+124.6580 	EXP 	plate_learning: autoDraw = False
+124.6580 	EXP 	learning_city_text: autoDraw = False
+124.6580 	EXP 	learning_street_text: autoDraw = False
+124.6580 	EXP 	learning_image: autoDraw = False
+124.6580 	EXP 	plate_learning: autoDraw = False
+124.6580 	EXP 	learning_city_text: autoDraw = False
+124.6580 	EXP 	learning_street_text: autoDraw = False
+124.6580 	EXP 	learning_image: autoDraw = False
+124.6580 	EXP 	short_break_text: autoDraw = False
+124.6580 	EXP 	fx_cross: autoDraw = True
+125.6675 	EXP 	fx_cross: autoDraw = False
+125.6675 	EXP 	fx_cross: autoDraw = False
+125.6675 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+125.6675 	EXP 	learning_city_text: text = 'Camponello'
+125.6675 	EXP 	learning_street_text: height = 48.0
+125.6675 	EXP 	learning_street_text: height = 48.0
+125.6675 	EXP 	learning_street_text: height = 48.0
+125.6675 	EXP 	learning_street_text: text = 'MÁRVÁNY UTCA'
+125.6675 	EXP 	learning_image: image = 'stimuli/scenes/113a.jpg'
+125.6675 	EXP 	plate_learning: autoDraw = True
+125.6675 	EXP 	learning_city_text: autoDraw = True
+125.6675 	EXP 	learning_street_text: autoDraw = True
+125.6675 	EXP 	learning_image: autoDraw = True
+128.6592 	EXP 	New trial (rep=0, index=11): OrderedDict([('Cue', 'OROSZLÁN UTCA'), ('Image', 'stimuli/objects/111a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/111a.jpg'), ('TestImage1', 'stimuli/objects/111b.jpg'), ('TestImage2', 'stimuli/objects/009a.jpg'), ('TestImage3', 'stimuli/objects/111a.jpg'), ('TestImage4', 'stimuli/objects/009b.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'dist2')])
+128.6751 	EXP 	plate_learning: autoDraw = False
+128.6751 	EXP 	learning_city_text: autoDraw = False
+128.6751 	EXP 	learning_street_text: autoDraw = False
+128.6751 	EXP 	learning_image: autoDraw = False
+128.6751 	EXP 	short_break_text: autoDraw = False
+128.6751 	EXP 	fx_cross: autoDraw = True
+129.6864 	EXP 	fx_cross: autoDraw = False
+129.6864 	EXP 	fx_cross: autoDraw = False
+129.6864 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+129.6864 	EXP 	learning_city_text: text = 'Camponello'
+129.6864 	EXP 	learning_street_text: height = 48.0
+129.6864 	EXP 	learning_street_text: height = 48.0
+129.6864 	EXP 	learning_street_text: height = 48.0
+129.6864 	EXP 	learning_street_text: text = 'OROSZLÁN UTCA'
+129.6864 	EXP 	learning_image: image = 'stimuli/objects/111a.jpg'
+129.6864 	EXP 	plate_learning: autoDraw = True
+129.6864 	EXP 	learning_city_text: autoDraw = True
+129.6864 	EXP 	learning_street_text: autoDraw = True
+129.6864 	EXP 	learning_image: autoDraw = True
+132.6759 	EXP 	New trial (rep=0, index=12): OrderedDict([('Cue', 'ZÁSZLÓ UTCA'), ('Image', 'stimuli/scenes/028a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/028a.jpg'), ('TestImage1', 'stimuli/objects/100b.jpg'), ('TestImage2', 'stimuli/scenes/028b.jpg'), ('TestImage3', 'stimuli/objects/100a.jpg'), ('TestImage4', 'stimuli/scenes/028a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'target')])
+132.6913 	EXP 	plate_learning: autoDraw = False
+132.6913 	EXP 	learning_city_text: autoDraw = False
+132.6913 	EXP 	learning_street_text: autoDraw = False
+132.6913 	EXP 	learning_image: autoDraw = False
+132.6913 	EXP 	short_break_text: autoDraw = False
+132.6913 	EXP 	fx_cross: autoDraw = True
+133.6996 	EXP 	fx_cross: autoDraw = False
+133.6996 	EXP 	fx_cross: autoDraw = False
+133.6996 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+133.6996 	EXP 	learning_city_text: text = 'Camponello'
+133.6996 	EXP 	learning_street_text: height = 48.0
+133.6996 	EXP 	learning_street_text: height = 48.0
+133.6996 	EXP 	learning_street_text: height = 48.0
+133.6996 	EXP 	learning_street_text: text = 'ZÁSZLÓ UTCA'
+133.6996 	EXP 	learning_image: image = 'stimuli/scenes/028a.jpg'
+133.6996 	EXP 	plate_learning: autoDraw = True
+133.6996 	EXP 	learning_city_text: autoDraw = True
+133.6996 	EXP 	learning_street_text: autoDraw = True
+133.6996 	EXP 	learning_image: autoDraw = True
+136.6925 	EXP 	New trial (rep=0, index=13): OrderedDict([('Cue', 'TÜKÖR UTCA'), ('Image', 'stimuli/objects/002a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/objects/017a.jpg'), ('TestImage1', 'stimuli/objects/017b.jpg'), ('TestImage2', 'stimuli/objects/017a.jpg'), ('TestImage3', 'stimuli/scenes/020b.jpg'), ('TestImage4', 'stimuli/scenes/020a.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'dist1')])
+136.7076 	EXP 	plate_learning: autoDraw = False
+136.7076 	EXP 	learning_city_text: autoDraw = False
+136.7076 	EXP 	learning_street_text: autoDraw = False
+136.7076 	EXP 	learning_image: autoDraw = False
+136.7076 	EXP 	short_break_text: autoDraw = False
+136.7076 	EXP 	fx_cross: autoDraw = True
+137.7163 	EXP 	fx_cross: autoDraw = False
+137.7163 	EXP 	fx_cross: autoDraw = False
+137.7163 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+137.7163 	EXP 	learning_city_text: text = 'Camponello'
+137.7163 	EXP 	learning_street_text: height = 48.0
+137.7163 	EXP 	learning_street_text: height = 48.0
+137.7163 	EXP 	learning_street_text: height = 48.0
+137.7163 	EXP 	learning_street_text: text = 'TÜKÖR UTCA'
+137.7163 	EXP 	learning_image: image = 'stimuli/objects/002a.jpg'
+137.7163 	EXP 	plate_learning: autoDraw = True
+137.7163 	EXP 	learning_city_text: autoDraw = True
+137.7163 	EXP 	learning_street_text: autoDraw = True
+137.7163 	EXP 	learning_image: autoDraw = True
+140.7093 	EXP 	New trial (rep=0, index=14): OrderedDict([('Cue', 'HEGESZTŐ UTCA'), ('Image', 'stimuli/objects/093a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/scenes/033a.jpg'), ('TestImage1', 'stimuli/scenes/030a.jpg'), ('TestImage2', 'stimuli/scenes/033b.jpg'), ('TestImage3', 'stimuli/scenes/033a.jpg'), ('TestImage4', 'stimuli/scenes/030b.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'target'), ('TestImage4Type', 'dist2')])
+140.7243 	EXP 	plate_learning: autoDraw = False
+140.7243 	EXP 	learning_city_text: autoDraw = False
+140.7243 	EXP 	learning_street_text: autoDraw = False
+140.7243 	EXP 	learning_image: autoDraw = False
+140.7243 	EXP 	short_break_text: autoDraw = False
+140.7243 	EXP 	fx_cross: autoDraw = True
+141.7370 	EXP 	fx_cross: autoDraw = False
+141.7370 	EXP 	fx_cross: autoDraw = False
+141.7370 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+141.7370 	EXP 	learning_city_text: text = 'Camponello'
+141.7370 	EXP 	learning_street_text: height = 48.0
+141.7370 	EXP 	learning_street_text: height = 48.0
+141.7370 	EXP 	learning_street_text: height = 48.0
+141.7370 	EXP 	learning_street_text: text = 'HEGESZTŐ UTCA'
+141.7370 	EXP 	learning_image: image = 'stimuli/objects/093a.jpg'
+141.7370 	EXP 	plate_learning: autoDraw = True
+141.7370 	EXP 	learning_city_text: autoDraw = True
+141.7370 	EXP 	learning_street_text: autoDraw = True
+141.7370 	EXP 	learning_image: autoDraw = True
+144.7253 	EXP 	New trial (rep=0, index=15): OrderedDict([('Cue', 'ZEBRA UTCA'), ('Image', 'stimuli/objects/104a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/104a.jpg'), ('TestImage1', 'stimuli/scenes/113a.jpg'), ('TestImage2', 'stimuli/objects/104a.jpg'), ('TestImage3', 'stimuli/objects/104b.jpg'), ('TestImage4', 'stimuli/scenes/113b.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'target'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist2')])
+144.7412 	EXP 	plate_learning: autoDraw = False
+144.7412 	EXP 	learning_city_text: autoDraw = False
+144.7412 	EXP 	learning_street_text: autoDraw = False
+144.7412 	EXP 	learning_image: autoDraw = False
+144.7412 	EXP 	short_break_text: autoDraw = False
+144.7412 	EXP 	fx_cross: autoDraw = True
+145.7467 	EXP 	fx_cross: autoDraw = False
+145.7467 	EXP 	fx_cross: autoDraw = False
+145.7467 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+145.7467 	EXP 	learning_city_text: text = 'Camponello'
+145.7467 	EXP 	learning_street_text: height = 48.0
+145.7467 	EXP 	learning_street_text: height = 48.0
+145.7467 	EXP 	learning_street_text: height = 48.0
+145.7467 	EXP 	learning_street_text: text = 'ZEBRA UTCA'
+145.7467 	EXP 	learning_image: image = 'stimuli/objects/104a.jpg'
+145.7467 	EXP 	plate_learning: autoDraw = True
+145.7467 	EXP 	learning_city_text: autoDraw = True
+145.7467 	EXP 	learning_street_text: autoDraw = True
+145.7467 	EXP 	learning_image: autoDraw = True
+148.7421 	EXP 	New trial (rep=0, index=16): OrderedDict([('Cue', 'KESELYŰ UTCA'), ('Image', 'stimuli/objects/018a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/scenes/030a.jpg'), ('TestImage1', 'stimuli/scenes/030a.jpg'), ('TestImage2', 'stimuli/scenes/030b.jpg'), ('TestImage3', 'stimuli/scenes/033b.jpg'), ('TestImage4', 'stimuli/scenes/033a.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'dist1')])
+148.7574 	EXP 	plate_learning: autoDraw = False
+148.7574 	EXP 	learning_city_text: autoDraw = False
+148.7574 	EXP 	learning_street_text: autoDraw = False
+148.7574 	EXP 	learning_image: autoDraw = False
+148.7574 	EXP 	short_break_text: autoDraw = False
+148.7574 	EXP 	fx_cross: autoDraw = True
+149.7640 	EXP 	fx_cross: autoDraw = False
+149.7640 	EXP 	fx_cross: autoDraw = False
+149.7640 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+149.7640 	EXP 	learning_city_text: text = 'Camponello'
+149.7640 	EXP 	learning_street_text: height = 48.0
+149.7640 	EXP 	learning_street_text: height = 48.0
+149.7640 	EXP 	learning_street_text: height = 48.0
+149.7640 	EXP 	learning_street_text: text = 'KESELYŰ UTCA'
+149.7640 	EXP 	learning_image: image = 'stimuli/objects/018a.jpg'
+149.7640 	EXP 	plate_learning: autoDraw = True
+149.7640 	EXP 	learning_city_text: autoDraw = True
+149.7640 	EXP 	learning_street_text: autoDraw = True
+149.7640 	EXP 	learning_image: autoDraw = True
+152.7583 	EXP 	New trial (rep=0, index=17): OrderedDict([('Cue', 'MANDARIN UTCA'), ('Image', 'stimuli/objects/091a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/091a.jpg'), ('TestImage1', 'stimuli/objects/091a.jpg'), ('TestImage2', 'stimuli/scenes/029a.jpg'), ('TestImage3', 'stimuli/scenes/029b.jpg'), ('TestImage4', 'stimuli/objects/091b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'lure')])
+152.7740 	EXP 	plate_learning: autoDraw = False
+152.7740 	EXP 	learning_city_text: autoDraw = False
+152.7740 	EXP 	learning_street_text: autoDraw = False
+152.7740 	EXP 	learning_image: autoDraw = False
+152.7740 	EXP 	short_break_text: autoDraw = False
+152.7740 	EXP 	fx_cross: autoDraw = True
+153.7813 	EXP 	fx_cross: autoDraw = False
+153.7813 	EXP 	fx_cross: autoDraw = False
+153.7813 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+153.7813 	EXP 	learning_city_text: text = 'Camponello'
+153.7813 	EXP 	learning_street_text: height = 48.0
+153.7813 	EXP 	learning_street_text: height = 48.0
+153.7813 	EXP 	learning_street_text: height = 48.0
+153.7813 	EXP 	learning_street_text: text = 'MANDARIN UTCA'
+153.7813 	EXP 	learning_image: image = 'stimuli/objects/091a.jpg'
+153.7813 	EXP 	plate_learning: autoDraw = True
+153.7813 	EXP 	learning_city_text: autoDraw = True
+153.7813 	EXP 	learning_street_text: autoDraw = True
+153.7813 	EXP 	learning_image: autoDraw = True
+156.7755 	EXP 	New trial (rep=0, index=18): OrderedDict([('Cue', 'SZIKLA UTCA'), ('Image', 'stimuli/objects/082a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/objects/039a.jpg'), ('TestImage1', 'stimuli/objects/039b.jpg'), ('TestImage2', 'stimuli/objects/039a.jpg'), ('TestImage3', 'stimuli/objects/054a.jpg'), ('TestImage4', 'stimuli/objects/054b.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'dist2')])
+156.7910 	EXP 	plate_learning: autoDraw = False
+156.7910 	EXP 	learning_city_text: autoDraw = False
+156.7910 	EXP 	learning_street_text: autoDraw = False
+156.7910 	EXP 	learning_image: autoDraw = False
+156.7910 	EXP 	short_break_text: autoDraw = False
+156.7910 	EXP 	fx_cross: autoDraw = True
+157.7956 	EXP 	fx_cross: autoDraw = False
+157.7956 	EXP 	fx_cross: autoDraw = False
+157.7956 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+157.7956 	EXP 	learning_city_text: text = 'Camponello'
+157.7956 	EXP 	learning_street_text: height = 48.0
+157.7956 	EXP 	learning_street_text: height = 48.0
+157.7956 	EXP 	learning_street_text: height = 48.0
+157.7956 	EXP 	learning_street_text: text = 'SZIKLA UTCA'
+157.7956 	EXP 	learning_image: image = 'stimuli/objects/082a.jpg'
+157.7956 	EXP 	plate_learning: autoDraw = True
+157.7956 	EXP 	learning_city_text: autoDraw = True
+157.7956 	EXP 	learning_street_text: autoDraw = True
+157.7956 	EXP 	learning_image: autoDraw = True
+160.7918 	EXP 	New trial (rep=0, index=19): OrderedDict([('Cue', 'TOLMÁCS UTCA'), ('Image', 'stimuli/scenes/068a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/068a.jpg'), ('TestImage1', 'stimuli/scenes/068a.jpg'), ('TestImage2', 'stimuli/scenes/068b.jpg'), ('TestImage3', 'stimuli/objects/048a.jpg'), ('TestImage4', 'stimuli/objects/048b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'dist2')])
+160.8073 	EXP 	plate_learning: autoDraw = False
+160.8073 	EXP 	learning_city_text: autoDraw = False
+160.8073 	EXP 	learning_street_text: autoDraw = False
+160.8073 	EXP 	learning_image: autoDraw = False
+160.8073 	EXP 	short_break_text: autoDraw = False
+160.8073 	EXP 	fx_cross: autoDraw = True
+161.8120 	EXP 	fx_cross: autoDraw = False
+161.8120 	EXP 	fx_cross: autoDraw = False
+161.8120 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+161.8120 	EXP 	learning_city_text: text = 'Camponello'
+161.8120 	EXP 	learning_street_text: height = 48.0
+161.8120 	EXP 	learning_street_text: height = 48.0
+161.8120 	EXP 	learning_street_text: height = 48.0
+161.8120 	EXP 	learning_street_text: text = 'TOLMÁCS UTCA'
+161.8120 	EXP 	learning_image: image = 'stimuli/scenes/068a.jpg'
+161.8120 	EXP 	plate_learning: autoDraw = True
+161.8120 	EXP 	learning_city_text: autoDraw = True
+161.8120 	EXP 	learning_street_text: autoDraw = True
+161.8120 	EXP 	learning_image: autoDraw = True
+164.8086 	EXP 	New trial (rep=0, index=20): OrderedDict([('Cue', 'MUSTÁR UTCA'), ('Image', 'stimuli/scenes/041a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/scenes/057a.jpg'), ('TestImage1', 'stimuli/scenes/057a.jpg'), ('TestImage2', 'stimuli/scenes/048b.jpg'), ('TestImage3', 'stimuli/scenes/048a.jpg'), ('TestImage4', 'stimuli/scenes/057b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'lure')])
+164.8242 	EXP 	plate_learning: autoDraw = False
+164.8242 	EXP 	learning_city_text: autoDraw = False
+164.8242 	EXP 	learning_street_text: autoDraw = False
+164.8242 	EXP 	learning_image: autoDraw = False
+164.8242 	EXP 	short_break_text: autoDraw = False
+164.8242 	EXP 	fx_cross: autoDraw = True
+165.8283 	EXP 	fx_cross: autoDraw = False
+165.8283 	EXP 	fx_cross: autoDraw = False
+165.8283 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+165.8283 	EXP 	learning_city_text: text = 'Camponello'
+165.8283 	EXP 	learning_street_text: height = 48.0
+165.8283 	EXP 	learning_street_text: height = 48.0
+165.8283 	EXP 	learning_street_text: height = 48.0
+165.8283 	EXP 	learning_street_text: text = 'MUSTÁR UTCA'
+165.8283 	EXP 	learning_image: image = 'stimuli/scenes/041a.jpg'
+165.8283 	EXP 	plate_learning: autoDraw = True
+165.8283 	EXP 	learning_city_text: autoDraw = True
+165.8283 	EXP 	learning_street_text: autoDraw = True
+165.8283 	EXP 	learning_image: autoDraw = True
+168.8251 	EXP 	New trial (rep=0, index=21): OrderedDict([('Cue', 'RÁDIÓ UTCA'), ('Image', 'stimuli/scenes/098a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/098a.jpg'), ('TestImage1', 'stimuli/objects/030a.jpg'), ('TestImage2', 'stimuli/objects/030b.jpg'), ('TestImage3', 'stimuli/scenes/098b.jpg'), ('TestImage4', 'stimuli/scenes/098a.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'target')])
+168.8407 	EXP 	plate_learning: autoDraw = False
+168.8407 	EXP 	learning_city_text: autoDraw = False
+168.8407 	EXP 	learning_street_text: autoDraw = False
+168.8407 	EXP 	learning_image: autoDraw = False
+168.8407 	EXP 	short_break_text: autoDraw = False
+168.8407 	EXP 	fx_cross: autoDraw = True
+169.8440 	EXP 	fx_cross: autoDraw = False
+169.8440 	EXP 	fx_cross: autoDraw = False
+169.8440 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+169.8440 	EXP 	learning_city_text: text = 'Camponello'
+169.8440 	EXP 	learning_street_text: height = 48.0
+169.8440 	EXP 	learning_street_text: height = 48.0
+169.8440 	EXP 	learning_street_text: height = 48.0
+169.8440 	EXP 	learning_street_text: text = 'RÁDIÓ UTCA'
+169.8440 	EXP 	learning_image: image = 'stimuli/scenes/098a.jpg'
+169.8440 	EXP 	plate_learning: autoDraw = True
+169.8440 	EXP 	learning_city_text: autoDraw = True
+169.8440 	EXP 	learning_street_text: autoDraw = True
+169.8440 	EXP 	learning_image: autoDraw = True
+172.8416 	EXP 	New trial (rep=0, index=22): OrderedDict([('Cue', 'KALAPÁCS UTCA'), ('Image', 'stimuli/objects/003a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/003a.jpg'), ('TestImage1', 'stimuli/objects/003b.jpg'), ('TestImage2', 'stimuli/objects/003a.jpg'), ('TestImage3', 'stimuli/objects/024b.jpg'), ('TestImage4', 'stimuli/objects/024a.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'dist1')])
+172.8574 	EXP 	plate_learning: autoDraw = False
+172.8574 	EXP 	learning_city_text: autoDraw = False
+172.8574 	EXP 	learning_street_text: autoDraw = False
+172.8574 	EXP 	learning_image: autoDraw = False
+172.8574 	EXP 	short_break_text: autoDraw = False
+172.8574 	EXP 	fx_cross: autoDraw = True
+173.8614 	EXP 	fx_cross: autoDraw = False
+173.8614 	EXP 	fx_cross: autoDraw = False
+173.8614 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+173.8614 	EXP 	learning_city_text: text = 'Camponello'
+173.8614 	EXP 	learning_street_text: height = 48.0
+173.8614 	EXP 	learning_street_text: height = 48.0
+173.8614 	EXP 	learning_street_text: height = 48.0
+173.8614 	EXP 	learning_street_text: text = 'KALAPÁCS UTCA'
+173.8614 	EXP 	learning_image: image = 'stimuli/objects/003a.jpg'
+173.8614 	EXP 	plate_learning: autoDraw = True
+173.8614 	EXP 	learning_city_text: autoDraw = True
+173.8614 	EXP 	learning_street_text: autoDraw = True
+173.8614 	EXP 	learning_image: autoDraw = True
+176.8589 	EXP 	New trial (rep=0, index=23): OrderedDict([('Cue', 'ÁLLOMÁS UTCA'), ('Image', 'stimuli/scenes/077a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/077a.jpg'), ('TestImage1', 'stimuli/objects/036b.jpg'), ('TestImage2', 'stimuli/scenes/077b.jpg'), ('TestImage3', 'stimuli/scenes/077a.jpg'), ('TestImage4', 'stimuli/objects/036a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'target'), ('TestImage4Type', 'dist1')])
+176.8736 	EXP 	plate_learning: autoDraw = False
+176.8736 	EXP 	learning_city_text: autoDraw = False
+176.8736 	EXP 	learning_street_text: autoDraw = False
+176.8736 	EXP 	learning_image: autoDraw = False
+176.8736 	EXP 	short_break_text: autoDraw = False
+176.8736 	EXP 	fx_cross: autoDraw = True
+177.8769 	EXP 	fx_cross: autoDraw = False
+177.8769 	EXP 	fx_cross: autoDraw = False
+177.8769 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+177.8769 	EXP 	learning_city_text: text = 'Camponello'
+177.8769 	EXP 	learning_street_text: height = 48.0
+177.8769 	EXP 	learning_street_text: height = 48.0
+177.8769 	EXP 	learning_street_text: height = 48.0
+177.8769 	EXP 	learning_street_text: text = 'ÁLLOMÁS UTCA'
+177.8769 	EXP 	learning_image: image = 'stimuli/scenes/077a.jpg'
+177.8769 	EXP 	plate_learning: autoDraw = True
+177.8769 	EXP 	learning_city_text: autoDraw = True
+177.8769 	EXP 	learning_street_text: autoDraw = True
+177.8769 	EXP 	learning_image: autoDraw = True
+180.8753 	EXP 	New trial (rep=0, index=24): OrderedDict([('Cue', 'KOCKA UTCA'), ('Image', 'stimuli/scenes/009a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/009a.jpg'), ('TestImage1', 'stimuli/objects/035b.jpg'), ('TestImage2', 'stimuli/objects/035a.jpg'), ('TestImage3', 'stimuli/scenes/009a.jpg'), ('TestImage4', 'stimuli/scenes/009b.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'lure')])
+180.8905 	EXP 	plate_learning: autoDraw = False
+180.8905 	EXP 	learning_city_text: autoDraw = False
+180.8905 	EXP 	learning_street_text: autoDraw = False
+180.8905 	EXP 	learning_image: autoDraw = False
+180.8905 	EXP 	short_break_text: autoDraw = False
+180.8905 	EXP 	fx_cross: autoDraw = True
+181.8949 	EXP 	fx_cross: autoDraw = False
+181.8949 	EXP 	fx_cross: autoDraw = False
+181.8949 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+181.8949 	EXP 	learning_city_text: text = 'Camponello'
+181.8949 	EXP 	learning_street_text: height = 48.0
+181.8949 	EXP 	learning_street_text: height = 48.0
+181.8949 	EXP 	learning_street_text: height = 48.0
+181.8949 	EXP 	learning_street_text: text = 'KOCKA UTCA'
+181.8949 	EXP 	learning_image: image = 'stimuli/scenes/009a.jpg'
+181.8949 	EXP 	plate_learning: autoDraw = True
+181.8949 	EXP 	learning_city_text: autoDraw = True
+181.8949 	EXP 	learning_street_text: autoDraw = True
+181.8949 	EXP 	learning_image: autoDraw = True
+184.8916 	EXP 	New trial (rep=0, index=25): OrderedDict([('Cue', 'MOCSÁR UTCA'), ('Image', 'stimuli/scenes/022a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/022a.jpg'), ('TestImage1', 'stimuli/objects/007a.jpg'), ('TestImage2', 'stimuli/objects/007b.jpg'), ('TestImage3', 'stimuli/scenes/022a.jpg'), ('TestImage4', 'stimuli/scenes/022b.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'target'), ('TestImage4Type', 'lure')])
+184.9068 	EXP 	plate_learning: autoDraw = False
+184.9068 	EXP 	learning_city_text: autoDraw = False
+184.9068 	EXP 	learning_street_text: autoDraw = False
+184.9068 	EXP 	learning_image: autoDraw = False
+184.9068 	EXP 	short_break_text: autoDraw = False
+184.9068 	EXP 	fx_cross: autoDraw = True
+185.9115 	EXP 	fx_cross: autoDraw = False
+185.9115 	EXP 	fx_cross: autoDraw = False
+185.9115 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+185.9115 	EXP 	learning_city_text: text = 'Camponello'
+185.9115 	EXP 	learning_street_text: height = 48.0
+185.9115 	EXP 	learning_street_text: height = 48.0
+185.9115 	EXP 	learning_street_text: height = 48.0
+185.9115 	EXP 	learning_street_text: text = 'MOCSÁR UTCA'
+185.9115 	EXP 	learning_image: image = 'stimuli/scenes/022a.jpg'
+185.9115 	EXP 	plate_learning: autoDraw = True
+185.9115 	EXP 	learning_city_text: autoDraw = True
+185.9115 	EXP 	learning_street_text: autoDraw = True
+185.9115 	EXP 	learning_image: autoDraw = True
+188.9086 	EXP 	New trial (rep=0, index=26): OrderedDict([('Cue', 'PAPRIKA UTCA'), ('Image', 'stimuli/scenes/056a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/056a.jpg'), ('TestImage1', 'stimuli/scenes/079a.jpg'), ('TestImage2', 'stimuli/scenes/056a.jpg'), ('TestImage3', 'stimuli/scenes/079b.jpg'), ('TestImage4', 'stimuli/scenes/056b.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'lure')])
+188.9237 	EXP 	plate_learning: autoDraw = False
+188.9237 	EXP 	learning_city_text: autoDraw = False
+188.9237 	EXP 	learning_street_text: autoDraw = False
+188.9237 	EXP 	learning_image: autoDraw = False
+188.9237 	EXP 	short_break_text: autoDraw = False
+188.9237 	EXP 	fx_cross: autoDraw = True
+189.9266 	EXP 	fx_cross: autoDraw = False
+189.9266 	EXP 	fx_cross: autoDraw = False
+189.9266 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+189.9266 	EXP 	learning_city_text: text = 'Camponello'
+189.9266 	EXP 	learning_street_text: height = 48.0
+189.9266 	EXP 	learning_street_text: height = 48.0
+189.9266 	EXP 	learning_street_text: height = 48.0
+189.9266 	EXP 	learning_street_text: text = 'PAPRIKA UTCA'
+189.9266 	EXP 	learning_image: image = 'stimuli/scenes/056a.jpg'
+189.9266 	EXP 	plate_learning: autoDraw = True
+189.9266 	EXP 	learning_city_text: autoDraw = True
+189.9266 	EXP 	learning_street_text: autoDraw = True
+189.9266 	EXP 	learning_image: autoDraw = True
+192.9249 	EXP 	New trial (rep=0, index=27): OrderedDict([('Cue', 'LÁNDZSA UTCA'), ('Image', 'stimuli/objects/053a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/objects/054a.jpg'), ('TestImage1', 'stimuli/objects/113b.jpg'), ('TestImage2', 'stimuli/objects/113a.jpg'), ('TestImage3', 'stimuli/objects/054a.jpg'), ('TestImage4', 'stimuli/objects/054b.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'lure')])
+192.9404 	EXP 	plate_learning: autoDraw = False
+192.9404 	EXP 	learning_city_text: autoDraw = False
+192.9404 	EXP 	learning_street_text: autoDraw = False
+192.9404 	EXP 	learning_image: autoDraw = False
+192.9404 	EXP 	short_break_text: autoDraw = False
+192.9404 	EXP 	fx_cross: autoDraw = True
+193.9469 	EXP 	fx_cross: autoDraw = False
+193.9469 	EXP 	fx_cross: autoDraw = False
+193.9469 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+193.9469 	EXP 	learning_city_text: text = 'Camponello'
+193.9469 	EXP 	learning_street_text: height = 48.0
+193.9469 	EXP 	learning_street_text: height = 48.0
+193.9469 	EXP 	learning_street_text: height = 48.0
+193.9469 	EXP 	learning_street_text: text = 'LÁNDZSA UTCA'
+193.9469 	EXP 	learning_image: image = 'stimuli/objects/053a.jpg'
+193.9469 	EXP 	plate_learning: autoDraw = True
+193.9469 	EXP 	learning_city_text: autoDraw = True
+193.9469 	EXP 	learning_street_text: autoDraw = True
+193.9469 	EXP 	learning_image: autoDraw = True
+196.9416 	EXP 	New trial (rep=0, index=28): OrderedDict([('Cue', 'FÉSZEK UTCA'), ('Image', 'stimuli/objects/064a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/scenes/110a.jpg'), ('TestImage1', 'stimuli/scenes/110b.jpg'), ('TestImage2', 'stimuli/scenes/110a.jpg'), ('TestImage3', 'stimuli/objects/032b.jpg'), ('TestImage4', 'stimuli/objects/032a.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'dist1')])
+196.9568 	EXP 	plate_learning: autoDraw = False
+196.9568 	EXP 	learning_city_text: autoDraw = False
+196.9568 	EXP 	learning_street_text: autoDraw = False
+196.9568 	EXP 	learning_image: autoDraw = False
+196.9568 	EXP 	short_break_text: autoDraw = False
+196.9568 	EXP 	fx_cross: autoDraw = True
+197.9618 	EXP 	fx_cross: autoDraw = False
+197.9618 	EXP 	fx_cross: autoDraw = False
+197.9618 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+197.9618 	EXP 	learning_city_text: text = 'Camponello'
+197.9618 	EXP 	learning_street_text: height = 48.0
+197.9618 	EXP 	learning_street_text: height = 48.0
+197.9618 	EXP 	learning_street_text: height = 48.0
+197.9618 	EXP 	learning_street_text: text = 'FÉSZEK UTCA'
+197.9618 	EXP 	learning_image: image = 'stimuli/objects/064a.jpg'
+197.9618 	EXP 	plate_learning: autoDraw = True
+197.9618 	EXP 	learning_city_text: autoDraw = True
+197.9618 	EXP 	learning_street_text: autoDraw = True
+197.9618 	EXP 	learning_image: autoDraw = True
+200.9586 	EXP 	New trial (rep=0, index=29): OrderedDict([('Cue', 'SAJTÓ UTCA'), ('Image', 'stimuli/scenes/016a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/objects/065a.jpg'), ('TestImage1', 'stimuli/objects/065b.jpg'), ('TestImage2', 'stimuli/objects/065a.jpg'), ('TestImage3', 'stimuli/objects/096b.jpg'), ('TestImage4', 'stimuli/objects/096a.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'dist1')])
+200.9735 	EXP 	plate_learning: autoDraw = False
+200.9735 	EXP 	learning_city_text: autoDraw = False
+200.9735 	EXP 	learning_street_text: autoDraw = False
+200.9735 	EXP 	learning_image: autoDraw = False
+200.9735 	EXP 	short_break_text: autoDraw = False
+200.9735 	EXP 	fx_cross: autoDraw = True
+201.9776 	EXP 	fx_cross: autoDraw = False
+201.9776 	EXP 	fx_cross: autoDraw = False
+201.9776 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+201.9776 	EXP 	learning_city_text: text = 'Camponello'
+201.9776 	EXP 	learning_street_text: height = 48.0
+201.9776 	EXP 	learning_street_text: height = 48.0
+201.9776 	EXP 	learning_street_text: height = 48.0
+201.9776 	EXP 	learning_street_text: text = 'SAJTÓ UTCA'
+201.9776 	EXP 	learning_image: image = 'stimuli/scenes/016a.jpg'
+201.9776 	EXP 	plate_learning: autoDraw = True
+201.9776 	EXP 	learning_city_text: autoDraw = True
+201.9776 	EXP 	learning_street_text: autoDraw = True
+201.9776 	EXP 	learning_image: autoDraw = True
+204.9744 	EXP 	New trial (rep=0, index=30): OrderedDict([('Cue', 'LEVÉL UTCA'), ('Image', 'stimuli/objects/036a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/036a.jpg'), ('TestImage1', 'stimuli/scenes/068b.jpg'), ('TestImage2', 'stimuli/objects/036a.jpg'), ('TestImage3', 'stimuli/objects/036b.jpg'), ('TestImage4', 'stimuli/scenes/068a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'target'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist1')])
+204.9900 	EXP 	plate_learning: autoDraw = False
+204.9900 	EXP 	learning_city_text: autoDraw = False
+204.9900 	EXP 	learning_street_text: autoDraw = False
+204.9900 	EXP 	learning_image: autoDraw = False
+204.9900 	EXP 	short_break_text: autoDraw = False
+204.9900 	EXP 	fx_cross: autoDraw = True
+206.0013 	EXP 	fx_cross: autoDraw = False
+206.0013 	EXP 	fx_cross: autoDraw = False
+206.0013 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+206.0013 	EXP 	learning_city_text: text = 'Camponello'
+206.0013 	EXP 	learning_street_text: height = 48.0
+206.0013 	EXP 	learning_street_text: height = 48.0
+206.0013 	EXP 	learning_street_text: height = 48.0
+206.0013 	EXP 	learning_street_text: text = 'LEVÉL UTCA'
+206.0013 	EXP 	learning_image: image = 'stimuli/objects/036a.jpg'
+206.0013 	EXP 	plate_learning: autoDraw = True
+206.0013 	EXP 	learning_city_text: autoDraw = True
+206.0013 	EXP 	learning_street_text: autoDraw = True
+206.0013 	EXP 	learning_image: autoDraw = True
+208.9920 	EXP 	New trial (rep=0, index=31): OrderedDict([('Cue', 'HÁRFA UTCA'), ('Image', 'stimuli/scenes/014a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/scenes/020a.jpg'), ('TestImage1', 'stimuli/scenes/020a.jpg'), ('TestImage2', 'stimuli/scenes/020b.jpg'), ('TestImage3', 'stimuli/scenes/057a.jpg'), ('TestImage4', 'stimuli/scenes/057b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'dist2')])
+209.0066 	EXP 	plate_learning: autoDraw = False
+209.0066 	EXP 	learning_city_text: autoDraw = False
+209.0066 	EXP 	learning_street_text: autoDraw = False
+209.0066 	EXP 	learning_image: autoDraw = False
+209.0066 	EXP 	short_break_text: autoDraw = False
+209.0066 	EXP 	fx_cross: autoDraw = True
+210.0105 	EXP 	fx_cross: autoDraw = False
+210.0105 	EXP 	fx_cross: autoDraw = False
+210.0105 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+210.0105 	EXP 	learning_city_text: text = 'Camponello'
+210.0105 	EXP 	learning_street_text: height = 48.0
+210.0105 	EXP 	learning_street_text: height = 48.0
+210.0105 	EXP 	learning_street_text: height = 48.0
+210.0105 	EXP 	learning_street_text: text = 'HÁRFA UTCA'
+210.0105 	EXP 	learning_image: image = 'stimuli/scenes/014a.jpg'
+210.0105 	EXP 	plate_learning: autoDraw = True
+210.0105 	EXP 	learning_city_text: autoDraw = True
+210.0105 	EXP 	learning_street_text: autoDraw = True
+210.0105 	EXP 	learning_image: autoDraw = True
+213.0076 	EXP 	New trial (rep=0, index=32): OrderedDict([('Cue', 'FOGAS UTCA'), ('Image', 'stimuli/objects/004a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/004a.jpg'), ('TestImage1', 'stimuli/objects/022b.jpg'), ('TestImage2', 'stimuli/objects/004a.jpg'), ('TestImage3', 'stimuli/objects/022a.jpg'), ('TestImage4', 'stimuli/objects/004b.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'lure')])
+213.0230 	EXP 	plate_learning: autoDraw = False
+213.0230 	EXP 	learning_city_text: autoDraw = False
+213.0230 	EXP 	learning_street_text: autoDraw = False
+213.0230 	EXP 	learning_image: autoDraw = False
+213.0230 	EXP 	short_break_text: autoDraw = False
+213.0230 	EXP 	fx_cross: autoDraw = True
+214.0299 	EXP 	fx_cross: autoDraw = False
+214.0299 	EXP 	fx_cross: autoDraw = False
+214.0299 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+214.0299 	EXP 	learning_city_text: text = 'Camponello'
+214.0299 	EXP 	learning_street_text: height = 48.0
+214.0299 	EXP 	learning_street_text: height = 48.0
+214.0299 	EXP 	learning_street_text: height = 48.0
+214.0299 	EXP 	learning_street_text: text = 'FOGAS UTCA'
+214.0299 	EXP 	learning_image: image = 'stimuli/objects/004a.jpg'
+214.0299 	EXP 	plate_learning: autoDraw = True
+214.0299 	EXP 	learning_city_text: autoDraw = True
+214.0299 	EXP 	learning_street_text: autoDraw = True
+214.0299 	EXP 	learning_image: autoDraw = True
+217.0243 	EXP 	New trial (rep=0, index=33): OrderedDict([('Cue', 'KESZTYŰ UTCA'), ('Image', 'stimuli/objects/090a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/090a.jpg'), ('TestImage1', 'stimuli/objects/090b.jpg'), ('TestImage2', 'stimuli/objects/021a.jpg'), ('TestImage3', 'stimuli/objects/090a.jpg'), ('TestImage4', 'stimuli/objects/021b.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'dist2')])
+217.0397 	EXP 	plate_learning: autoDraw = False
+217.0397 	EXP 	learning_city_text: autoDraw = False
+217.0397 	EXP 	learning_street_text: autoDraw = False
+217.0397 	EXP 	learning_image: autoDraw = False
+217.0397 	EXP 	short_break_text: autoDraw = False
+217.0397 	EXP 	fx_cross: autoDraw = True
+218.0497 	EXP 	fx_cross: autoDraw = False
+218.0497 	EXP 	fx_cross: autoDraw = False
+218.0497 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+218.0497 	EXP 	learning_city_text: text = 'Camponello'
+218.0497 	EXP 	learning_street_text: height = 48.0
+218.0497 	EXP 	learning_street_text: height = 48.0
+218.0497 	EXP 	learning_street_text: height = 48.0
+218.0497 	EXP 	learning_street_text: text = 'KESZTYŰ UTCA'
+218.0497 	EXP 	learning_image: image = 'stimuli/objects/090a.jpg'
+218.0497 	EXP 	plate_learning: autoDraw = True
+218.0497 	EXP 	learning_city_text: autoDraw = True
+218.0497 	EXP 	learning_street_text: autoDraw = True
+218.0497 	EXP 	learning_image: autoDraw = True
+221.0408 	EXP 	New trial (rep=0, index=34): OrderedDict([('Cue', 'KRÉTA UTCA'), ('Image', 'stimuli/scenes/086a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/086a.jpg'), ('TestImage1', 'stimuli/scenes/086b.jpg'), ('TestImage2', 'stimuli/scenes/022a.jpg'), ('TestImage3', 'stimuli/scenes/086a.jpg'), ('TestImage4', 'stimuli/scenes/022b.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'dist2')])
+221.0564 	EXP 	plate_learning: autoDraw = False
+221.0564 	EXP 	learning_city_text: autoDraw = False
+221.0564 	EXP 	learning_street_text: autoDraw = False
+221.0564 	EXP 	learning_image: autoDraw = False
+221.0564 	EXP 	short_break_text: autoDraw = False
+221.0564 	EXP 	fx_cross: autoDraw = True
+222.0576 	EXP 	fx_cross: autoDraw = False
+222.0576 	EXP 	fx_cross: autoDraw = False
+222.0576 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+222.0576 	EXP 	learning_city_text: text = 'Camponello'
+222.0576 	EXP 	learning_street_text: height = 48.0
+222.0576 	EXP 	learning_street_text: height = 48.0
+222.0576 	EXP 	learning_street_text: height = 48.0
+222.0576 	EXP 	learning_street_text: text = 'KRÉTA UTCA'
+222.0576 	EXP 	learning_image: image = 'stimuli/scenes/086a.jpg'
+222.0576 	EXP 	plate_learning: autoDraw = True
+222.0576 	EXP 	learning_city_text: autoDraw = True
+222.0576 	EXP 	learning_street_text: autoDraw = True
+222.0576 	EXP 	learning_image: autoDraw = True
+225.0423 	EXP 	New trial (rep=0, index=35): OrderedDict([('Cue', 'FIÓK UTCA'), ('Image', 'stimuli/scenes/089a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/089a.jpg'), ('TestImage1', 'stimuli/scenes/055b.jpg'), ('TestImage2', 'stimuli/scenes/089a.jpg'), ('TestImage3', 'stimuli/scenes/055a.jpg'), ('TestImage4', 'stimuli/scenes/089b.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'lure')])
+225.0563 	EXP 	plate_learning: autoDraw = False
+225.0563 	EXP 	learning_city_text: autoDraw = False
+225.0563 	EXP 	learning_street_text: autoDraw = False
+225.0563 	EXP 	learning_image: autoDraw = False
+225.0563 	EXP 	plate_learning: autoDraw = False
+225.0563 	EXP 	learning_city_text: autoDraw = False
+225.0563 	EXP 	learning_street_text: autoDraw = False
+225.0563 	EXP 	learning_image: autoDraw = False
+225.0563 	EXP 	short_break_text: autoDraw = False
+225.0563 	EXP 	fx_cross: autoDraw = True
+226.0617 	EXP 	fx_cross: autoDraw = False
+226.0617 	EXP 	fx_cross: autoDraw = False
+226.0617 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+226.0617 	EXP 	learning_city_text: text = 'Camponello'
+226.0617 	EXP 	learning_street_text: height = 48.0
+226.0617 	EXP 	learning_street_text: height = 48.0
+226.0617 	EXP 	learning_street_text: height = 48.0
+226.0617 	EXP 	learning_street_text: text = 'FIÓK UTCA'
+226.0617 	EXP 	learning_image: image = 'stimuli/scenes/089a.jpg'
+226.0617 	EXP 	plate_learning: autoDraw = True
+226.0617 	EXP 	learning_city_text: autoDraw = True
+226.0617 	EXP 	learning_street_text: autoDraw = True
+226.0617 	EXP 	learning_image: autoDraw = True
+229.0576 	EXP 	New trial (rep=0, index=36): OrderedDict([('Cue', 'ZSEMLE UTCA'), ('Image', 'stimuli/objects/046a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/046a.jpg'), ('TestImage1', 'stimuli/objects/046b.jpg'), ('TestImage2', 'stimuli/objects/046a.jpg'), ('TestImage3', 'stimuli/objects/080a.jpg'), ('TestImage4', 'stimuli/objects/080b.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'dist2')])
+229.0727 	EXP 	plate_learning: autoDraw = False
+229.0727 	EXP 	learning_city_text: autoDraw = False
+229.0727 	EXP 	learning_street_text: autoDraw = False
+229.0727 	EXP 	learning_image: autoDraw = False
+229.0727 	EXP 	short_break_text: autoDraw = False
+229.0727 	EXP 	fx_cross: autoDraw = True
+230.0827 	EXP 	fx_cross: autoDraw = False
+230.0827 	EXP 	fx_cross: autoDraw = False
+230.0827 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+230.0827 	EXP 	learning_city_text: text = 'Camponello'
+230.0827 	EXP 	learning_street_text: height = 48.0
+230.0827 	EXP 	learning_street_text: height = 48.0
+230.0827 	EXP 	learning_street_text: height = 48.0
+230.0827 	EXP 	learning_street_text: text = 'ZSEMLE UTCA'
+230.0827 	EXP 	learning_image: image = 'stimuli/objects/046a.jpg'
+230.0827 	EXP 	plate_learning: autoDraw = True
+230.0827 	EXP 	learning_city_text: autoDraw = True
+230.0827 	EXP 	learning_street_text: autoDraw = True
+230.0827 	EXP 	learning_image: autoDraw = True
+233.0739 	EXP 	New trial (rep=0, index=37): OrderedDict([('Cue', 'LIGET UTCA'), ('Image', 'stimuli/scenes/005a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 1), ('UpdateImage', 'stimuli/scenes/106a.jpg'), ('TestImage1', 'stimuli/scenes/062b.jpg'), ('TestImage2', 'stimuli/scenes/106a.jpg'), ('TestImage3', 'stimuli/scenes/106b.jpg'), ('TestImage4', 'stimuli/scenes/062a.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'target'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist1')])
+233.0894 	EXP 	plate_learning: autoDraw = False
+233.0894 	EXP 	learning_city_text: autoDraw = False
+233.0894 	EXP 	learning_street_text: autoDraw = False
+233.0894 	EXP 	learning_image: autoDraw = False
+233.0894 	EXP 	short_break_text: autoDraw = False
+233.0894 	EXP 	fx_cross: autoDraw = True
+234.0910 	EXP 	fx_cross: autoDraw = False
+234.0910 	EXP 	fx_cross: autoDraw = False
+234.0910 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+234.0910 	EXP 	learning_city_text: text = 'Camponello'
+234.0910 	EXP 	learning_street_text: height = 48.0
+234.0910 	EXP 	learning_street_text: height = 48.0
+234.0910 	EXP 	learning_street_text: height = 48.0
+234.0910 	EXP 	learning_street_text: text = 'LIGET UTCA'
+234.0910 	EXP 	learning_image: image = 'stimuli/scenes/005a.jpg'
+234.0910 	EXP 	plate_learning: autoDraw = True
+234.0910 	EXP 	learning_city_text: autoDraw = True
+234.0910 	EXP 	learning_street_text: autoDraw = True
+234.0910 	EXP 	learning_image: autoDraw = True
+237.0905 	EXP 	New trial (rep=0, index=38): OrderedDict([('Cue', 'LEMEZ UTCA'), ('Image', 'stimuli/objects/011a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/011a.jpg'), ('TestImage1', 'stimuli/objects/011a.jpg'), ('TestImage2', 'stimuli/objects/087b.jpg'), ('TestImage3', 'stimuli/objects/087a.jpg'), ('TestImage4', 'stimuli/objects/011b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'lure')])
+237.1059 	EXP 	plate_learning: autoDraw = False
+237.1059 	EXP 	learning_city_text: autoDraw = False
+237.1059 	EXP 	learning_street_text: autoDraw = False
+237.1059 	EXP 	learning_image: autoDraw = False
+237.1059 	EXP 	short_break_text: autoDraw = False
+237.1059 	EXP 	fx_cross: autoDraw = True
+238.1123 	EXP 	fx_cross: autoDraw = False
+238.1123 	EXP 	fx_cross: autoDraw = False
+238.1123 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+238.1123 	EXP 	learning_city_text: text = 'Camponello'
+238.1123 	EXP 	learning_street_text: height = 48.0
+238.1123 	EXP 	learning_street_text: height = 48.0
+238.1123 	EXP 	learning_street_text: height = 48.0
+238.1123 	EXP 	learning_street_text: text = 'LEMEZ UTCA'
+238.1123 	EXP 	learning_image: image = 'stimuli/objects/011a.jpg'
+238.1123 	EXP 	plate_learning: autoDraw = True
+238.1123 	EXP 	learning_city_text: autoDraw = True
+238.1123 	EXP 	learning_street_text: autoDraw = True
+238.1123 	EXP 	learning_image: autoDraw = True
+241.1069 	EXP 	New trial (rep=0, index=39): OrderedDict([('Cue', 'DOMINÓ UTCA'), ('Image', 'stimuli/objects/058a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/scenes/095a.jpg'), ('TestImage1', 'stimuli/scenes/095a.jpg'), ('TestImage2', 'stimuli/scenes/095b.jpg'), ('TestImage3', 'stimuli/objects/065b.jpg'), ('TestImage4', 'stimuli/objects/065a.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'lure'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'dist1')])
+241.1225 	EXP 	plate_learning: autoDraw = False
+241.1225 	EXP 	learning_city_text: autoDraw = False
+241.1225 	EXP 	learning_street_text: autoDraw = False
+241.1225 	EXP 	learning_image: autoDraw = False
+241.1225 	EXP 	short_break_text: autoDraw = False
+241.1225 	EXP 	fx_cross: autoDraw = True
+242.1297 	EXP 	fx_cross: autoDraw = False
+242.1297 	EXP 	fx_cross: autoDraw = False
+242.1297 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+242.1297 	EXP 	learning_city_text: text = 'Camponello'
+242.1297 	EXP 	learning_street_text: height = 48.0
+242.1297 	EXP 	learning_street_text: height = 48.0
+242.1297 	EXP 	learning_street_text: height = 48.0
+242.1297 	EXP 	learning_street_text: text = 'DOMINÓ UTCA'
+242.1297 	EXP 	learning_image: image = 'stimuli/objects/058a.jpg'
+242.1297 	EXP 	plate_learning: autoDraw = True
+242.1297 	EXP 	learning_city_text: autoDraw = True
+242.1297 	EXP 	learning_street_text: autoDraw = True
+242.1297 	EXP 	learning_image: autoDraw = True
+245.1238 	EXP 	New trial (rep=0, index=40): OrderedDict([('Cue', 'TRIATLON UTCA'), ('Image', 'stimuli/objects/087a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/087a.jpg'), ('TestImage1', 'stimuli/objects/087a.jpg'), ('TestImage2', 'stimuli/objects/047b.jpg'), ('TestImage3', 'stimuli/objects/087b.jpg'), ('TestImage4', 'stimuli/objects/047a.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist1')])
+245.1392 	EXP 	plate_learning: autoDraw = False
+245.1392 	EXP 	learning_city_text: autoDraw = False
+245.1392 	EXP 	learning_street_text: autoDraw = False
+245.1392 	EXP 	learning_image: autoDraw = False
+245.1392 	EXP 	short_break_text: autoDraw = False
+245.1392 	EXP 	fx_cross: autoDraw = True
+246.1448 	EXP 	fx_cross: autoDraw = False
+246.1448 	EXP 	fx_cross: autoDraw = False
+246.1448 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+246.1448 	EXP 	learning_city_text: text = 'Camponello'
+246.1448 	EXP 	learning_street_text: height = 48.0
+246.1448 	EXP 	learning_street_text: height = 48.0
+246.1448 	EXP 	learning_street_text: height = 48.0
+246.1448 	EXP 	learning_street_text: text = 'TRIATLON UTCA'
+246.1448 	EXP 	learning_image: image = 'stimuli/objects/087a.jpg'
+246.1448 	EXP 	plate_learning: autoDraw = True
+246.1448 	EXP 	learning_city_text: autoDraw = True
+246.1448 	EXP 	learning_street_text: autoDraw = True
+246.1448 	EXP 	learning_image: autoDraw = True
+249.1402 	EXP 	New trial (rep=0, index=41): OrderedDict([('Cue', 'GYŰRŰ UTCA'), ('Image', 'stimuli/objects/025a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/025a.jpg'), ('TestImage1', 'stimuli/scenes/028a.jpg'), ('TestImage2', 'stimuli/scenes/028b.jpg'), ('TestImage3', 'stimuli/objects/025a.jpg'), ('TestImage4', 'stimuli/objects/025b.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'target'), ('TestImage4Type', 'lure')])
+249.1558 	EXP 	plate_learning: autoDraw = False
+249.1558 	EXP 	learning_city_text: autoDraw = False
+249.1558 	EXP 	learning_street_text: autoDraw = False
+249.1558 	EXP 	learning_image: autoDraw = False
+249.1558 	EXP 	short_break_text: autoDraw = False
+249.1558 	EXP 	fx_cross: autoDraw = True
+250.1651 	EXP 	fx_cross: autoDraw = False
+250.1651 	EXP 	fx_cross: autoDraw = False
+250.1651 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+250.1651 	EXP 	learning_city_text: text = 'Camponello'
+250.1651 	EXP 	learning_street_text: height = 48.0
+250.1651 	EXP 	learning_street_text: height = 48.0
+250.1651 	EXP 	learning_street_text: height = 48.0
+250.1651 	EXP 	learning_street_text: text = 'GYŰRŰ UTCA'
+250.1651 	EXP 	learning_image: image = 'stimuli/objects/025a.jpg'
+250.1651 	EXP 	plate_learning: autoDraw = True
+250.1651 	EXP 	learning_city_text: autoDraw = True
+250.1651 	EXP 	learning_street_text: autoDraw = True
+250.1651 	EXP 	learning_image: autoDraw = True
+253.1571 	EXP 	New trial (rep=0, index=42): OrderedDict([('Cue', 'KORONA UTCA'), ('Image', 'stimuli/objects/080a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/080a.jpg'), ('TestImage1', 'stimuli/scenes/116a.jpg'), ('TestImage2', 'stimuli/objects/080a.jpg'), ('TestImage3', 'stimuli/objects/080b.jpg'), ('TestImage4', 'stimuli/scenes/116b.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'target'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist2')])
+253.1728 	EXP 	plate_learning: autoDraw = False
+253.1728 	EXP 	learning_city_text: autoDraw = False
+253.1728 	EXP 	learning_street_text: autoDraw = False
+253.1728 	EXP 	learning_image: autoDraw = False
+253.1728 	EXP 	short_break_text: autoDraw = False
+253.1728 	EXP 	fx_cross: autoDraw = True
+254.1783 	EXP 	fx_cross: autoDraw = False
+254.1783 	EXP 	fx_cross: autoDraw = False
+254.1783 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+254.1783 	EXP 	learning_city_text: text = 'Camponello'
+254.1783 	EXP 	learning_street_text: height = 48.0
+254.1783 	EXP 	learning_street_text: height = 48.0
+254.1783 	EXP 	learning_street_text: height = 48.0
+254.1783 	EXP 	learning_street_text: text = 'KORONA UTCA'
+254.1783 	EXP 	learning_image: image = 'stimuli/objects/080a.jpg'
+254.1783 	EXP 	plate_learning: autoDraw = True
+254.1783 	EXP 	learning_city_text: autoDraw = True
+254.1783 	EXP 	learning_street_text: autoDraw = True
+254.1783 	EXP 	learning_image: autoDraw = True
+257.1735 	EXP 	New trial (rep=0, index=43): OrderedDict([('Cue', 'POLIP UTCA'), ('Image', 'stimuli/objects/024a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/024a.jpg'), ('TestImage1', 'stimuli/scenes/009a.jpg'), ('TestImage2', 'stimuli/objects/024a.jpg'), ('TestImage3', 'stimuli/objects/024b.jpg'), ('TestImage4', 'stimuli/scenes/009b.jpg'), ('TestImage1Type', 'dist1'), ('TestImage2Type', 'target'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist2')])
+257.1898 	EXP 	plate_learning: autoDraw = False
+257.1898 	EXP 	learning_city_text: autoDraw = False
+257.1898 	EXP 	learning_street_text: autoDraw = False
+257.1898 	EXP 	learning_image: autoDraw = False
+257.1898 	EXP 	short_break_text: autoDraw = False
+257.1898 	EXP 	fx_cross: autoDraw = True
+258.1929 	EXP 	fx_cross: autoDraw = False
+258.1929 	EXP 	fx_cross: autoDraw = False
+258.1929 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+258.1929 	EXP 	learning_city_text: text = 'Camponello'
+258.1929 	EXP 	learning_street_text: height = 48.0
+258.1929 	EXP 	learning_street_text: height = 48.0
+258.1929 	EXP 	learning_street_text: height = 48.0
+258.1929 	EXP 	learning_street_text: text = 'POLIP UTCA'
+258.1929 	EXP 	learning_image: image = 'stimuli/objects/024a.jpg'
+258.1929 	EXP 	plate_learning: autoDraw = True
+258.1929 	EXP 	learning_city_text: autoDraw = True
+258.1929 	EXP 	learning_street_text: autoDraw = True
+258.1929 	EXP 	learning_image: autoDraw = True
+261.1902 	EXP 	New trial (rep=0, index=44): OrderedDict([('Cue', 'PÁRNA UTCA'), ('Image', 'stimuli/objects/021a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/objects/021a.jpg'), ('TestImage1', 'stimuli/objects/021b.jpg'), ('TestImage2', 'stimuli/objects/021a.jpg'), ('TestImage3', 'stimuli/objects/003b.jpg'), ('TestImage4', 'stimuli/objects/003a.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'target'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'dist1')])
+261.2061 	EXP 	plate_learning: autoDraw = False
+261.2061 	EXP 	learning_city_text: autoDraw = False
+261.2061 	EXP 	learning_street_text: autoDraw = False
+261.2061 	EXP 	learning_image: autoDraw = False
+261.2061 	EXP 	short_break_text: autoDraw = False
+261.2061 	EXP 	fx_cross: autoDraw = True
+262.2122 	EXP 	fx_cross: autoDraw = False
+262.2122 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+262.2122 	EXP 	learning_city_text: text = 'Camponello'
+262.2122 	EXP 	learning_street_text: height = 48.0
+262.2122 	EXP 	learning_street_text: height = 48.0
+262.2122 	EXP 	learning_street_text: height = 48.0
+262.2122 	EXP 	learning_street_text: text = 'PÁRNA UTCA'
+262.2122 	EXP 	learning_image: image = 'stimuli/objects/021a.jpg'
+262.2122 	EXP 	plate_learning: autoDraw = True
+262.2122 	EXP 	learning_city_text: autoDraw = True
+262.2122 	EXP 	learning_street_text: autoDraw = True
+262.2122 	EXP 	learning_image: autoDraw = True
+265.2222 	EXP 	plate_learning: autoDraw = False
+265.2222 	EXP 	learning_city_text: autoDraw = False
+265.2222 	EXP 	learning_street_text: autoDraw = False
+265.2222 	EXP 	learning_image: autoDraw = False
+265.2222 	EXP 	short_break_text: autoDraw = True
+270.6583 	EXP 	New trial (rep=0, index=45): OrderedDict([('Cue', 'TERASZ UTCA'), ('Image', 'stimuli/scenes/116a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/116a.jpg'), ('TestImage1', 'stimuli/scenes/104b.jpg'), ('TestImage2', 'stimuli/scenes/104a.jpg'), ('TestImage3', 'stimuli/scenes/116a.jpg'), ('TestImage4', 'stimuli/scenes/116b.jpg'), ('TestImage1Type', 'dist2'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'target'), ('TestImage4Type', 'lure')])
+270.6608 	DATA 	Keypress: space
+270.6725 	EXP 	short_break_text: autoDraw = False
+270.6725 	EXP 	fx_cross: autoDraw = True
+271.6843 	EXP 	fx_cross: autoDraw = False
+271.6843 	EXP 	fx_cross: autoDraw = False
+271.6843 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+271.6843 	EXP 	learning_city_text: text = 'Camponello'
+271.6843 	EXP 	learning_street_text: height = 48.0
+271.6843 	EXP 	learning_street_text: height = 48.0
+271.6843 	EXP 	learning_street_text: height = 48.0
+271.6843 	EXP 	learning_street_text: text = 'TERASZ UTCA'
+271.6843 	EXP 	learning_image: image = 'stimuli/scenes/116a.jpg'
+271.6843 	EXP 	plate_learning: autoDraw = True
+271.6843 	EXP 	learning_city_text: autoDraw = True
+271.6843 	EXP 	learning_street_text: autoDraw = True
+271.6843 	EXP 	learning_image: autoDraw = True
+274.6736 	EXP 	New trial (rep=0, index=46): OrderedDict([('Cue', 'BANÁN UTCA'), ('Image', 'stimuli/scenes/034a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 0), ('UpdateImage', 'stimuli/scenes/034a.jpg'), ('TestImage1', 'stimuli/scenes/034b.jpg'), ('TestImage2', 'stimuli/objects/111a.jpg'), ('TestImage3', 'stimuli/objects/111b.jpg'), ('TestImage4', 'stimuli/scenes/034a.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'dist2'), ('TestImage4Type', 'target')])
+274.6888 	EXP 	plate_learning: autoDraw = False
+274.6888 	EXP 	learning_city_text: autoDraw = False
+274.6888 	EXP 	learning_street_text: autoDraw = False
+274.6888 	EXP 	learning_image: autoDraw = False
+274.6888 	EXP 	short_break_text: autoDraw = False
+274.6888 	EXP 	fx_cross: autoDraw = True
+275.6916 	EXP 	fx_cross: autoDraw = False
+275.6916 	EXP 	fx_cross: autoDraw = False
+275.6916 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+275.6916 	EXP 	learning_city_text: text = 'Camponello'
+275.6916 	EXP 	learning_street_text: height = 48.0
+275.6916 	EXP 	learning_street_text: height = 48.0
+275.6916 	EXP 	learning_street_text: height = 48.0
+275.6916 	EXP 	learning_street_text: text = 'BANÁN UTCA'
+275.6916 	EXP 	learning_image: image = 'stimuli/scenes/034a.jpg'
+275.6916 	EXP 	plate_learning: autoDraw = True
+275.6916 	EXP 	learning_city_text: autoDraw = True
+275.6916 	EXP 	learning_street_text: autoDraw = True
+275.6916 	EXP 	learning_image: autoDraw = True
+278.6896 	EXP 	New trial (rep=0, index=47): OrderedDict([('Cue', 'KÖNYVTÁR UTCA'), ('Image', 'stimuli/objects/029a.jpg'), ('Category', 'object'), ('CorrectResponse', 'left'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/scenes/053a.jpg'), ('TestImage1', 'stimuli/scenes/053b.jpg'), ('TestImage2', 'stimuli/objects/028b.jpg'), ('TestImage3', 'stimuli/objects/028a.jpg'), ('TestImage4', 'stimuli/scenes/053a.jpg'), ('TestImage1Type', 'lure'), ('TestImage2Type', 'dist2'), ('TestImage3Type', 'dist1'), ('TestImage4Type', 'target')])
+278.7051 	EXP 	plate_learning: autoDraw = False
+278.7051 	EXP 	learning_city_text: autoDraw = False
+278.7051 	EXP 	learning_street_text: autoDraw = False
+278.7051 	EXP 	learning_image: autoDraw = False
+278.7051 	EXP 	short_break_text: autoDraw = False
+278.7051 	EXP 	fx_cross: autoDraw = True
+279.7188 	EXP 	fx_cross: autoDraw = False
+279.7188 	EXP 	fx_cross: autoDraw = False
+279.7188 	EXP 	plate_learning: image = './stimuli/street_plate2.png'
+279.7188 	EXP 	learning_city_text: text = 'Camponello'
+279.7188 	EXP 	learning_street_text: height = 48.0
+279.7188 	EXP 	learning_street_text: height = 48.0
+279.7188 	EXP 	learning_street_text: height = 48.0
+279.7188 	EXP 	learning_street_text: text = 'KÖNYVTÁR UTCA'
+279.7188 	EXP 	learning_image: image = 'stimuli/objects/029a.jpg'
+279.7188 	EXP 	plate_learning: autoDraw = True
+279.7188 	EXP 	learning_city_text: autoDraw = True
+279.7188 	EXP 	learning_street_text: autoDraw = True
+279.7188 	EXP 	learning_image: autoDraw = True
+282.7069 	EXP 	New trial (rep=0, index=48): OrderedDict([('Cue', 'ÜVEG UTCA'), ('Image', 'stimuli/scenes/093a.jpg'), ('Category', 'scene'), ('CorrectResponse', 'right'), ('CityName', 'Camponello'), ('Novelty', 2), ('UpdateImage', 'stimuli/objects/028a.jpg'), ('TestImage1', 'stimuli/objects/028a.jpg'), ('TestImage2', 'stimuli/scenes/095a.jpg'), ('TestImage3', 'stimuli/objects/028b.jpg'), ('TestImage4', 'stimuli/scenes/095b.jpg'), ('TestImage1Type', 'target'), ('TestImage2Type', 'dist1'), ('TestImage3Type', 'lure'), ('TestImage4Type', 'dist2')])
+282.7219 	EXP 	plate_learning: autoDraw = False
+282.7219 	EXP 	learning_city_text: autoDraw = False
+282.7219 	EXP 	learning_street_text: autoDraw = False
+282.7219 	EXP 	learning_image: autoDraw = False
+282.7219 	EXP 	short_break_text: autoDraw = False
+282.7219 	EXP 	fx_cross: autoDraw = True
+283.7168 	DEPRECATION 	Couldn't find image stimuli/scenes/093a.jpg; check path? (tried: C:\Users\hcccl\Documents\Hippopolis\stimuli\scenes\093a.jpg)
+283.9809 	EXP 	window1: mouseVisible = True
